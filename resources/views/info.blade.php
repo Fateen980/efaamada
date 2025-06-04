@@ -7,16 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta name="author"/>
-    <meta name="keywords" content="المنصة الوطنية للمخالفات (إيفاء)"/>
-    <meta name="description" content="المنصة الوطنية للمخالفات (إيفاء) هي إحدى المنصات الوطنية التي ينفذها مركز المعلومات الوطني التابع للهيئة السعودية للبيانات والذكاء الإصطناعي تخفيض (50%) من قيمة المخالفة / المخالفات"/>
+    <meta name="keywords" content=" ايفاء المنصة الوطنية للمخالفات"/>
+    <meta name="description" content="  ايفاء المنصة الوطنية للمخالفات
+ هي إحدى المنصات الوطنية التي ينفذها مركز المعلومات الوطني التابع للهيئة السعودية للبيانات والذكاء الإصطناعي تخفيض (50%) من قيمة المخالفة / المخالفات"/>
     <meta property="og:title" content="المنصة الوطنية للمخالفات (إيفاء)"/>
     <meta property="og:type" content="website"/>
     <meta property="og:url"/>
     <meta property="og:image"/>ط
-    <meta property="og:site_name" content="المنصة الوطنية للمخالفات (إيفاء)"/>
+    <meta property="og:site_name" content="  ايفاء المنصة الوطنية للمخالفات"/>
     <meta property="og:description" content="المنصة الوطنية للمخالفات (إيفاء) هي إحدى المنصات الوطنية التي ينفذها مركز المعلومات الوطني التابع للهيئة السعودية للبيانات والذكاء الإصطناعي تخفيض (50%) من قيمة المخالفة / المخالفات"/>
     <meta name="twitter:card" content="summary_large_image"/>
-    <meta name="twitter:title" content="المنصة الوطنية للمخالفات (إيفاء)"/>
+    <meta name="twitter:title" content=" ايفاء المنصة الوطنية للمخالفات"/>
     <meta name="twitter:description" content="المنصة الوطنية للمخالفات (إيفاء) هي إحدى المنصات الوطنية التي ينفذها مركز المعلومات الوطني التابع للهيئة السعودية للبيانات والذكاء الإصطناعي تخفيض (50%) من قيمة المخالفة / المخالفات"/>
     <meta name="twitter:image"/>
     <meta name="google-site-verification" content="2NrOZO7mGElLtUEKpo92Ah5_G-ie9hCK9woWE33XxyU" />
