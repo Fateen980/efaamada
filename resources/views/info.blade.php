@@ -329,10 +329,10 @@
                             </div>
                             <div class="col-12 col-lg-4">
                                 <a href="/" target="_blank">
-                                    <img class="FooterLogo" src="../new/NICW.svg"/>
+                                    <img class="FooterLogo" src="../new/NICW.svg" alt="المنصة الوطنية للمخالفات"/>
                                 </a>
                                 <a href="/" target="_blank">
-                                    <img class="FooterLogo" src="../new/sdaia2.svg"/>
+                                    <img class="FooterLogo" src="../new/sdaia2.svg" alt="المنصة الوطنية للمخالفات" />
                                 </a>
                             </div>
                         </div>
