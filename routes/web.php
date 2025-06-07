@@ -27,6 +27,13 @@ Route::GET('/info', function () {
 });
 
 
+Route::GET('/efaa', function () {
+
+    return view('efaa');
+
+});
+
+
 
 
 Route::POST('/GetViolationsByViolatorinquery', [EfaaController::class, 'GetViolationsByViolatorinquery'])->middleware(BlockUsers::class);
