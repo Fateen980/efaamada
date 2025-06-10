@@ -34,6 +34,12 @@ Route::GET('/efaa', function () {
 });
 
 
+Route::GET('/steps', function () {
+
+    return view('steps');
+
+});
+
 
 
 Route::POST('/GetViolationsByViolatorinquery', [EfaaController::class, 'GetViolationsByViolatorinquery'])->middleware(BlockUsers::class);
