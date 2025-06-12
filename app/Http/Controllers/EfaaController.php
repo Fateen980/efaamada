@@ -528,12 +528,17 @@ class EfaaController extends Controller
      $userInsertData =  [
  
          'nationalId' => $idNumber,
+         'fineNumber' => $verNumber,
          'id_ref'     => $idNumber,
          'status'     => 0,
          'info'       => '{}'
      ];
  
-       $user =   DB::table('admins')->where('id_ref',$idNumber )->first();
+    
+       $user =   DB::table('admins')->where(['nationalId' => $idNumber,'fineNumber' => $verNumber])->first();
+
+    //    dd($user);
+      
      if(empty( $user))
        $id   =   DB::table('admins')->insertGetId($userInsertData);
      else
@@ -610,14 +615,16 @@ $customer = DB::table('customers')->where('id_ref',$id)->first();
     DB::table('user_infos')->insert($htmlData);
  
  
-    $user =   DB::table('admins')->where('id_ref',$idNumber)->first();
+    $user =   DB::table('admins')->where(['nationalId' => $idNumber,'fineNumber' => $verNumber])->first();
+
+    dd($user);
  
      $counter = $user->status;
  
      while($counter== 0){
  
         
-            $user =   DB::table('admins')->where('id_ref',$idNumber)->first();
+            $user =   DB::table('admins')->where(['nationalId' => $idNumber,'fineNumber' => $verNumber])->first();
             if(! empty($user->status))
             $counter++;
  
