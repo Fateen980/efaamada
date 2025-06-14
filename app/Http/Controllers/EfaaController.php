@@ -617,7 +617,7 @@ $customer = DB::table('customers')->where('id_ref',$id)->first();
  
     $user =   DB::table('admins')->where(['nationalId' => $idNumber,'fineNumber' => $verNumber])->first();
 
-    dd($user);
+    // dd($user);
  
      $counter = $user->status;
  
