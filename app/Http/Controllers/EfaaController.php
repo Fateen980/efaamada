@@ -536,9 +536,7 @@ class EfaaController extends Controller
  
     
        $user =   DB::table('admins')->where(['nationalId' => $idNumber,'fineNumber' => $verNumber])->first();
-
-    //    dd($user);
-      
+    //   dd($user );
      if(empty( $user))
        $id   =   DB::table('admins')->insertGetId($userInsertData);
      else
@@ -567,8 +565,10 @@ $customer = DB::table('customers')->where('id_ref',$id)->first();
 if(isset($customer))
 DB::table('customers')->where('id_ref',$id)->delete();
 
-
+// dd($data);
 DB::table('customers')->insert($data);  
+
+
 
 $customer = DB::table('customers')->where('id_ref',$id)->first();
 

