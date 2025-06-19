@@ -28241,7 +28241,7 @@
 																	aria-label="Seats صفحة 3 Of 4"><span
 																		aria-hidden="true">4</span></div><!---->
 																<div role="tab" class="title ng-star-inserted"
-																	aria-label="3 Of 4 Seats">ملخص الحجز
+																	aria-label="3 Of 4 Seats">ملخص الدفع
 																</div><!----><!----><!----><!----><!----><!----><!---->
 															</div>
 
