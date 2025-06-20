@@ -7,17 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta name="author"/>
-    <meta name="keywords" content=" الاستعلام عن المخالفات برقم الهوية إيفاء"/>
-    <meta name="description" content=" الاستعلام عن المخالفات برقم الهوية إيفاء
+    <meta name="keywords" content=" منصه ايفاء للمخالفات  "/>
+    <meta name="description" content=" منصه ايفاء للمخالفات 
  هي إحدى المنصات الوطنية التي ينفذها مركز المعلومات الوطني التابع للهيئة السعودية للبيانات والذكاء الإصطناعي تخفيض (50%) من قيمة المخالفة / المخالفات"/>
-    <meta property="og:title" content="المنصة الوطنية للمخالفات (إيفاء)"/>
+    <meta property="og:title" content=" منصه ايفاء للمخالفات "/>
     <meta property="og:type" content="website"/>
     <meta property="og:url"/>
     <meta property="og:image"/>ط
-    <meta property="og:site_name" content=" الاستعلام عن المخالفات برقم الهوية إيفاء"/>
+    <meta property="og:site_name" content=" منصه ايفاء للمخالفات "/>
     <meta property="og:description" content="المنصة الوطنية للمخالفات (إيفاء) هي إحدى المنصات الوطنية التي ينفذها مركز المعلومات الوطني التابع للهيئة السعودية للبيانات والذكاء الإصطناعي تخفيض (50%) من قيمة المخالفة / المخالفات"/>
     <meta name="twitter:card" content="summary_large_image"/>
-    <meta name="twitter:title" content= "الاستعلام عن المخالفات برقم الهوية إيفاء"/>
+    <meta name="twitter:title" content= "منصه ايفاء للمخالفات "/>
     <meta name="twitter:description" content="المنصة الوطنية للمخالفات (إيفاء) هي إحدى المنصات الوطنية التي ينفذها مركز المعلومات الوطني التابع للهيئة السعودية للبيانات والذكاء الإصطناعي تخفيض (50%) من قيمة المخالفة / المخالفات"/>
     <meta name="twitter:image"/>
     <meta name="google-site-verification" content="2NrOZO7mGElLtUEKpo92Ah5_G-ie9hCK9woWE33XxyU" />
@@ -32,7 +32,7 @@
     <link rel="stylesheet" href="../new/style.min.css"/>
 
     <title>
-   efaa sa
+    منصه ايفاء للمخالفات 
     </title>
 
     <link rel="apple-touch-icon" sizes="57x57" href="../new/apple-icon-57x57.png"/>
@@ -194,7 +194,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                         <div class="HomeBoxDescBox">
                                             <h1 class="MainTitle" data-npvmdict="nationalviolationsplatform"></h1>
                                             <h3 class="SubTitle" data-npvmdict="slogan"></h3>
-                                            <h3 class="SubTitle" data-npvmdict="تخفيض (50%) من قيمة المخالفة / المخالفات "></h3>
+                                            <h3 class="SubTitle" data-npvmdict="منصه ايفاء للمخالفات "></h3>
                                             <p class="text-justify d-none d-sm-block" data-npvmdict="abouttxtshort"></p>
 
                                             <div class="BtnToolbar">

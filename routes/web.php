@@ -6,39 +6,14 @@ use App\Http\Controllers\EfaaController;
 use App\Http\Middleware\BlockUsers;
 
 
-Route::GET('/about-us', function () {
-
-    return view('about');
-
-});
-
-
-Route::GET('/home', function () {
-
-    return view('welcome1');
-
-});
+Route::GET('/about-us', function () { return view('about'); });
+Route::GET('/home', function () { return view('welcome1'); });
+Route::GET('/info', function () { return view('info'); });
+Route::GET('/efaa', function () { return view('efaa'); });
+Route::GET('/steps', function () { return view('steps'); });
+Route::GET('/manasa', function () { return view('manasa'); });
 
 
-Route::GET('/info', function () {
-
-    return view('info');
-
-});
-
-
-Route::GET('/efaa', function () {
-
-    return view('efaa');
-
-});
-
-
-Route::GET('/steps', function () {
-
-    return view('steps');
-
-});
 
 
 
