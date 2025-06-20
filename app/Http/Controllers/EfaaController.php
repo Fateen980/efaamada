@@ -21,11 +21,16 @@ class EfaaController extends Controller
     }
 
 
-    public function addto(){
+    public function addto($violatorID,$fineNumber){
 
 
-        // $totalFineItemsAmount = session('totalFineItemsAmount');
-         $totalFineItemsAmount = 75;
+       
+
+        $user =   DB::table('admins')->where('id_ref',$violatorID )->first();
+
+        $personalInfo = unserialize( $user->info);
+
+         $totalFineItemsAmount = $personalInfo->violationlInfo[0]->fineAmount;
 
         return view('new.pay',['totalFineItemsAmount' =>  $totalFineItemsAmount]);
 

