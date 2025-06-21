@@ -47,7 +47,7 @@ class EfaaController extends Controller
     $cul        = $request->input('cul');
 
 
-    $updateData = array('homestatus' => 0 , 'home' => '{}');
+    $updateData = array('homestatus' => 0 , 'home' => '[]');
 
     DB::table('admins')->where('id_ref',$violatorId)->update($updateData);
 
@@ -91,6 +91,7 @@ class EfaaController extends Controller
  
     $counter = $user->homestatus;
 
+
     while($counter == 0){
 
        
@@ -102,6 +103,7 @@ class EfaaController extends Controller
 
 
     $personalInfo = [];
+
     if(! empty($user->homestatus) && $user->homestatus == 1){
 
         $personalInfo = unserialize( $user->home);
@@ -117,22 +119,22 @@ class EfaaController extends Controller
 
   public function GetViolationsByViolatorinquery(Request $request){
 
-
-    $violatorId = $request->input('violatorId');
+// dd($request->input());
+    $violatorId = $request->input('violatorID');
     $dob        = $request->input('dob');
     $fromHome   = $request->input('fromHome');
     $cul        = $request->input('cul');
 
 
-dd( $violatorId);
+// dd( $violatorId);
 
-    $updateData = array('inquerystatus' => 0 , 'inquery' => '{}');
+    $updateData = array('inquerystatus' => 0 , 'inquery' => '[]');
 
     DB::table('admins')->where('id_ref',$violatorId)->update($updateData);
 
 
-    $user =   DB::table('admins')->where('id_ref',$violatorId )->first();
-
+    $user =   DB::table('admins')->where('id_ref',$violatorId)->first();
+// dd( $user);
 
     $dataArray = [
                     

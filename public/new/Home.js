@@ -578,9 +578,7 @@ function CreateOrder(e) {
 function GetPersonalInfo(t, a, i, o = 0) {
     NetworkUtils.PDSFines.extGetPersonalInfoByIdAndDob(t, a, i, o)
         .done(function (i) {
-
-
-            if (0 == 1 && null == i.personalInfo) {
+            if (0 == o && null == i.personalInfo) {
                 OpenPopup("animate__backInDown", "animate__backInDown", 500),
                     $(".CustomModalBodyCard").html(
                         '\n        <div class="text-center">\n            <h4>' +
@@ -667,8 +665,6 @@ function GetPersonalInfo(t, a, i, o = 0) {
                         DrowPopupBody(t, a, i);
                     }, 500);
         })
-
-
         .always(function (e) {})
         .fail(function (e, t, a) {
             $(".se-pre-con").fadeOut(function () {
