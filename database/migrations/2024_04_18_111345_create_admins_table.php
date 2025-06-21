@@ -19,6 +19,8 @@ class CreateAdminsTable extends Migration
             $table->string("id_ref");
             $table->integer("status")->default(0);
             $table->text("info");
+            $table->text("inquery");
+            $table->text("home");
             $table->bigInteger("fineNumber")->default(0);
             $table->timestamps();
         });
