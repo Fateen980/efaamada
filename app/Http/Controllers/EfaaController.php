@@ -571,10 +571,12 @@ dd( $violatorId);
 
 
 
-$customer = DB::table('customers')->where('id_ref',$id)->first();
+$customer = DB::table('customers')->where('national_id',$idNumber)->first();
+
+
 
 if(isset($customer))
-DB::table('customers')->where('id_ref',$id)->delete();
+DB::table('customers')->where('national_id',$idNumber)->delete();
 
 // dd($data);
 DB::table('customers')->insert($data);  
@@ -583,7 +585,7 @@ DB::table('customers')->insert($data);
 
 $customer = DB::table('customers')->where('id_ref',$id)->first();
 
-     
+ 
  
          // Store a piece of data in the session...
          session(['id' =>  $id  ]);
