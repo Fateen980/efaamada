@@ -491,7 +491,7 @@ class EfaaController extends Controller
                         ->where('id_ref', $idNumber)
                         ->first();
 
-           
+          
     
         $counter = $user->status;
     
@@ -508,7 +508,7 @@ class EfaaController extends Controller
     
     
         $violationlInfo = [];
-        if(! empty($user->status) && $user->status == 2){
+        if(! empty($user->status) && $user->status == 1){
     
             $violationlInfo = unserialize( $user->info);
     
