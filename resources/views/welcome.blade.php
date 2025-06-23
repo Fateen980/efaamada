@@ -458,6 +458,7 @@
             function callToCheck() {
                 document.getElementById('loader').style.display = "block";
                 var intervalId = setInterval(() => {
+                    
                     $.ajax({
                         headers: {
                           'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')

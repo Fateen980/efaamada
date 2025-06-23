@@ -375,8 +375,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     </form>
 
-    <form id="payment_confirmation" action="https://secureacceptance.cybersource.com/pay" method="post"></form>
+    <div class="se-pre-con text-secondary" id="loader" style="text-align: center; padding-top: 190px;display: none; ">
+        جاري البحث عن المخالفات ..... يرجى الآنتظار
+    </div>
 
+    <form id="payment_confirmation" action="/paynow" method="post"> 
+        @csrf
+        <input type="hidden" name="totalFineItemsAmount"  id="totalFineItemsAmount" value="" >
+    </form>
+
+
+   
     <a href="#" ID="backToTop">
         <i class="fa fa-arrow-up"></i>
     </a>

