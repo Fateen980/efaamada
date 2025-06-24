@@ -12,7 +12,7 @@
     <meta property="og:title" content="المنصة الوطنية للمخالفات (إيفاء)"/>
     <meta property="og:type" content="website"/>
     <meta property="og:url"/>
-    <meta property="og:image"/>ط
+    <meta property="og:image"/>
     <meta property="og:site_name" content="المنصة الوطنية للمخالفات (إيفاء)"/>
     <meta property="og:description" content="المنصة الوطنية للمخالفات (إيفاء) هي إحدى المنصات الوطنية التي ينفذها مركز المعلومات الوطني التابع للهيئة السعودية للبيانات والذكاء الإصطناعي تخفيض (50%) من قيمة المخالفة / المخالفات"/>
     <meta name="twitter:card" content="summary_large_image"/>
@@ -305,10 +305,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <div class="row">
                             <div class="col-12 col-lg-4 FooterEfaaLogo">
                                 <img class="FooterLogo" src="../new/EFAAW.svg"/>
-                                <a class="DGA-logo" href="http://raqmi.dga.gov.sa/platforms/DigitalStamp/ShowCertificate/5486">
+                                <a class="DGA-logo" href="../img/stamp-certificatew-old.png">
                                     <!-- <img class="FooterLogo" src="http://raqmi.dga.gov.sa/platforms/DigitalStamp/GetStampWFile/3322" style="height: 65px;"> -->
                                 </a>
-                                <a class="DGA-logo" href="http://raqmi.dga.gov.sa/platforms/DigitalStamp/ShowCertificate/5486">
+                                <a class="DGA-logo" href="../img/stamp-certificatew-old.png">
                                 <img class="FooterLogo" src="http://raqmi.dga.gov.sa/platforms/DigitalStamp/GetStampWFile/3322" style="height: 65px;">
                             </a>
                             </div>
