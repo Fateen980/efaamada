@@ -308,6 +308,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                 <a class="DGA-logo" href="http://raqmi.dga.gov.sa/platforms/DigitalStamp/ShowCertificate/5486">
                                     <!-- <img class="FooterLogo" src="http://raqmi.dga.gov.sa/platforms/DigitalStamp/GetStampWFile/3322" style="height: 65px;"> -->
                                 </a>
+                                <a class="DGA-logo" href="http://raqmi.dga.gov.sa/platforms/DigitalStamp/ShowCertificate/5486">
+                                <img class="FooterLogo" src="http://raqmi.dga.gov.sa/platforms/DigitalStamp/GetStampWFile/3322" style="height: 65px;">
+                            </a>
                             </div>
                             <div class="col-12 col-lg-4">
                                 <div class="HomeMainBoxSearchBoxContainer FooterMed">
