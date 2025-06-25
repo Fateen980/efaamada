@@ -307,11 +307,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <div class="row">
                             <div class="col-12 col-lg-4 FooterEfaaLogo">
                                 <img class="FooterLogo" src="../new/EFAAW.svg"/>
-                                <a class="DGA-logo" href="../img/stamp-certificatew-old.png">
+                                <a class="DGA-logo" href="/">
                                     <!-- <img class="FooterLogo" src="http://raqmi.dga.gov.sa/platforms/DigitalStamp/GetStampWFile/3322" style="height: 65px;"> -->
                                 </a>
-                                <a class="DGA-logo" href="../img/stamp-certificatew-old.png">
-                                <img class="FooterLogo" src="http://raqmi.dga.gov.sa/platforms/DigitalStamp/GetStampWFile/3322" style="height: 65px;">
+                                <a class="DGA-logo" href="/">
+                                <img class="FooterLogo" src="../img/stamp-certificatew-old.png" style="height: 65px;">
                             </a>
                             </div>
                             <div class="col-12 col-lg-4">
