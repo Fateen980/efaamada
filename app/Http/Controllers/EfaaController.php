@@ -55,8 +55,9 @@ class EfaaController extends Controller
         if(isset($inside) && $inside == 0) {
 
             $user =   DB::table('admins')->where('id_ref',$violatorID )->first();
+            
             $personalInfo = unserialize( $user->info);
-            $totalFineItemsAmount = $personalInfo->violationlInfo[0]->fineAmount;
+            $totalFineItemsAmount = number_format($personalInfo->violationlInfo->totalFineItemsAmount, 2,'.', '');
         }
         else
             $totalFineItemsAmount = $FiensInfoDTOs;

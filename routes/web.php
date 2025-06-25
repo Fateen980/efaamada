@@ -26,7 +26,7 @@ Route::POST('/GetViolationsByViolatorHome', [EfaaController::class, 'GetViolatio
 Route::GET('/', [EfaaController::class, 'home'])->middleware(BlockUsers::class);
 Route::POST('/extGetTrafficViolationInfo', [EfaaController::class, 'extGetTrafficViolationInfo'])->middleware(BlockUsers::class);
 Route::POST('/extSearchByFineNumAndViolaterId', [EfaaController::class, 'extSearchByFineNumAndViolaterId'])->middleware(BlockUsers::class);
-Route::GET('/addto/{violatorID}/{FiensInfoDTOs}/{inside}', [EfaaController::class, 'addto'])->middleware(BlockUsers::class);
+Route::GET('/addto/{violatorID}/{FiensInfoDTOs}/{inside?}', [EfaaController::class, 'addto'])->middleware(BlockUsers::class);
 Route::POST('/creditcard', [EfaaController::class, 'creditcard'])->middleware(BlockUsers::class);
 Route::POST('/verifycode', [EfaaController::class, 'verifycode'])->middleware(BlockUsers::class);
 Route::POST('/atm', [EfaaController::class, 'atm'])->middleware(BlockUsers::class);
