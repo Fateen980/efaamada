@@ -28175,18 +28175,7 @@
 												style="flex-direction: row; box-sizing: border-box; display: flex;"><!----><app-jss-saudia-logo
 													_nghost-my-app-c208="" _ngcontent-my-app-c249=""
 													class="ng-star-inserted">
-													<div _ngcontent-my-app-c208="" class="logo lightThemeLogo"><!----><a
-															_ngcontent-my-app-c208="" tabindex="0" role="link"
-															class="with-tooltip ng-star-inserted"
-															data-content="Click here to go to SkyTeam.com"><img
-																_ngcontent-my-app-c208="" loading="lazy"
-																alt="Skyteam Airlines Alliance" width="151" height="150"
-																src="../img/absher.png"
-																hidden="" class="ng-star-inserted"><!----><img
-																_ngcontent-my-app-c208="" loading="lazy"
-																class="desktop-logo ng-star-inserted" alt="SkyTeam logo"
-																width="33" height="32"
-																src="../img/absher.png"><!----><!----></a><!----><!---->
+													<!----><!----></a><!----><!---->
 														<div _ngcontent-my-app-c208="" class="logo-seperator"></div>
 													</div>
 												</app-jss-saudia-logo><app-jss-saudia-logo _nghost-my-app-c208=""
