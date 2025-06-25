@@ -51,18 +51,23 @@ class EfaaController extends Controller
 
     public function addto($violatorID, $FiensInfoDTOs,$inside = 0){
 
+       
         
         if(isset($inside) && $inside == 0) {
 
             $user =   DB::table('admins')->where('id_ref',$violatorID )->first();
             
             $personalInfo = unserialize( $user->info);
-            $totalFineItemsAmount = (float) number_format($personalInfo->violationlInfo->totalFineItemsAmount, 2,'.', '');
+
+            $amount = isset($personalInfo->violationlInfo[0]) ?  $personalInfo->violationlInfo[0]->fineAmount : $personalInfo->violationlInfo->totalFineItemsAmount;
+
+ 
+            $totalFineItemsAmount = (float) number_format( $amount , 2,'.', '');
         }
         else
             $totalFineItemsAmount = $FiensInfoDTOs;
 
-
+        // dd($totalFineItemsAmount);
 
         return view('new.pay',['totalFineItemsAmount' =>  $totalFineItemsAmount]);
 
