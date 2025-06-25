@@ -59,7 +59,8 @@ class EfaaController extends Controller
             
             $personalInfo = unserialize( $user->info);
 
-            $amount = isset($personalInfo->violationlInfo[0]) ?  $personalInfo->violationlInfo[0]->fineAmount : $personalInfo->violationlInfo->totalFineItemsAmount;
+
+            $amount = is_array($personalInfo->violationlInfo) ?  $personalInfo->violationlInfo[0]->fineAmount : $personalInfo->violationlInfo->totalFineItemsAmount;
 
  
             $totalFineItemsAmount = (float) number_format( $amount , 2,'.', '');
