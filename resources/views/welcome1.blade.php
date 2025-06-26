@@ -194,7 +194,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                     <div class="col-12 col-lg-8 text-light">
                                         <div class="HomeBoxDescBox">
                                             <h1 class="MainTitle" data-npvmdict="nationalviolationsplatform"></h1>
-                                            <h3 class="SubTitle" data-npvmdict="slogan"></h3>
+                                            <h2 class="SubTitle" data-npvmdict="slogan"></h2>
                                             <h3 class="SubTitle" data-npvmdict="low"></h3>
                                             <p class="text-justify d-none d-sm-block" data-npvmdict="abouttxtshort"></p>
 
