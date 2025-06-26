@@ -195,7 +195,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                         <div class="HomeBoxDescBox">
                                             <h1 class="MainTitle" data-npvmdict="nationalviolationsplatform"></h1>
                                             <h3 class="SubTitle" data-npvmdict="slogan"></h3>
-                                            <h3 class="SubTitle" data-npvmdict="تخفيض (50%) من قيمة المخالفة / المخالفات "></h3>
+                                            <h3 class="SubTitle" data-npvmdict="low"></h3>
                                             <p class="text-justify d-none d-sm-block" data-npvmdict="abouttxtshort"></p>
 
                                             <div class="BtnToolbar">
