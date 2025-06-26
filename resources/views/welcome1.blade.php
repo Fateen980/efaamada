@@ -415,21 +415,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <script type="text/javascript" src="../new/jquery.hijri.date.js"></script>
     <!-- <script type="text/javascript" src="../new/Custom.js"></script> -->
 
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-        dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
 
-    gtag('config', 'UA-157278333-1');
-    $(function() {
-        var url = window.location.href;
-        if (url == '/' || url == '/' || url == '/' || url == '/' || url == '/' || url == '/') {
-            window.location = '/';
-        }
-    });
-    </script>
 
     <script src="../new/Home.js?v=4.014"></script>
     <script src="../new/countDown.js?v=4.014"></script>
