@@ -127,7 +127,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <a href="#" class="droopmenu-brand">
                                 <img alt="إيفاء" src="../new/EFAAW.svg">
                             </a>
-                            <a href="#" class="droopmenu-toggle"></a>
+                            <!-- <a href="#" class="droopmenu-toggle">/a> -->
                         </div>
                         <div class="droopmenu-nav">
                             <ul class="droopmenu">
