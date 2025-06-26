@@ -11,14 +11,17 @@
 <meta name="description" content="المنصة الوطنية للمخالفات (إيفاء) هي إحدى المنصات الوطنية التي ينفذها مركز المعلومات الوطني التابع للهيئة السعودية للبيانات والذكاء الإصطناعي" />
 <meta property="og:title" content="المنصة الوطنية للمخالفات (إيفاء)" />
 <meta property="og:type" content="website" />
-<meta property="og:url" /><meta property="og:image" />
+<meta property="og:url" />
+<meta property="og:image" />
 <meta property="og:site_name" content="المنصة الوطنية للمخالفات (إيفاء)" />
 <meta property="og:description" content="المنصة الوطنية للمخالفات (إيفاء) هي إحدى المنصات الوطنية التي ينفذها مركز المعلومات الوطني التابع للهيئة السعودية للبيانات والذكاء الإصطناعي" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="المنصة الوطنية للمخالفات (إيفاء)" />
 <meta name="twitter:description" content="المنصة الوطنية للمخالفات (إيفاء) هي إحدى المنصات الوطنية التي ينفذها مركز المعلومات الوطني التابع للهيئة السعودية للبيانات والذكاء الإصطناعي" />
-<meta name="twitter:image" /><link rel="stylesheet" href="Custom/plugins/fontawesome/css/all.min.css" />
-<link rel="stylesheet" href="Assets/css/bootstrap.min.css" /><link rel="stylesheet" href="Custom/plugins/nav/css/droopmenu.css" />
+<meta name="twitter:image" />
+<link rel="stylesheet" href="Custom/plugins/fontawesome/css/all.min.css" />
+<link rel="stylesheet" href="Assets/css/bootstrap.min.css" />
+<link rel="stylesheet" href="Custom/plugins/nav/css/droopmenu.css" />
 <link rel="stylesheet" href="Custom/plugins/popup/css/slickmodal.min.css" />
 <link rel="stylesheet" href="Custom/plugins/animate.min.css" />
 <link rel="stylesheet" href="Custom/plugins/popup/css/countdown_banner.css" type="text/css" />
@@ -45,7 +48,13 @@
 <link rel="manifest" href="/Custom/fav/manifest.json" />
 <meta name="msapplication-TileColor" content="#ffffff" />
 <meta name="msapplication-TileImage" content="/Custom/fav/ms-icon-144x144.png" />
-<meta name="theme-color" content="#ffffff" /></head>
+<meta name="theme-color" content="#ffffff" />
+
+
+</head>
+
+
+
 <body class="rtlDesign HomePage">
     <div class="se-pre-con"></div>
     <form method="post" action="./" id="form1" class="MainForm">
