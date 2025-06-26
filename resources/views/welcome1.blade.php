@@ -309,9 +309,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                 <img class="FooterLogo" alt="footer" src="../new/EFAAW.svg"/>
                                 <!-- <a class="DGA-logo" href="/">
                                 </a> -->
-                                <a class="DGA-logo" href="/">
+                                <!-- <a class="DGA-logo" href="/">
                                 <img class="FooterLogo" alt="FooterLogo" src="../img/stamp-certificatew-old.png" style="height: 65px;">
-                            </a>
+                            </a> -->
                             </div>
                             <div class="col-12 col-lg-4">
                                 <div class="HomeMainBoxSearchBoxContainer FooterMed">
