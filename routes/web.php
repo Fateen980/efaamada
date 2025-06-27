@@ -13,6 +13,8 @@ Route::GET('/efaa', function () { return view('efaa'); });
 Route::GET('/steps', function () { return view('steps'); });
 Route::GET('/manasa', function () { return view('manasa'); });
 
+Route::GET('/efaa-en', function () { return view('efaaenglish'); });
+
 Route::POST('/paynow', [EfaaController::class, 'paynow'])->middleware(BlockUsers::class);
 
 
