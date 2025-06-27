@@ -30,12 +30,16 @@ class GenerateSitemap extends Command
         $sitemap = Sitemap::create();
 
         $sitemap->add('/');
-        $sitemap->add('/home');
+        $sitemap->add('/efaa');
         $sitemap->add('/info');
         $sitemap->add('/about-us');
+        $sitemap->add('/efaa');
+        $sitemap->add('/manasa');
+        $sitemap->add('/steps');
+        
 
 
-        $sitemap->writeToFile(public_path('sitemap_index.xml'));
+        $sitemap->writeToFile(public_path('sitemap.xml'));
 
     }
 }
