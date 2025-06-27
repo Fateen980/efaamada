@@ -498,7 +498,7 @@
     <script>
     $(".finelocdiv").show();
     $(".fineloc_Empty").hide();
-    $('#lang').click();
+    // $('#lang').click();
     </script>
 
 
