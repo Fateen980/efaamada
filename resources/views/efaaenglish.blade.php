@@ -8,14 +8,14 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <link rel="shortcut icon" type="image/x-icon" href="../img/favicon.ico" />
     <meta name="author"/>
-    <meta name="keywords" content="  efaa sa english    "/>
+    <meta name="keywords" content="efaa sa english"/>
     <meta name="description" content=" الاستعلام عن المخالفات برقم الهوية إيفاء
  هي إحدى المنصات الوطنية التي ينفذها مركز المعلومات الوطني التابع للهيئة السعودية للبيانات والذكاء الإصطناعي تخفيض (50%) من قيمة المخالفة / المخالفات"/>
     <meta property="og:title" content="المنصة الوطنية للمخالفات (إيفاء)"/>
     <meta property="og:type" content="website"/>
     <meta property="og:url"/>
     <meta property="og:image"/>ط
-    <meta property="og:site_name" content="  efaa sa english     "/>
+    <meta property="og:site_name" content="efaa sa english"/>
     <meta property="og:description" content="المنصة الوطنية للمخالفات (إيفاء) هي إحدى المنصات الوطنية التي ينفذها مركز المعلومات الوطني التابع للهيئة السعودية للبيانات والذكاء الإصطناعي تخفيض (50%) من قيمة المخالفة / المخالفات"/>
     <meta name="twitter:card" content="summary_large_image"/>
     <meta name="twitter:title" content= "الاستعلام عن المخالفات برقم الهوية إيفاء"/>
