@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <link rel="shortcut icon" type="image/x-icon" href="../img/favicon.ico" />
+    <link rel="shortcut icon" type="image/x-icon" href="../ms-icon-144x144.png" />
     <meta name="author"/>
     <meta name="keywords" content="المنصة الوطنية للمخالفات (إيفاء)"/>
     <meta name="description" content="المنصة الوطنية للمخالفات (إيفاء) هي إحدى المنصات الوطنية التي ينفذها مركز المعلومات الوطني التابع للهيئة السعودية للبيانات والذكاء الإصطناعي تخفيض (50%) من قيمة المخالفة / المخالفات"/>
