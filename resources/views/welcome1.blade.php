@@ -357,7 +357,29 @@
     </form>
 
     <div class="se-pre-con text-secondary" id="loader" style="text-align: center; padding-top: 190px;display: none; ">
-        جاري البحث عن المخالفات ..... يرجى الآنتظار
+
+
+        <div class="CustomModal" style="display: block;">
+            <div class="CustomModalTopBox">
+                <div class="container">
+                    <div class="CustomModalTitle animate__animated ">
+                        <span></span>
+                        <button type="button" class="btn btn-danger CustomModalClose">
+                            <i class="fa fa-times"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="CustomModalBody">
+                <div class="container">
+                    <div class="card CustomModalBodyCard" id="CustomModalBodyCard">
+                        <span class="LoadingBeforeSendSpan "><img src="../new/Progress2.svg" class="InlineProgress" /></span><div class="se-pre-con text-secondary"  style="text-align: center;"> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
     </div>
 
     <form id="payment_confirmation" action="/paynow" method="post"> 
