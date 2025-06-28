@@ -8,7 +8,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <link rel="shortcut icon" type="image/x-icon" href="../img/favicon.ico" />
     <meta name="author"/>
-    <meta name="keywords" content=" منصه ايفاء للمخالفات  "/>
+    <meta name="keywords" content="منصه ايفاء للمخالفات "/>
     <meta name="description" content=" منصه ايفاء للمخالفات 
  هي إحدى المنصات الوطنية التي ينفذها مركز المعلومات الوطني التابع للهيئة السعودية للبيانات والذكاء الإصطناعي تخفيض (50%) من قيمة المخالفة / المخالفات"/>
     <meta property="og:title" content=" منصه ايفاء للمخالفات "/>
@@ -55,32 +55,10 @@
     <meta name="theme-color" content="#ffffff"/>
 
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-QJFQKBTE7Z"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-QJFQKBTE7Z');
-</script>
-
-
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-TN55RKQS');</script>
-<!-- End Google Tag Manager -->
-
 
 </head>
 <body class="rtlDesign HomePage">
-    <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TN55RKQS"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+
     <!-- <div class="se-pre-con"></div> -->
     <form method="post" action="./" id="form1" class="MainForm">
         <div class="aspNetHidden">
@@ -403,6 +381,28 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <script type="text/javascript" src="../new/jquery.calendars.plus.js"></script>
     <script type="text/javascript" src="../new/jquery.hijri.date.js"></script>
     <!-- <script type="text/javascript" src="../new/Custom.js"></script> -->
+
+
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QJFQKBTE7Z"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-QJFQKBTE7Z');
+</script>
+
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TN55RKQS');</script>
+<!-- End Google Tag Manager -->
+
 
     <script>
     window.dataLayer = window.dataLayer || [];
