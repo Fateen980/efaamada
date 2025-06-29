@@ -469,11 +469,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     today_date > mot_adv_end_date ||
     today_date > mot_end_date
     ) {
-        showPopupAdv = false;
+        showPopupAdv = true;
     }
     else if (MotivProg.toLowerCase() == "true") {
         showPopupAdv = true;
     }
+
+    console.log(showPopupAdv);
 
     if (showPopupAdv) {
 
