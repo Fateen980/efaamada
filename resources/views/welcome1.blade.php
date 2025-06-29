@@ -456,71 +456,71 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
     $(".sm-countDown").attr("data-sm-countdown-enddate", MotivProgAdvEndDate);
 
-    var showPopupAdv;
-    var mot_adv_end_date = new Date(MotivProgAdvEndDate);
-    var mot_end_date = new Date(MotivProgEndDate);
-    var today_date = new Date();
-    mot_end_date.setHours(0, 0, 0, 0);
-    mot_adv_end_date.setHours(0, 0, 0, 0);
-    today_date.setHours(0, 0, 0, 0);
+    // var showPopupAdv;
+    // var mot_adv_end_date = new Date(MotivProgAdvEndDate);
+    // var mot_end_date = new Date(MotivProgEndDate);
+    // var today_date = new Date();
+    // mot_end_date.setHours(0, 0, 0, 0);
+    // mot_adv_end_date.setHours(0, 0, 0, 0);
+    // today_date.setHours(0, 0, 0, 0);
 
 
-    if (
-    today_date > mot_adv_end_date ||
-    today_date > mot_end_date
-    ) {
-        showPopupAdv = true;
-    }
-    else if (MotivProg.toLowerCase() == "true") {
-        showPopupAdv = true;
-    }
+    // if (
+    // today_date > mot_adv_end_date ||
+    // today_date > mot_end_date
+    // ) {
+    //     showPopupAdv = true;
+    // }
+    // else if (MotivProg.toLowerCase() == "true") {
+    //     showPopupAdv = true;
+    // }
 
-    console.log(showPopupAdv);
+    // console.log(showPopupAdv);
 
-    if (showPopupAdv) {
+    // if (showPopupAdv) {
 
-        $('.countDownBanner').SlickModals({
-            popup_type: 'instant',
-            popup_closeButtonText: 'إغلاق',
-            popup_css: {
-                'width': '400px',
-                'max-width': '400px',
-                'height': '400px',
-                'background': 'transparent',
-                'padding': '0',
-                'margin': '30px',
-                'animation-duration': '0.6s'
-            },
-            overlay_closesPopup: false,
-            mobile_breakpoint: '767px',
-            mobile_position: 'bottomCenter',
-            mobile_css: {
-                'width': '90%',
-                'max-width': '400px',
-                'height': '400px',
-                'background': 'transparent',
-                'padding': '0',
-                'margin': '20px',
-                'animation-duration': '0.6s',
-                'top': '100px',
-                'left': '5%',
-                'right': '5%',
-            },
-            callback_afterInit: function() {
+    //     $('.countDownBanner').SlickModals({
+    //         popup_type: 'instant',
+    //         popup_closeButtonText: 'إغلاق',
+    //         popup_css: {
+    //             'width': '400px',
+    //             'max-width': '400px',
+    //             'height': '400px',
+    //             'background': 'transparent',
+    //             'padding': '0',
+    //             'margin': '30px',
+    //             'animation-duration': '0.6s'
+    //         },
+    //         overlay_closesPopup: false,
+    //         mobile_breakpoint: '767px',
+    //         mobile_position: 'bottomCenter',
+    //         mobile_css: {
+    //             'width': '90%',
+    //             'max-width': '400px',
+    //             'height': '400px',
+    //             'background': 'transparent',
+    //             'padding': '0',
+    //             'margin': '20px',
+    //             'animation-duration': '0.6s',
+    //             'top': '100px',
+    //             'left': '5%',
+    //             'right': '5%',
+    //         },
+    //         callback_afterInit: function() {
 
-                setTimeout(function() {
+    //             setTimeout(function() {
 
-                    showPopupAdvBanner()
-                }, 1000);
-                sm_countDown('.countDownBanner');
+    //                 showPopupAdvBanner()
+    //             }, 1000);
+    //             sm_countDown('.countDownBanner');
 
-            }
-        });
-        function showPopupAdvBanner() {
-            $('.sm-countDown').fadeIn()
-        }
-    }
-    </script>
+    //         }
+    //     });
+    //     function showPopupAdvBanner() {
+    //         $('.sm-countDown').fadeIn()
+    //     }
+    // }
+    // </script>
     <script>
     $(".finelocdiv").show();
     $(".fineloc_Empty").hide();
