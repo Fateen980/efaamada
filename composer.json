@@ -8,6 +8,7 @@
         "php": "^8.2",
         "laravel/framework": "^11.9",
         "laravel/tinker": "^2.9",
+        "nesbot/carbon": "^3.10",
         "pusher/pusher-php-server": "~7.0",
         "spatie/laravel-sitemap": "^7.2",
         "stevebauman/location": "^7.3"

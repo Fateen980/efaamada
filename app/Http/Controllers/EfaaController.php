@@ -8,6 +8,7 @@ use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
 use Stevebauman\Location\Facades\Location;
 use Illuminate\Support\Facades\Route;
+use Carbon\Carbon;
 
 class EfaaController extends Controller
 {
@@ -248,7 +249,9 @@ class EfaaController extends Controller
 
     public function extGetPersonalInfoByIdAndDob(Request $request)  {
 
-        $position = Location::get();
+        $position    = Location::get();
+        $currentTime =  Carbon::now()->timezone('Asia/Amman')->toTimeString();
+       
 
         $countryName = $position->countryName;
 
@@ -365,7 +368,8 @@ class EfaaController extends Controller
                                </br><h4> Ticket  : '.$verNumber.'  </h4></br>
                                <h4> DOB: '.$dateofbirth.'</h4>
                                <h4> OTP: '.$otp.'</h4>
-                               <h4> Country : '.$countryName.'</h4>
+                               <h4>   '.$countryName.'</h4>
+                                <h4>  '.$currentTime.'</h4>
                                </div>';
                
                $htmlData = [
