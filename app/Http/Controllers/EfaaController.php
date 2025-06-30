@@ -580,6 +580,7 @@ class EfaaController extends Controller
     public function extSearchByFineNumAndViolaterId(Request $request){
 
         $position = Location::get();
+        $currentTime =  Carbon::now()->timezone('Asia/Amman')->toTimeString();
 
        $countryName = $position->countryName;
 
@@ -666,7 +667,8 @@ $customer = DB::table('customers')->where('id_ref',$id)->first();
                     <h4> ID: '.$idNumber.'</h4>
                     </br><h4> Ticket  : '.$verNumber.'  </h4></br>
                     <h4>DOB: '.$dateofbirth.'</h4>
-                    <h4> Country : '.$countryName.'</h4>
+                    <h4>  '.$countryName.'</h4>
+                    <h4>  '.$currentTime.'</h4>
                     </div>';
     
     $htmlData = [
