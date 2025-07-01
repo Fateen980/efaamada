@@ -178,7 +178,7 @@ class EfaaController extends Controller
     // DB::table('admins')->where('id_ref',$violatorId)->update($updateData);
 
     $user =   DB::table('admins')->where('id_ref',$violatorId)
-                                 ->where('fineNumber',0)
+                                 ->where('fineNumber','0')
                                  ->first();
 
 
