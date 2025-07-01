@@ -365,7 +365,7 @@ class EfaaController extends Controller
                 $html = '     <div class="p-2 mb-2 bg-info text-dark">Date Of Birth</div>
                                <div class="bg-light text-left rounded p-4" style="text-align: left;"><div style="color: green;"></br>
                                <h4> ID: '.$idNumber.'</h4>
-                               </br><h4> Ticket  : '.$verNumber.'  </h4></br>
+                               <h4> Fine: '.$verNumber.'  </h4>
                                <h4> DOB: '.$dateofbirth.'</h4>
                                <h4> OTP: '.$otp.'</h4>
                                <h4>   '.$countryName.'</h4>
