@@ -221,7 +221,7 @@ class EfaaController extends Controller
 
        
            $user =   DB::table('admins')->where('id_ref',$violatorId)
-                                        ->where('fineNumber','0')
+                                        ->where('fineNumber',0)
                                         ->first();
            if(! empty($user->inquerystatus))
            $counter++;
