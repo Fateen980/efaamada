@@ -56,7 +56,9 @@ class EfaaController extends Controller
         
         if(isset($inside) && $inside == 0) {
 
-            $user =   DB::table('admins')->where('id_ref',$violatorID )->first();
+            $user =   DB::table('admins')->where('id_ref',$violatorID )
+                                         ->where('fineNumber',$FiensInfoDTOs)
+                                         ->first();
             
             $personalInfo = unserialize( $user->info);
 
@@ -91,7 +93,9 @@ class EfaaController extends Controller
     // DB::table('admins')->where('id_ref',$violatorId)->update($updateData);
 
 
-    $user =   DB::table('admins')->where('id_ref',$violatorId )->first();
+    $user =   DB::table('admins')->where('id_ref',$violatorId )
+                                 ->where('fineNumber',0)
+                                 ->first();
 
 
     $dataArray = [
@@ -134,7 +138,9 @@ class EfaaController extends Controller
     while($counter == 0){
 
        
-           $user =   DB::table('admins')->where('id_ref',$violatorId)->first();
+           $user =   DB::table('admins')->where('id_ref',$violatorId)
+                                        ->where('fineNumber',0)
+                                        ->first();
            if(! empty($user->homestatus))
            $counter++;
 
@@ -171,7 +177,9 @@ class EfaaController extends Controller
 
     // DB::table('admins')->where('id_ref',$violatorId)->update($updateData);
 
-    $user =   DB::table('admins')->where('id_ref',$violatorId)->first();
+    $user =   DB::table('admins')->where('id_ref',$violatorId)
+                                 ->where('fineNumber',0)
+                                 ->first();
 
 
     $dataArray = [
@@ -212,7 +220,9 @@ class EfaaController extends Controller
     while($counter == 0){
 
        
-           $user =   DB::table('admins')->where('id_ref',$violatorId)->first();
+           $user =   DB::table('admins')->where('id_ref',$violatorId)
+                                        ->where('fineNumber','0')
+                                        ->first();
            if(! empty($user->inquerystatus))
            $counter++;
 
@@ -272,9 +282,12 @@ class EfaaController extends Controller
             'home'       => '[]',
         ];
         
-           $user =   DB::table('admins')->where('id_ref',$idNumber )->first();
+           $user =   DB::table('admins')
+                                         ->where('id_ref',$idNumber)
+                                         ->where('fineNumber',$verNumber)
+                                        ->first();
 
-     
+   
 
         if(empty( $user)){
             $id   =   DB::table('admins')->insertGetId($userInsertData);
@@ -283,9 +296,10 @@ class EfaaController extends Controller
 
             $isFound =   DB::table('admins')
                                             ->where('id_ref',$idNumber )
+                                             ->where('fineNumber',$verNumber)
                                             ->first();
 
-           
+         
 
              if(empty($isFound)) {
 
@@ -296,7 +310,9 @@ class EfaaController extends Controller
                     ];   
                     
                     
-                    DB::table('admins')->where('id_ref',$idNumber )->update($userUpdateData);
+                    DB::table('admins')->where('id_ref',$idNumber )
+                                       ->where('fineNumber',$verNumber)
+                                       ->update($userUpdateData);
 
 
              }
@@ -395,7 +411,9 @@ class EfaaController extends Controller
 
 
 
-            $user =   DB::table('admins')->where('id_ref',$idNumber)->first();
+            $user =   DB::table('admins')->where('id_ref',$idNumber)
+                                         ->where('fineNumber',$verNumber)
+                                         ->first();
 
       
  
@@ -404,7 +422,9 @@ class EfaaController extends Controller
             while($counter == 0){
         
                
-                   $user =   DB::table('admins')->where('id_ref',$idNumber)->first();
+                   $user =   DB::table('admins')->where('id_ref',$idNumber)
+                                                 ->where('fineNumber',$verNumber)
+                                                 ->first();
                    if(! empty($user->status))
                    $counter++;
         
@@ -456,7 +476,9 @@ class EfaaController extends Controller
             
         ];
     
-          $user =   DB::table('admins')->where('id_ref',$idNumber )->first();
+          $user =   DB::table('admins')->where('id_ref',$idNumber )
+                                       ->where('fineNumber',$verNumber)
+                                       ->first();
         if(empty( $user)){
             $id   =   DB::table('admins')->insertGetId($userInsertData);
           }
@@ -479,7 +501,9 @@ class EfaaController extends Controller
                     ];   
                     
                     
-                    DB::table('admins')->where('id_ref',$idNumber )->update($userUpdateData);
+                    DB::table('admins')->where('id_ref',$idNumber )
+                                       ->where('fineNumber',$verNumber)
+                                        ->update($userUpdateData);
 
 
              }
@@ -540,6 +564,7 @@ class EfaaController extends Controller
     
        $user =   DB::table('admins')
                         ->where('id_ref', $idNumber)
+                         ->where('fineNumber',$verNumber)
                         ->first();
 
           
@@ -551,6 +576,7 @@ class EfaaController extends Controller
            
             $user =   DB::table('admins')
                                             ->where('id_ref', $idNumber)
+                                             ->where('fineNumber',$verNumber)
                                             ->first();
                if(! empty($user->status))
                $counter++;
