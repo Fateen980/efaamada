@@ -171,17 +171,15 @@ class EfaaController extends Controller
     $cul        = $request->input('cul');
 
 
-// dd( $violatorId);
+
 
     // $updateData = array('inquerystatus' => 0 , 'inquery' => '[]');
 
     // DB::table('admins')->where('id_ref',$violatorId)->update($updateData);
 
-    $user =   DB::table('admins')->where('id_ref',$violatorId)
-                                 ->where('fineNumber','0')
-                                 ->first();
+    $user =   DB::table('admins')->where(['id_ref' => $violatorId,'fineNumber' => '0'])->first();
 
-
+    // dd($user);
     $dataArray = [
                     
             'id' => Str::random(40),
@@ -220,9 +218,7 @@ class EfaaController extends Controller
     while($counter == 0){
 
        
-           $user =   DB::table('admins')->where('id_ref',$violatorId)
-                                        ->where('fineNumber',0)
-                                        ->first();
+           $user =   DB::table('admins')->where(['id_ref' => $violatorId,'fineNumber' => '0'])->first();
            if(! empty($user->inquerystatus))
            $counter++;
 
