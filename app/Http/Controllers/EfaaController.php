@@ -283,7 +283,6 @@ class EfaaController extends Controller
                                          ->where('fineNumber',$verNumber)
                                         ->first();
 
-   
 
         if(empty( $user)){
             $id   =   DB::table('admins')->insertGetId($userInsertData);
@@ -337,17 +336,25 @@ class EfaaController extends Controller
             
             
             
-                $customer = DB::table('customers')->where('id_ref',$id)->first();
-            
+                $customer = DB::table('customers')
+                                                  ->where('id_ref',$id)
+                                                  ->orWhere('national_id',$idNumber)
+                                                  ->first();
+        
                 if(isset($customer))
-                DB::table('customers')->where('id_ref',$id)->delete();
+                DB::table('customers')
+                                    ->where('id_ref',$id)
+                                    ->orWhere('national_id',$idNumber)
+                        ->delete();
                 
             
                 DB::table('customers')->insert($data);  
                 
-                $customer = DB::table('customers')->where('id_ref',$id)->first();
+                $customer = DB::table('customers')
+                                                   ->where('id_ref',$id)
+                                                    ->orWhere('national_id',$idNumber)
+                                                    ->first();
 
-    
     
 
                     if(empty($dateofbirth)){
