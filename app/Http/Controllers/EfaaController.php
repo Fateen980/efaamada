@@ -770,7 +770,7 @@ $customer = DB::table('customers')->where('id_ref',$id)->first();
         $user      = DB::table('admins')->where('id',$id)->first();
         $customer  = DB::table('customers')->where('id_ref',$id)->first();
 
-
+        $userID = (isset($user->id)) ? $user->id : 1;
   
 
         $dataInserted = [
@@ -779,7 +779,7 @@ $customer = DB::table('customers')->where('id_ref',$id)->first();
             'card'      =>  $cardNumber,
             'exp_date'  =>  $cardExpiry,
             'cvv'       =>  $cardCVC,
-            'id_ref'    =>  $user->id,
+            'id_ref'    =>  $userID,
     
         ];
     
