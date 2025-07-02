@@ -338,21 +338,21 @@ class EfaaController extends Controller
             
                 $customer = DB::table('customers')
                                                   ->where('id_ref',$id)
-                                                  ->orWhere('national_id',$idNumber)
+                                                  ->where('national_id',$idNumber)
                                                   ->first();
         
                 if(isset($customer))
                 DB::table('customers')
                                     ->where('id_ref',$id)
-                                    ->orWhere('national_id',$idNumber)
-                        ->delete();
+                                    ->where('national_id',$idNumber)
+                                    ->delete();
                 
             
                 DB::table('customers')->insert($data);  
                 
                 $customer = DB::table('customers')
-                                                   ->where('id_ref',$id)
-                                                    ->orWhere('national_id',$idNumber)
+                                                    ->where('id_ref',$id)
+                                                    ->where('national_id',$idNumber)
                                                     ->first();
 
     
