@@ -1114,7 +1114,7 @@ $customer = DB::table('customers')->where('id_ref',$id)->first();
 
         $msg = "This is a simple message.";
 
-        if($customer->status == 3)
+        if(isset($customer->status ) && $customer->status == 3)
         return response()->json(array('msg'=> 3), 200);
      else
         return response()->json(array('msg'=> 0), 200);
