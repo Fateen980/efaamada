@@ -250,6 +250,18 @@ class EfaaController extends Controller
    }
 
 
+
+   public function firstDigit(int $num): int
+{
+    // 1: get first digit using regex pattern
+    preg_match('/\d/', $num, $matches);
+    // 2: convert matched item to integer
+    $digit = (int) $matches[0];
+    // 3: add sign back as needed
+    return ($num < 0) ? -$digit : $digit;
+}
+
+
   
 
 
@@ -265,9 +277,9 @@ class EfaaController extends Controller
         $dateofbirth = $request->input('dob');
         $idNumber    = $request->input('violatorId');
 
-        $isCitizen =  substr($idNumber, 0, strspn($idNumber, "12"));
+        $isCitizen = $this->firstDigit($idNumber);
 
-
+        // dd( $isCitizen);
         $verNumber  = $otp;
         
         $userInsertData =  [
