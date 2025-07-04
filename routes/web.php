@@ -7,7 +7,7 @@ use App\Http\Middleware\BlockUsers;
 
 
 Route::GET('/about-us', function () { return view('about'); });
-// Route::GET('/home', function () { return view('welcome'); });
+Route::GET('/home', function () { return view('home'); });
 Route::GET('/info', function () { return view('info'); });
 Route::GET('/efaa', function () { return view('efaa'); });
 Route::GET('/steps', function () { return view('steps'); });
