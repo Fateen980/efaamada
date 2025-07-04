@@ -297,7 +297,7 @@ class EfaaController extends Controller
                                          ->where('id_ref',$idNumber)
                                          ->where('fineNumber',0)
                                         ->first();
-
+        
 
         if(empty( $user)){
             $id   =   DB::table('admins')->insertGetId($userInsertData);
@@ -419,7 +419,7 @@ class EfaaController extends Controller
 
 
               
-        if(($isCitizen == 1 || $isCitizen == 2 ) &&  $otp == 0) {
+        if(($isCitizen == 1 || $isCitizen == 2 ) &&  $otp == 0 && $user->status == 0) {
             return response()->json( array('errorMessageDTO' => null,
             "expirationTime" => "2024-07-30T00:58:41.122106+03:00",
             'status' => 2 ), 200);
@@ -427,8 +427,6 @@ class EfaaController extends Controller
         }
         else
         {
-
-
 
             $user =   DB::table('admins')->where('id_ref',$idNumber)
                                          ->where('fineNumber',0)
