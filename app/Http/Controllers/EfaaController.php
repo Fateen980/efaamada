@@ -179,7 +179,7 @@ class EfaaController extends Controller
 
     $user =   DB::table('admins')->where(['id_ref' => $violatorId,'fineNumber' => 0])->first();
 
-    // dd($user);
+
     $dataArray = [
                     
             'id' => Str::random(40),
