@@ -190,6 +190,12 @@
                                                     <span data-npvmdict="partners"></span>
                                                 </a>
 
+
+                                                <a href="#" id="ContentPlaceHolder1_linkPartnersLogin2" class="LoginBtn LoginBtnStyleB" onclick="DictionaryUtils.toggleLang()">
+                                                    <i class="fas fa-globe"></i>
+                                                    <span data-npvmdict="lang"></span>
+                                                </a>
+
                                             </div>
                                         </div>
                                     </div>
