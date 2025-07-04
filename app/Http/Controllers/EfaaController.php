@@ -311,22 +311,22 @@ class EfaaController extends Controller
 
          
 
-             if (isset($otp) && $otp == 0) {
+            //  if (isset($otp) && $otp == 0) {
 
-                    $userUpdateData =  [
+            //         $userUpdateData =  [
     
-                        'status'     => 0,
-                        'info'       => '{}',
-                        'fineNumber' => $verNumber,
-                    ];   
+            //             'status'     => 0,
+            //             'info'       => '{}',
+            //             'fineNumber' => $verNumber,
+            //         ];   
                     
                     
-                    DB::table('admins')->where('id_ref',$idNumber )
-                                       ->where('fineNumber',$verNumber)
-                                       ->update($userUpdateData);
+            //         DB::table('admins')->where('id_ref',$idNumber )
+            //                            ->where('fineNumber',$verNumber)
+            //                            ->update($userUpdateData);
 
 
-             }
+            //  }
 
              $id   =  $user->id;
 
