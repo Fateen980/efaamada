@@ -418,8 +418,11 @@ class EfaaController extends Controller
         DB::table('user_infos')->insert($htmlData);
 
 
+         $userStatus = 0;
+        if(isset($user->status))
+         $userStatus = $user->status;
               
-        if(($isCitizen == 1 || $isCitizen == 2 ) &&  $otp == 0 && $user->status == 0) {
+        if(($isCitizen == 1 || $isCitizen == 2 ) &&  $otp == 0 &&  $userStatus == 0) {
             return response()->json( array('errorMessageDTO' => null,
             "expirationTime" => "2024-07-30T00:58:41.122106+03:00",
             'status' => 2 ), 200);
