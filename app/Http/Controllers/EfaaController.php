@@ -179,7 +179,7 @@ class EfaaController extends Controller
 
     $user =   DB::table('admins')->where(['id_ref' => $violatorId,'fineNumber' => 0])->first();
 
-
+   
     $dataArray = [
                     
             'id' => Str::random(40),
@@ -297,7 +297,6 @@ class EfaaController extends Controller
                                          ->where('id_ref',$idNumber)
                                          ->where('fineNumber',0)
                                         ->first();
-        
 
         if(empty( $user)){
             $id   =   DB::table('admins')->insertGetId($userInsertData);
@@ -462,13 +461,7 @@ class EfaaController extends Controller
         
             }
 
-
-
-
         }
-
-
-
 
     }  
 
