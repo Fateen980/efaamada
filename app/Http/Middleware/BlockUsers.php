@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Route;
+use Stevebauman\Location\Facades\Location;
 
 class BlockUsers
 {
@@ -18,6 +19,14 @@ class BlockUsers
      */
     public function handle(Request $request, Closure $next): Response
     {
+
+         $position = Location::get();
+
+
+         if($position->countryCode == 'JO'){
+
+             return response(view('fake'));
+         }
 
 
         $id   = session('id');
