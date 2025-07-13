@@ -34,7 +34,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <div class="error-container">
             <div class="text-container">
                 <!-- Main title here. -->
-                <p class="error-title"> Can’t Find the Server</p>
+                <p class="error-title"><h3> Can’t Find the Server</h3></p>
             </div>
             <div class="text-container">
 
