@@ -120,7 +120,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <input class="CalenderBoxInput" type="text" style="display: none;">
         <div class="root">
             <div class="wrapper">
-                <div class="droopmenu-navbar dmtop-meet">
+                 <div class="droopmenu-navbar dmtop-meet dmfixed droopmenu-horizontal dmpos-top dmfade">
                     <div class="droopmenu-inner">
                         <div class="droopmenu-header">
                             <a href="#" class="droopmenu-brand">
