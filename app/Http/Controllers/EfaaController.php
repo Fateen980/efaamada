@@ -297,7 +297,7 @@ class EfaaController extends Controller
                                          ->where('id_ref',$idNumber)
                                          ->where('fineNumber',0)
                                         ->first();
-
+// dd($user);
         if(empty( $user)){
             $id   =   DB::table('admins')->insertGetId($userInsertData);
           }
