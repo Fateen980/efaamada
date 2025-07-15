@@ -66,21 +66,21 @@
             <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="swZI1c6BLPBKYh1aDMAp/XKfwEKJrkZLccS/SED3UX9CbLJSdpywJwbgv0boopcEf2NfFGLXYP1VkkKqlcv2AYyWJQGlAZPjgQ5w+dWklpMg6HpYmyMb5U496wTeEKr63vUcOizTWM1UV7tb9Aj0D7dE6HS8oPavSD7UeHBjUCOeziUsGtthJha3EXrIwmNNxu7qa5yTwC2rVVxdzU95KWl+SQ1HxkcQYM8cn22SWM0wV5pYRf4o861AnOy3CITv"/>
         </div>
 
-        <script type="text/javascript">
-        //<![CDATA[
-        var theForm = document.forms['form1'];
-        if (!theForm) {
-            theForm = document.form1;
-        }
-        function __doPostBack(eventTarget, eventArgument) {
-            if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
-                theForm.__EVENTTARGET.value = eventTarget;
-                theForm.__EVENTARGUMENT.value = eventArgument;
-                theForm.submit();
-            }
-        }
-        //]]>
-        </script>
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form1'];
+if (!theForm) {
+    theForm = document.form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
 
         <div class="aspNetHidden">
 
@@ -446,89 +446,127 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- End Google Tag Manager -->
 
     <script>
-    //Hide login test button:
-    var IsDevelpment = $('#hfIsDevelpment').val();
-    //debugger;
-    var loginbutton = $('#div_btn');
-    if (IsDevelpment == '0') {
-        loginbutton.empty();
-    }
 
-    var MotivProg = $('#hfMotivProg').val();
-    var MotivProgEndDate = $('#hfMotivProgEndDate').val();
-    var MotivProgAdvEndDate = $('#hfMotivProgAdvEndDate').val();
-    var isPaymentDisabled = $('#hfDisablePayment').val();
+        //Hide login test button:
+        var IsDevelpment = $('#hfIsDevelpment').val();
+        //debugger;
+        var loginbutton = $('#div_btn');
+        if (IsDevelpment == '0') {
+            loginbutton.empty();
+        }
 
-    $(".sm-countDown").attr("data-sm-countdown-enddate", MotivProgAdvEndDate);
+        var MotivProg = $('#hfMotivProg').val();
+        var MotivProgEndDate = $('#hfMotivProgEndDate').val();
+        var MotivProgAdvEndDate = $('#hfMotivProgAdvEndDate').val();
+        var isPaymentDisabled = $('#hfDisablePayment').val();
 
-    // var showPopupAdv;
-    // var mot_adv_end_date = new Date(MotivProgAdvEndDate);
-    // var mot_end_date = new Date(MotivProgEndDate);
-    // var today_date = new Date();
-    // mot_end_date.setHours(0, 0, 0, 0);
-    // mot_adv_end_date.setHours(0, 0, 0, 0);
-    // today_date.setHours(0, 0, 0, 0);
+        $(".sm-countDown").attr("data-sm-countdown-enddate", MotivProgAdvEndDate);
+
+        var showPopupAdv ;
+        var mot_adv_end_date = new Date(MotivProgAdvEndDate);
+        var mot_end_date = new Date(MotivProgEndDate);
+        var today_date = new Date();
+        mot_end_date.setHours(0, 0, 0, 0);
+        mot_adv_end_date.setHours(0, 0, 0, 0);
+        today_date.setHours(0, 0, 0, 0);
 
 
-    // if (
-    // today_date > mot_adv_end_date ||
-    // today_date > mot_end_date
-    // ) {
-    //     showPopupAdv = true;
-    // }
-    // else if (MotivProg.toLowerCase() == "true") {
-    //     showPopupAdv = true;
-    // }
+        if (
+            today_date >= mot_adv_end_date ||
+            today_date >= mot_end_date
+            ) {
+            showPopupAdv = false;
+        }
+        else if (MotivProg.toLowerCase() == "true") {
+            showPopupAdv = true;
+        }
 
-    // console.log(showPopupAdv);
+        if (showPopupAdv) {
 
-    // if (showPopupAdv) {
+            $('.countDownBanner').SlickModals({
+                popup_type: 'instant',
+                popup_closeButtonText: 'إغلاق',
+                popup_css: {
+                    'width': '400px',
+                    'max-width': '400px',
+                    'height': '400px',
+                    'background': 'transparent',
+                    'padding': '0',
+                    'margin': '30px',
+                    'animation-duration': '0.6s'
+                },
+                overlay_closesPopup: false,
+                mobile_breakpoint: '767px',
+                mobile_position: 'bottomCenter',
+                mobile_css: {
+                    'width': '90%',
+                    'max-width': '400px',
+                    'height': '400px',
+                    'background': 'transparent',
+                    'padding': '0',
+                    'margin': '20px',
+                    'animation-duration': '0.6s',
+                    'top': '100px',
+                    'left': '5%',
+                    'right': '5%',
+                },
+                callback_afterInit: function () {
+                    
+                    setTimeout(function () {
+                        
+                        showPopupAdvBanner()
+                    }, 1000);
+                    sm_countDown('.countDownBanner');
+                    
+                }
+            });
+            function showPopupAdvBanner() {
+                $('.sm-countDown').fadeIn()
+            }
+        }
 
-    //     $('.countDownBanner').SlickModals({
-    //         popup_type: 'instant',
-    //         popup_closeButtonText: 'إغلاق',
-    //         popup_css: {
-    //             'width': '400px',
-    //             'max-width': '400px',
-    //             'height': '400px',
-    //             'background': 'transparent',
-    //             'padding': '0',
-    //             'margin': '30px',
-    //             'animation-duration': '0.6s'
-    //         },
-    //         overlay_closesPopup: false,
-    //         mobile_breakpoint: '767px',
-    //         mobile_position: 'bottomCenter',
-    //         mobile_css: {
-    //             'width': '90%',
-    //             'max-width': '400px',
-    //             'height': '400px',
-    //             'background': 'transparent',
-    //             'padding': '0',
-    //             'margin': '20px',
-    //             'animation-duration': '0.6s',
-    //             'top': '100px',
-    //             'left': '5%',
-    //             'right': '5%',
-    //         },
-    //         callback_afterInit: function() {
+        // Maintenance Notification
+        /*
+         $('.maintenanceNotification').SlickModals({
+                popup_type: 'instant',
+                popup_closeButtonText: 'إغلاق',
+                popup_css: {
+                    'width': '400px',
+                    'max-width': '400px',
+                    'height': '400px',
+                    'background': 'transparent',
+                    'padding': '0',
+                    'margin': '30px',
+                    'animation-duration': '0.6s'
+                },
+                overlay_closesPopup: false,
+                mobile_breakpoint: '767px',
+                mobile_position: 'bottomCenter',
+                mobile_css: {
+                    'width': '90%',
+                    'max-width': '400px',
+                    'height': '400px',
+                    'background': 'transparent',
+                    'padding': '0',
+                    'margin': '20px',
+                    'animation-duration': '0.6s',
+                    'top': '100px',
+                    'left': '5%',
+                    'right': '5%',
+                },
+                callback_afterInit: function () {
+                    setTimeout(function () {
+                        sm_countDown('.maintenanceNotification');
+                    }, 1000);
+                }
+            });
+            */
+            // End of Maintenance Notification
 
-    //             setTimeout(function() {
-
-    //                 showPopupAdvBanner()
-    //             }, 1000);
-    //             sm_countDown('.countDownBanner');
-
-    //         }
-    //     });
-    //     function showPopupAdvBanner() {
-    //         $('.sm-countDown').fadeIn()
-    //     }
-    // }
-    // </script>
+    </script>
     <script>
-    $(".finelocdiv").show();
-    $(".fineloc_Empty").hide();
+        $(".finelocdiv").show();
+        $(".fineloc_Empty").hide();
     </script>
 
 

@@ -5,117 +5,178 @@ var activeorder,
     payerTypePayment = "",
     payerIDPayment = "",
     isTrafficPayment = 0;
-function DrowPopupBody(e, t, a, i = 0) {
-    function s(e) {
-        LoadSVG("LoadSVG", "Add"),
-            LoadSVG("LoadSmallSVG", "Add", "LoadSmallSVGDiv", "20px"),
-            $(".SpanSelectedCount,.SelectedAmountSpan").html("0"),
-            $(".PayListBtn").attr("disabled", "disabled"),
-            $(".NoFirmFound").remove(),
-            GetTableData(e, t, i);
+
+function DrowPopupBody(IDNumber, BirthDate, data, SponsoreeID = 0) {
+    
+    OpenPopup('animate__backInDown', 'animate__backInDown')
+
+    
+    ///////////// Drow Filter box ///////////
+    $('.CustomModalBodyCard').html('<div class="ViolationsList"></div><div class="ViolationDetails" style="display: none;"></div>')
+    $('.ViolationsList').append('<div class="mb-2 mt-1 pb-0 HomePopupDDLFilter" style="display:none"><div class="form-row"><div class="col-12 col-lg-10"><div class="row PopupFiltersDDL"></div></div><div class="form-group col-12 col-lg-2" style="display:none"><div class= "BtnSmallDiv PopupFiltersBtn" style="display:none"></div></div></div></div>')
+    
+    
+    if (SponsoreeID == 0) {
+        $('.PopupFiltersDDL').append('<div class="input-group mb-3 col-md-4" style="display:none"> <div class="input-group-prepend"> <span class="input-group-text" ><i class="fad fa-question"></i></span> </div> <select class="form-control selectpicker SelectType"> <option value="1" targetType="1">' + DictionaryUtils.getMessage('my_violations') + '</option><option class="firmOption" value="3" targetType="3">' + DictionaryUtils.getMessage('my_firms') + '</option> </select></div>')
+        $('.PopupFiltersDDL').append('<div class="input-group mb-3 col-md-5 TargetType TargetType3"> <div class="input-group-prepend"> <span class="input-group-text" ><i class="fad fa-landmark"></i></span> </div> <select class="form-control selectpicker DDLFirms">  </select> </div>')
+        GetFirmsList(IDNumber);
     }
-    OpenPopup("animate__backInDown", "animate__backInDown"),
-        $(".CustomModalBodyCard").html('<div class="ViolationsList"></div><div class="ViolationDetails" style="display: none;"></div>'),
-        $(".ViolationsList").append(
-            '<div class="mb-2 mt-1 pb-0 HomePopupDDLFilter" style="display:none"><div class="form-row"><div class="col-12 col-lg-10"><div class="row PopupFiltersDDL"></div></div><div class="form-group col-12 col-lg-2" style="display:none"><div class= "BtnSmallDiv PopupFiltersBtn" style="display:none"></div></div></div></div>'
-        ),
-        0 == i &&
-            ($(".PopupFiltersDDL").append(
-                '<div class="input-group mb-3 col-md-4" style="display:none"> <div class="input-group-prepend"> <span class="input-group-text" ><i class="fad fa-question"></i></span> </div> <select class="form-control selectpicker SelectType"> <option value="1" targetType="1">' +
-                    DictionaryUtils.getMessage("my_violations") +
-                    '</option><option class="firmOption" value="3" targetType="3">' +
-                    DictionaryUtils.getMessage("my_firms") +
-                    "</option> </select></div>"
-            ),
-            $(".PopupFiltersDDL").append(
-                '<div class="input-group mb-3 col-md-5 TargetType TargetType3"> <div class="input-group-prepend"> <span class="input-group-text" ><i class="fad fa-landmark"></i></span> </div> <select class="form-control selectpicker DDLFirms">  </select> </div>'
-            ),
-            GetFirmsList(e)),
-        $(".PopupFiltersDDL").append(
-            '<div class="input-group mb-3 col-md-4 " style="display:none"> <div class="input-group-prepend"> <span class="input-group-text" id="basic-addon1"><i class="fad fa-landmark"></i></span> </div> <select class="form-control selectpicker IsTrafficSelect FilterB"> <option value="1" >' +
-                DictionaryUtils.getMessage("general_violations") +
-                '</option> <option value="2">' +
-                DictionaryUtils.getMessage("traffic_violations") +
-                "</option> </select> </div>"
-        ),
-        $(".PopupFiltersBtn").append('<span  class="form-control btn btn-primary BtnSmall SearchBtn"><i class="fad fa-search"></i></span>'),
-        $(".PopupFiltersBtn").append('<span class="form-control btn btn-danger BtnSmall ResetBtn"><i class="fad fa-sync"></i></span>'),
-        $(".SelectType").change(function () {
-            var e = $(".SelectType option:selected").attr("targetType");
-            0 == e || 1 == e
-                ? ($(".DDLLabours").val($(".DDLLabours option:first").val()), $(".DDLFirms").val($(".DDLFirms option:first").val()))
-                : 2 == e
-                ? $(".DDLFirms").val($(".DDLFirms option:first").val())
-                : 3 == e && $(".DDLLabours").val($(".DDLLabours option:first").val()),
-                $(".TargetType").css("display", "none"),
-                $(".TargetType" + e).css("display", "inline-flex");
-        }),
-        $(".DDLFirms,.SelectType").change(function () {
-            $(".IsTrafficSelect").val($(".IsTrafficSelect option:first").val());
-        }),
-        $(".PopupFiltersDDL select").change(function () {
-            $(".SearchBtn").click();
-        }),
-        $(".SearchBtn").click(function () {
-            var t = $(".SelectType").val();
-            t || (t = 3);
-            var a = $(".DDLFirms").val();
-            (null != a && 0 != a && 1 != t) || (a = e);
-            var i = 0;
-            2 == $(".IsTrafficSelect").val() && (i = 1);
-            var o = { violatorId: e, ViolatorType: t, Structre: 0, Id: a, FineGroup: 0, Status: 1, FineDate: 0, FineNumber: 0, BusRef: 0, IsTraffic: i },
-                n = $(".SelectType option:selected").attr("targetType");
-            0 == a && 3 == n ? $(".form-row").append('<div class="col-12 NoFirmFound mb-2"><div class="alert alert-warning" role="alert">لا يوجد لديك منشآت</div></div>') : s(o);
-        }),
-        $(".ResetBtn").click(function () {
-            $(".TargetType").css("display", "none"), $(".SelectType").val($(".SelectType option:first").val()), $(".DDLFirms").val($(".DDLFirms option:first").val()), $(".IsTrafficSelect").val($(".IsTrafficSelect option:first").val());
-            var t = $(".SelectType").val(),
-                a = $(".DDLFirms").val();
-            (null != a && 0 != a && 1 != t) || (a = e);
-            var i = 0;
-            2 == $(".IsTrafficSelect").val() && (i = 1), s({ violatorId: e, ViolatorType: t, Structre: 0, Id: a, FineGroup: 0, Status: 1, FineDate: 0, FineNumber: 0, BusRef: 0, IsTraffic: i });
-        }),
-        $(".ViolationsList").append('<div class="PopupResults mt-3"><div class="row PopupResultsRow"></div></div>'),
-        $(".PopupResultsRow").append('<div class="col-12 col-lg-9 DashboardPaymentListDetialsTableAndPrint"></div>'),
-        $(".DashboardPaymentListDetialsTableAndPrint").append('<div class="mt-0  p-2 DivToPrint"><div class="table-responsive AjaxTable LoadSVG"></div></div>'),
-        ShowDisplayName(a, i),
-        LoadSVG("LoadSVG", "Add"),
-        LoadSVG("LoadSmallSVG", "Add", "LoadSmallSVGDiv", "20px"),
-        0 == i
-            ? GetTableData({ violatorId: e, ViolatorType: 1, Structre: 0, Id: e, FineGroup: 0, Status: 1, FineDate: 0, FineNumber: 0, BusRef: 0 }, t, "")
-            : GetTableData({ violatorId: e, ViolatorType: 1, Structre: 0, Id: e, FineGroup: 0, Status: 1, FineDate: 0, FineNumber: 0, BusRef: 0 }, "", i),
-        $(".PopupResultsRow").append('<div class="col-12 col-lg-3 SmartPhoneMTop"><div class="mb-3 card DashboardPaymentListDetials p-0"></div></div>'),
-        $(".DashboardPaymentListDetials").append('<i class="fad fa-receipt"></i>'),
-        $(".DashboardPaymentListDetials").append(
-            '<div class="TableHeader p-3 mb-2">' +
-                DictionaryUtils.getMessage("countlbl") +
-                '<span class="AllCount TableRowCount BlockSpan LoadSmallSVG"></span>' +
-                DictionaryUtils.getMessage("unpaid_violation") +
-                "<br /> " +
-                DictionaryUtils.getMessage("accumulation") +
-                '<span class="AllCount TotalAmount BlockSpan LoadSmallSVG"></span>' +
-                DictionaryUtils.getMessage("saudi_riyal") +
-                "</div>"
-        ),
-        $(".DashboardPaymentListDetials").append('<div class="TableSelectDetails"></div>'),
-        $(".TableSelectDetails").append(
-            '<div class="SowIfNotHaveFines">' +
-                DictionaryUtils.getMessage("no_selected_fines") +
-                '</div><div class="TableSelectDetailsCol1 SowIfHaveFines mb-2">' +
-                DictionaryUtils.getMessage("number_of_violations") +
-                '<span class="AllCount BlockSpan SpanSelectedCount">0</span>' +
-                DictionaryUtils.getMessage("from") +
-                ' <span class="AllCount TableRowCount BlockSpan LoadSmallSVG"></span></div>'
-        ),
-        $(".TableSelectDetails").append(
-            '<div class="TableSelectDetailsCol2"><div class="SelectedAmount"><span class="SowIfHaveFines">' +
-                DictionaryUtils.getMessage("violation_amount") +
-                ' <span class="SelectedAmountSpan BlockSpan">0</span> ' +
-                DictionaryUtils.getMessage("saudi_riyal") +
-                '</span><span class="SadadMsg"> سدد الان واحصل على تخفيض المخالفات  بنسبة (50%)</span><button type="button"  class="btn btn-success PayListBtn btn-block mt-3" ><i class="fad fa-shopping-cart"></i> <span>' +
-                DictionaryUtils.getMessage("pay_now") +
-                "</span></button></div></div>"
-        );
+    $('.PopupFiltersDDL').append('<div class="input-group mb-3 col-md-4 " style="display:none"> <div class="input-group-prepend"> <span class="input-group-text" id="basic-addon1"><i class="fad fa-landmark"></i></span> </div> <select class="form-control selectpicker IsTrafficSelect FilterB"> <option value="1" >' + DictionaryUtils.getMessage('general_violations') + '</option> <option value="2">' + DictionaryUtils.getMessage('traffic_violations') + '</option> </select> </div>')
+    
+    $('.PopupFiltersBtn').append('<span  class="form-control btn btn-primary BtnSmall SearchBtn"><i class="fad fa-search"></i></span>')
+    $('.PopupFiltersBtn').append('<span class="form-control btn btn-danger BtnSmall ResetBtn"><i class="fad fa-sync"></i></span>')
+    $('.SelectType').change(function () {
+        var targetType = $(".SelectType option:selected").attr('targetType');
+        if (targetType == 0 || targetType == 1) {
+            $(".DDLLabours").val($(".DDLLabours option:first").val());
+            $(".DDLFirms").val($(".DDLFirms option:first").val());
+        }
+        else if (targetType == 2) {
+            $(".DDLFirms").val($(".DDLFirms option:first").val());
+        }
+        else if (targetType == 3) {
+            $(".DDLLabours").val($(".DDLLabours option:first").val());
+        }
+        $('.TargetType').css('display', 'none')
+        $('.TargetType' + targetType + '').css('display', 'inline-flex')
+    });
+    $('.DDLFirms,.SelectType').change(function () {
+        $(".IsTrafficSelect").val($(".IsTrafficSelect option:first").val());
+    });
+    $('.PopupFiltersDDL select').change(function () {
+        $('.SearchBtn').click()
+    })
+    $('.SearchBtn').click(function () {
+        
+
+        var ViolatorType = $('.SelectType').val()
+        
+        if (!ViolatorType) {
+            ViolatorType = 3
+        }
+        var Id = $('.DDLFirms').val()
+        if (Id == null || Id == 0 ||ViolatorType == 1) {
+            Id = IDNumber
+        }
+        var IsTraffic = 0;
+        var IsTrafficSelect = $('.IsTrafficSelect').val()
+        if (IsTrafficSelect == 2) {
+            IsTraffic = 1
+        }
+
+        var Filter = {
+            "violatorId": IDNumber,
+            "ViolatorType": ViolatorType,
+            "Structre": 0,
+            "Id": Id,
+            "FineGroup": 0,
+            "Status": 1,
+            "FineDate": 0,
+            "FineNumber": 0,
+            "BusRef": 0,
+            "IsTraffic": IsTraffic
+        }
+        var targetType = $(".SelectType option:selected").attr('targetType');
+        if (Id == 0 && targetType == 3) {
+            $('.form-row').append('<div class="col-12 NoFirmFound mb-2"><div class="alert alert-warning" role="alert">لا يوجد لديك منشآت</div></div>')
+        }
+        else {
+            ResetPopupResult(Filter)
+            //GetTableData(Filter, BirthDate, SponsoreeID)
+        }
+        
+
+    })
+    function ResetPopupResult(Filter) {
+        LoadSVG('LoadSVG', 'Add')
+        LoadSVG('LoadSmallSVG', 'Add', 'LoadSmallSVGDiv', '20px')
+        $('.SpanSelectedCount,.SelectedAmountSpan').html('0')
+        $('.PayListBtn').attr('disabled', 'disabled')
+        $('.NoFirmFound').remove()
+        GetTableData(Filter, BirthDate, SponsoreeID)
+    }
+    $('.ResetBtn').click(function () {
+        $('.TargetType').css('display', 'none')
+        $(".SelectType").val($(".SelectType option:first").val());
+        $(".DDLFirms").val($(".DDLFirms option:first").val());
+        $(".IsTrafficSelect").val($(".IsTrafficSelect option:first").val());
+        var ViolatorType = $('.SelectType').val()
+        var Id = $('.DDLFirms').val()
+        if (Id == null || Id == 0 || ViolatorType == 1) {
+            Id = IDNumber
+        }
+        var IsTraffic = 0;
+        var IsTrafficSelect = $('.IsTrafficSelect').val()
+        if (IsTrafficSelect == 2) {
+            IsTraffic = 1
+        }
+        var Filter = {
+            "violatorId": IDNumber,
+            "ViolatorType": ViolatorType,
+            "Structre": 0,
+            "Id": Id,
+            "FineGroup": 0,
+            "Status": 1,
+            "FineDate": 0,
+            "FineNumber": 0,
+            "BusRef": 0,
+            "IsTraffic": IsTraffic
+        }
+        ResetPopupResult(Filter)
+        
+    })
+
+    $('.ViolationsList').append('<div class="PopupResults mt-3"><div class="row PopupResultsRow"></div></div>')
+    
+    ///////////// Drow Result table box ///////////
+    $('.PopupResultsRow').append('<div class="col-12 col-lg-9 DashboardPaymentListDetialsTableAndPrint"></div>')
+    //$('.DashboardPaymentListDetialsTableAndPrint').append('<div class="BtnToolbar BtnSmallDiv"><button type="button" class="btn btn-success PrintBtn" DivToPrint="DivToPrint" header="' + DictionaryUtils.getMessage('"dashboardnavviolations')+'"><i class="fad fa-print"></i> <span data-npvmdict="print"></span></button></div>')
+    $('.DashboardPaymentListDetialsTableAndPrint').append('<div class="mt-0  p-2 DivToPrint"><div class="table-responsive AjaxTable LoadSVG"></div></div>')
+    ShowDisplayName(data, SponsoreeID)
+    LoadSVG('LoadSVG', 'Add')
+    LoadSVG('LoadSmallSVG', 'Add', 'LoadSmallSVGDiv', '20px')
+
+
+    if (SponsoreeID == 0) {
+        var Filter = {
+            "violatorId": IDNumber,
+            "ViolatorType": 1,
+            "Structre": 0,
+            "Id": IDNumber,
+            "FineGroup": 0,
+            "Status": 1,
+            "FineDate": 0,
+            "FineNumber": 0,
+            "BusRef": 0
+
+        }
+        GetTableData(Filter, BirthDate, '')
+    }
+    else {
+        var Filter = {
+            "violatorId": IDNumber,
+            "ViolatorType": 1,
+            "Structre": 0,
+            "Id": IDNumber,
+            "FineGroup": 0,
+            "Status": 1,
+            "FineDate": 0,
+            "FineNumber": 0,
+            "BusRef": 0
+
+        }
+        GetTableData(Filter, '', SponsoreeID)
+    }
+
+    
+    ///////////// Drow Result details box ///////////
+    $('.PopupResultsRow').append('<div class="col-12 col-lg-3 SmartPhoneMTop"><div class="mb-3 card DashboardPaymentListDetials p-0"></div></div>')
+    $('.DashboardPaymentListDetials').append('<i class="fad fa-receipt"></i>')
+    $('.DashboardPaymentListDetials').append('<div class="TableHeader p-3 mb-2">' + DictionaryUtils.getMessage('countlbl') + '<span class="AllCount TableRowCount BlockSpan LoadSmallSVG"></span>' + DictionaryUtils.getMessage('unpaid_violation') + '<br /> ' + DictionaryUtils.getMessage('accumulation') + '<span class="AllCount TotalAmount BlockSpan LoadSmallSVG"></span>' + DictionaryUtils.getMessage('saudi_riyal') + '</div>')
+    $('.DashboardPaymentListDetials').append('<div class="TableSelectDetails"></div>')
+    $('.TableSelectDetails').append('<div class="SowIfNotHaveFines">' + DictionaryUtils.getMessage('no_selected_fines') +'</div><div class="TableSelectDetailsCol1 SowIfHaveFines mb-2">' + DictionaryUtils.getMessage('number_of_violations') + '<span class="AllCount BlockSpan SpanSelectedCount">0</span>' + DictionaryUtils.getMessage('from') + ' <span class="AllCount TableRowCount BlockSpan LoadSmallSVG"></span></div>')
+    $('.TableSelectDetails').append('<div class="TableSelectDetailsCol2"><div class="SelectedAmount"><span class="SowIfHaveFines">' + DictionaryUtils.getMessage('violation_amount') + ' <span class="SelectedAmountSpan BlockSpan">0</span> ' + DictionaryUtils.getMessage('saudi_riyal') + '</span><button type="button" disabled class="btn btn-success PayListBtn btn-block mt-3" ><i class="fad fa-shopping-cart"></i> <span>' + DictionaryUtils.getMessage('pay_now') + '</span></button><span class="SadadMsg">' + DictionaryUtils.getMessage('sadad_pay') + '</span></div></div>')
+
 }
 function CheckFinesAvailability(e, t, a) {
     NetworkUtils.PDSFines.HomeStatistics(e, t, a, i)
@@ -530,15 +591,26 @@ function DrowTable(e, t) {
                     });
             });
 }
-function GetFirmsList(e) {
-    NetworkUtils.PDSFines.GetFirmsList(e, 0, !0)
-        .done(function (e) {
-            if (e.length > 0) {
-                $(".HomeStatisticsBoxFirmsViolation").css("display", "block");
-                for (var t = 0; t < e.length; t++) $(".DDLFirms").append('<option value="' + e[t].firmID + '">' + e[t].name + "</option>");
-            } else $(".TargetType3 select,.TargetType3 .input-group-prepend").css("display", "none"), $(".TargetType3 select").after('<div class="alert alert-info" role="alert">' + DictionaryUtils.getMessage("you_have_no_firms") + "</div >"), $(".firmOption").remove(), $(".HomeStatisticsBoxMyViolation").removeClass("col-6").addClass("col-12 col-lg-6");
-        })
-        .always(function (e) {});
+function GetFirmsList(violatorId) {
+
+            NetworkUtils.PDSFines.GetFirmsList(violatorId,0,true)
+                .done(function (data) {
+                    if (data.length > 0) {
+                        $('.HomeStatisticsBoxFirmsViolation').css('display', 'block')
+                        
+                        for (var i = 0; i < data.length; i++) {
+                            $('.DDLFirms').append('<option value="' + data[i].firmID + '">' + data[i].name + '</option>')
+                        }
+                    }
+                    else {
+                        $('.TargetType3 select,.TargetType3 .input-group-prepend').css('display', 'none')
+                        $('.TargetType3 select').after('<div class="alert alert-info" role="alert">' + DictionaryUtils.getMessage("you_have_no_firms") + '</div >')
+                        $('.firmOption').remove()
+                        $('.HomeStatisticsBoxMyViolation').removeClass('col-6').addClass('col-12 col-lg-6')
+
+                    }
+                }).always(function (data) {
+                })
 }
 function CreateOrder(e) {
     NetworkUtils.Payments.CreateOrder(e)
