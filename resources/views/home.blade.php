@@ -64,21 +64,21 @@
             <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="swZI1c6BLPBKYh1aDMAp/XKfwEKJrkZLccS/SED3UX9CbLJSdpywJwbgv0boopcEf2NfFGLXYP1VkkKqlcv2AYyWJQGlAZPjgQ5w+dWklpMg6HpYmyMb5U496wTeEKr63vUcOizTWM1UV7tb9Aj0D7dE6HS8oPavSD7UeHBjUCOeziUsGtthJha3EXrIwmNNxu7qa5yTwC2rVVxdzU95KWl+SQ1HxkcQYM8cn22SWM0wV5pYRf4o861AnOy3CITv"/>
         </div>
 
-        <script type="text/javascript">
-        //<![CDATA[
-        var theForm = document.forms['form1'];
-        if (!theForm) {
-            theForm = document.form1;
-        }
-        function __doPostBack(eventTarget, eventArgument) {
-            if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
-                theForm.__EVENTTARGET.value = eventTarget;
-                theForm.__EVENTARGUMENT.value = eventArgument;
-                theForm.submit();
-            }
-        }
-        //]]>
-        </script>
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form1'];
+if (!theForm) {
+    theForm = document.form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
 
         <div class="aspNetHidden">
 
@@ -96,7 +96,7 @@
         <input class="CalenderBoxInput" type="text" style="display: none;">
         <div class="root">
             <div class="wrapper">
-                  <div class="droopmenu-navbar dmtop-meet dmfixed droopmenu-horizontal dmpos-top dmfade">
+                <div class="droopmenu-navbar dmtop-meet dmfixed droopmenu-horizontal dmpos-top dmfade">
                     <div class="droopmenu-inner">
                         <div class="droopmenu-header">
                             <a href="#" class="droopmenu-brand">
@@ -389,6 +389,7 @@
         <input type="hidden" name="totalFineItemsAmount"  id="totalFineItemsAmount" value="" >
     </form>
 
+
    
     <a href="#" ID="backToTop">
         <i class="fa fa-arrow-up"></i>
@@ -420,7 +421,9 @@
     <script src="../new/Home.js?v=4.014"></script>
     <script src="../new/countDown.js?v=4.014"></script>
 
-  <!-- Google tag (gtag.js) -->
+
+
+    <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-QJFQKBTE7Z"></script>
 <script>
   window.dataLayer = window.dataLayer || [];

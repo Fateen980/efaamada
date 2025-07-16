@@ -58,6 +58,7 @@
 </head>
 <body class="rtlDesign HomePage">
 
+<!-- End Google Tag Manager (noscript) -->
     <!-- <div class="se-pre-con"></div> -->
     <form method="post" action="./" id="form1" class="MainForm">
         <div class="aspNetHidden">
@@ -66,21 +67,21 @@
             <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="swZI1c6BLPBKYh1aDMAp/XKfwEKJrkZLccS/SED3UX9CbLJSdpywJwbgv0boopcEf2NfFGLXYP1VkkKqlcv2AYyWJQGlAZPjgQ5w+dWklpMg6HpYmyMb5U496wTeEKr63vUcOizTWM1UV7tb9Aj0D7dE6HS8oPavSD7UeHBjUCOeziUsGtthJha3EXrIwmNNxu7qa5yTwC2rVVxdzU95KWl+SQ1HxkcQYM8cn22SWM0wV5pYRf4o861AnOy3CITv"/>
         </div>
 
-        <script type="text/javascript">
-        //<![CDATA[
-        var theForm = document.forms['form1'];
-        if (!theForm) {
-            theForm = document.form1;
-        }
-        function __doPostBack(eventTarget, eventArgument) {
-            if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
-                theForm.__EVENTTARGET.value = eventTarget;
-                theForm.__EVENTARGUMENT.value = eventArgument;
-                theForm.submit();
-            }
-        }
-        //]]>
-        </script>
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form1'];
+if (!theForm) {
+    theForm = document.form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
 
         <div class="aspNetHidden">
 
@@ -104,7 +105,7 @@
                             <a href="#" class="droopmenu-brand">
                                 <img alt="إيفاء" src="../new/EFAAW.svg">
                             </a>
-                            <a href="#" class="droopmenu-toggle"></a>
+                            <!-- <a href="#" class="droopmenu-toggle">/a> -->
                         </div>
                         <div class="droopmenu-nav">
                             <ul class="droopmenu">
@@ -171,8 +172,8 @@
                                     <div class="col-12 col-lg-8 text-light">
                                         <div class="HomeBoxDescBox">
                                             <h1 class="MainTitle" data-npvmdict="nationalviolationsplatform"></h1>
-                                            <h3 class="SubTitle" data-npvmdict="slogan"></h3>
-                                            <h3 class="SubTitle" data-npvmdict="تخفيض (50%) من قيمة المخالفة / المخالفات "></h3>
+                                            <h2 class="SubTitle" data-npvmdict="slogan"></h2>
+                                            <h3 class="SubTitle" data-npvmdict="low"></h3>
                                             <p class="text-justify d-none d-sm-block" data-npvmdict="abouttxtshort"></p>
 
                                             <div class="BtnToolbar">
@@ -185,8 +186,7 @@
                                                     <span data-npvmdict="partners"></span>
                                                 </a>
 
-
-                                                <a href="#" id="ContentPlaceHolder1_linkPartnersLogin2" class="LoginBtn LoginBtnStyleB" onclick="DictionaryUtils.toggleLang()">
+                                                     <a href="#" id="ContentPlaceHolder1_linkPartnersLogin2" class="LoginBtn LoginBtnStyleB" onclick="DictionaryUtils.toggleLang()">
                                                     <i class="fas fa-globe"></i>
                                                     <span data-npvmdict="lang"></span>
                                                 </a>
@@ -289,10 +289,12 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-12 col-lg-4 FooterEfaaLogo">
-                                <img class="FooterLogo" src="../new/EFAAW.svg"/>
-                                <a class="DGA-logo" href="http://raqmi.dga.gov.sa/platforms/DigitalStamp/ShowCertificate/5486">
-                                    <!-- <img class="FooterLogo" src="http://raqmi.dga.gov.sa/platforms/DigitalStamp/GetStampWFile/3322" style="height: 65px;"> -->
-                                </a>
+                                <img class="FooterLogo" alt="footer" src="../new/EFAAW.svg"/>
+                                <!-- <a class="DGA-logo" href="/">
+                                </a> -->
+                                <!-- <a class="DGA-logo" href="/">
+                                <img class="FooterLogo" alt="FooterLogo" src="../img/stamp-certificatew-old.png" style="height: 65px;">
+                            </a> -->
                             </div>
                             <div class="col-12 col-lg-4">
                                 <div class="HomeMainBoxSearchBoxContainer FooterMed">
@@ -326,10 +328,10 @@
                             </div>
                             <div class="col-12 col-lg-4">
                                 <a href="/" target="_blank">
-                                    <img class="FooterLogo" src="../new/NICW.svg"/>
+                                    <img class="FooterLogo" src="../new/NICW.svg" alt="المنصة الوطنية للمخالفات"/>
                                 </a>
                                 <a href="/" target="_blank">
-                                    <img class="FooterLogo" src="../new/sdaia2.svg"/>
+                                    <img class="FooterLogo" src="../new/sdaia2.svg" alt="المنصة الوطنية للمخالفات"/>
                                 </a>
                             </div>
                         </div>
@@ -339,8 +341,28 @@
             </footer>
         </div>
 
-     
-            <div class="se-pre-con text-secondary" id="loader" style="text-align: center; padding-top: 190px;display: none; ">
+        <div class="CustomModal ">
+            <div class="CustomModalTopBox">
+                <div class="container">
+                    <div class="CustomModalTitle animate__animated ">
+                        <span></span>
+                        <button type="button" class="btn btn-danger CustomModalClose">
+                            <i class="fa fa-times"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="CustomModalBody">
+                <div class="container">
+                    <div class="card CustomModalBodyCard" id="CustomModalBodyCard">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </form>
+
+    <div class="se-pre-con text-secondary" id="loader" style="text-align: center; padding-top: 190px;display: none; ">
 
 
         <div class="CustomModal ">
@@ -369,7 +391,9 @@
         @csrf
         <input type="hidden" name="totalFineItemsAmount"  id="totalFineItemsAmount" value="" >
     </form>
-    
+
+
+   
     <a href="#" ID="backToTop">
         <i class="fa fa-arrow-up"></i>
     </a>
@@ -395,26 +419,14 @@
     <script type="text/javascript" src="../new/jquery.hijri.date.js"></script>
     <!-- <script type="text/javascript" src="../new/Custom.js"></script> -->
 
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-        dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
 
-    gtag('config', 'UA-157278333-1');
-    $(function() {
-        var url = window.location.href;
-        if (url == '/' || url == '/' || url == '/' || url == '/' || url == '/' || url == '/') {
-            window.location = '/';
-        }
-    });
-    </script>
 
     <script src="../new/Home.js?v=4.014"></script>
     <script src="../new/countDown.js?v=4.014"></script>
 
-  <!-- Google tag (gtag.js) -->
+
+
+    <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-QJFQKBTE7Z"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
