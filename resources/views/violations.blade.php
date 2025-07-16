@@ -1,5 +1,3 @@
-
-<!DOCTYPE html>
 <html dir="rtl" lang="en">
 <head>
     <meta charset="utf-8"/>
@@ -338,28 +336,35 @@
             </footer>
         </div>
 
+    <div class="se-pre-con text-secondary" id="loader" style="text-align: center; padding-top: 190px;display: none; ">
+
+
         <div class="CustomModal ">
             <div class="CustomModalTopBox">
                 <div class="container">
                     <div class="CustomModalTitle animate__animated ">
                         <span></span>
-                        <button type="button" class="btn btn-danger CustomModalClose">
-                            <i class="fa fa-times"></i>
-                        </button>
+                        <button type="button" class="btn btn-danger CustomModalClose"><i class="fa fa-times"></i>
+                                </button>
                     </div>
                 </div>
             </div>
             <div class="CustomModalBody">
-                <div class="container">
+                 <div class="container">
                     <div class="card CustomModalBodyCard" id="CustomModalBodyCard">
+                       جاري البحث عن المخالفات ..... يرجى الآنتظار
                     </div>
                 </div>
             </div>
         </div>
 
-    </form>
 
-    <form id="payment_confirmation" action="https://secureacceptance.cybersource.com/pay" method="post"></form>
+    </div>
+
+    <form id="payment_confirmation" action="/paynow" method="post"> 
+        @csrf
+        <input type="hidden" name="totalFineItemsAmount"  id="totalFineItemsAmount" value="" >
+    </form>
 
     <a href="#" ID="backToTop">
         <i class="fa fa-arrow-up"></i>
@@ -385,6 +390,8 @@
     <script type="text/javascript" src="../new/jquery.calendars.plus.js"></script>
     <script type="text/javascript" src="../new/jquery.hijri.date.js"></script>
     <!-- <script type="text/javascript" src="../new/Custom.js"></script> -->
+    <script src="../new/Home.js?v=4.014"></script>
+    <script src="../new/countDown.js?v=4.014"></script>
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-QJFQKBTE7Z"></script>

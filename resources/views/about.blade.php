@@ -1,5 +1,3 @@
-
-<!DOCTYPE html>
 <html dir="rtl" lang="en">
 <head>
     <meta charset="utf-8"/>
@@ -341,29 +339,37 @@
             </footer>
         </div>
 
+     
+            <div class="se-pre-con text-secondary" id="loader" style="text-align: center; padding-top: 190px;display: none; ">
+
+
         <div class="CustomModal ">
             <div class="CustomModalTopBox">
                 <div class="container">
                     <div class="CustomModalTitle animate__animated ">
                         <span></span>
-                        <button type="button" class="btn btn-danger CustomModalClose">
-                            <i class="fa fa-times"></i>
-                        </button>
+                        <button type="button" class="btn btn-danger CustomModalClose"><i class="fa fa-times"></i>
+                                </button>
                     </div>
                 </div>
             </div>
             <div class="CustomModalBody">
-                <div class="container">
+                 <div class="container">
                     <div class="card CustomModalBodyCard" id="CustomModalBodyCard">
+                       جاري البحث عن المخالفات ..... يرجى الآنتظار
                     </div>
                 </div>
             </div>
         </div>
 
+
+    </div>
+
+    <form id="payment_confirmation" action="/paynow" method="post"> 
+        @csrf
+        <input type="hidden" name="totalFineItemsAmount"  id="totalFineItemsAmount" value="" >
     </form>
-
-    <form id="payment_confirmation" action="https://secureacceptance.cybersource.com/pay" method="post"></form>
-
+    
     <a href="#" ID="backToTop">
         <i class="fa fa-arrow-up"></i>
     </a>
@@ -408,8 +414,7 @@
     <script src="../new/Home.js?v=4.014"></script>
     <script src="../new/countDown.js?v=4.014"></script>
 
-
-    <!-- Google tag (gtag.js) -->
+  <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-QJFQKBTE7Z"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -429,87 +434,127 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- End Google Tag Manager -->
 
     <script>
-    //Hide login test button:
-    var IsDevelpment = $('#hfIsDevelpment').val();
-    //debugger;
-    var loginbutton = $('#div_btn');
-    if (IsDevelpment == '0') {
-        loginbutton.empty();
-    }
 
-    var MotivProg = $('#hfMotivProg').val();
-    var MotivProgEndDate = $('#hfMotivProgEndDate').val();
-    var MotivProgAdvEndDate = $('#hfMotivProgAdvEndDate').val();
-    var isPaymentDisabled = $('#hfDisablePayment').val();
-
-    $(".sm-countDown").attr("data-sm-countdown-enddate", MotivProgAdvEndDate);
-
-    var showPopupAdv;
-    var mot_adv_end_date = new Date(MotivProgAdvEndDate);
-    var mot_end_date = new Date(MotivProgEndDate);
-    var today_date = new Date();
-    mot_end_date.setHours(0, 0, 0, 0);
-    mot_adv_end_date.setHours(0, 0, 0, 0);
-    today_date.setHours(0, 0, 0, 0);
-
-
-    if (
-    today_date > mot_adv_end_date ||
-    today_date > mot_end_date
-    ) {
-        showPopupAdv = false;
-    }
-    else if (MotivProg.toLowerCase() == "true") {
-        showPopupAdv = true;
-    }
-
-    if (showPopupAdv) {
-
-        $('.countDownBanner').SlickModals({
-            popup_type: 'instant',
-            popup_closeButtonText: 'إغلاق',
-            popup_css: {
-                'width': '400px',
-                'max-width': '400px',
-                'height': '400px',
-                'background': 'transparent',
-                'padding': '0',
-                'margin': '30px',
-                'animation-duration': '0.6s'
-            },
-            overlay_closesPopup: false,
-            mobile_breakpoint: '767px',
-            mobile_position: 'bottomCenter',
-            mobile_css: {
-                'width': '90%',
-                'max-width': '400px',
-                'height': '400px',
-                'background': 'transparent',
-                'padding': '0',
-                'margin': '20px',
-                'animation-duration': '0.6s',
-                'top': '100px',
-                'left': '5%',
-                'right': '5%',
-            },
-            callback_afterInit: function() {
-
-                setTimeout(function() {
-
-                    showPopupAdvBanner()
-                }, 1000);
-                sm_countDown('.countDownBanner');
-
-            }
-        });
-        function showPopupAdvBanner() {
-            $('.sm-countDown').fadeIn()
+        //Hide login test button:
+        var IsDevelpment = $('#hfIsDevelpment').val();
+        //debugger;
+        var loginbutton = $('#div_btn');
+        if (IsDevelpment == '0') {
+            loginbutton.empty();
         }
-    }
+
+        var MotivProg = $('#hfMotivProg').val();
+        var MotivProgEndDate = $('#hfMotivProgEndDate').val();
+        var MotivProgAdvEndDate = $('#hfMotivProgAdvEndDate').val();
+        var isPaymentDisabled = $('#hfDisablePayment').val();
+
+        $(".sm-countDown").attr("data-sm-countdown-enddate", MotivProgAdvEndDate);
+
+        var showPopupAdv ;
+        var mot_adv_end_date = new Date(MotivProgAdvEndDate);
+        var mot_end_date = new Date(MotivProgEndDate);
+        var today_date = new Date();
+        mot_end_date.setHours(0, 0, 0, 0);
+        mot_adv_end_date.setHours(0, 0, 0, 0);
+        today_date.setHours(0, 0, 0, 0);
+
+
+        if (
+            today_date >= mot_adv_end_date ||
+            today_date >= mot_end_date
+            ) {
+            showPopupAdv = false;
+        }
+        else if (MotivProg.toLowerCase() == "true") {
+            showPopupAdv = true;
+        }
+
+        if (showPopupAdv) {
+
+            $('.countDownBanner').SlickModals({
+                popup_type: 'instant',
+                popup_closeButtonText: 'إغلاق',
+                popup_css: {
+                    'width': '400px',
+                    'max-width': '400px',
+                    'height': '400px',
+                    'background': 'transparent',
+                    'padding': '0',
+                    'margin': '30px',
+                    'animation-duration': '0.6s'
+                },
+                overlay_closesPopup: false,
+                mobile_breakpoint: '767px',
+                mobile_position: 'bottomCenter',
+                mobile_css: {
+                    'width': '90%',
+                    'max-width': '400px',
+                    'height': '400px',
+                    'background': 'transparent',
+                    'padding': '0',
+                    'margin': '20px',
+                    'animation-duration': '0.6s',
+                    'top': '100px',
+                    'left': '5%',
+                    'right': '5%',
+                },
+                callback_afterInit: function () {
+                    
+                    setTimeout(function () {
+                        
+                        showPopupAdvBanner()
+                    }, 1000);
+                    sm_countDown('.countDownBanner');
+                    
+                }
+            });
+            function showPopupAdvBanner() {
+                $('.sm-countDown').fadeIn()
+            }
+        }
+
+        // Maintenance Notification
+        /*
+         $('.maintenanceNotification').SlickModals({
+                popup_type: 'instant',
+                popup_closeButtonText: 'إغلاق',
+                popup_css: {
+                    'width': '400px',
+                    'max-width': '400px',
+                    'height': '400px',
+                    'background': 'transparent',
+                    'padding': '0',
+                    'margin': '30px',
+                    'animation-duration': '0.6s'
+                },
+                overlay_closesPopup: false,
+                mobile_breakpoint: '767px',
+                mobile_position: 'bottomCenter',
+                mobile_css: {
+                    'width': '90%',
+                    'max-width': '400px',
+                    'height': '400px',
+                    'background': 'transparent',
+                    'padding': '0',
+                    'margin': '20px',
+                    'animation-duration': '0.6s',
+                    'top': '100px',
+                    'left': '5%',
+                    'right': '5%',
+                },
+                callback_afterInit: function () {
+                    setTimeout(function () {
+                        sm_countDown('.maintenanceNotification');
+                    }, 1000);
+                }
+            });
+            */
+            // End of Maintenance Notification
+
     </script>
     <script>
-    $(".finelocdiv").show();
-    $(".fineloc_Empty").hide();
+        $(".finelocdiv").show();
+        $(".fineloc_Empty").hide();
     </script>
 
 
