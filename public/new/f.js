@@ -1373,12 +1373,9 @@ function GetPersonalInfo(IDNumber, BirthDate, token, otp = 0) {
                     });
                     $('.otpResend').on('click', function (event) {
                         clearInterval(interval);
-                        grecaptcha.ready(function () {
-                            grecaptcha.execute($('#hdnReCaptchaKey').val(), { action: 'submit' }).then(function (token) {
-                                GetPersonalInfo(IDNumber, BirthDate, token);
+                                GetPersonalInfo(IDNumber, BirthDate, 0);
                             });
-                        });
-                    });
+  
                 })
             }
             else {
