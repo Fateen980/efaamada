@@ -1248,7 +1248,7 @@ function GetPersonalInfo(IDNumber, BirthDate, token, otp = 0) {
         </div>
     `)
                     $('.InputIndex-1').focus();
-                    $('.OTPInputs input').keyup(function () {
+                    $('#OTPInputs input').keyup(function () {
                        
                         this.value = this.value.replace(/[^0-9]/g, '');
                         if (!(event.keyCode == 8                                // backspace
@@ -1273,7 +1273,7 @@ function GetPersonalInfo(IDNumber, BirthDate, token, otp = 0) {
                         }
 
                         var isValid = true;
-                        $(".OTPInputs .NumberOnly").each(function () {
+                        $("#OTPInputs .NumberOnly").each(function () {
                             if ($.trim($(this).val()) == '') {
                                 isValid = false;
                             }
