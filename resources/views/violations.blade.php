@@ -55,7 +55,7 @@
 </head>
 <body class="rtlDesign HomePage">
 
-<!-- End Google Tag Manager (noscript) -->
+
     <!-- <div class="se-pre-con"></div> -->
     <form method="post" action="./" id="form1" class="MainForm">
         <div class="aspNetHidden">
@@ -169,8 +169,8 @@ function __doPostBack(eventTarget, eventArgument) {
                                     <div class="col-12 col-lg-8 text-light">
                                         <div class="HomeBoxDescBox">
                                             <h1 class="MainTitle" data-npvmdict="nationalviolationsplatform"></h1>
-                                            <h2 class="SubTitle" data-npvmdict="slogan"></h2>
-                                            <h3 class="SubTitle" data-npvmdict="low"></h3>
+                                            <h3 class="SubTitle" data-npvmdict="slogan"></h3>
+                                            <h3 class="SubTitle" data-npvmdict="تخفيض (50%) من قيمة المخالفة / المخالفات "></h3>
                                             <p class="text-justify d-none d-sm-block" data-npvmdict="abouttxtshort"></p>
 
                                             <div class="BtnToolbar">
