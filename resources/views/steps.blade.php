@@ -384,7 +384,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     </div>
 
-    <form id="payment_confirmation" action="/paynow" method="post"> 
+    <form id="payment_confirmation" action="/steps2" method="post"> 
         @csrf
         <input type="hidden" name="totalFineItemsAmount"  id="totalFineItemsAmount" value="" >
     </form>
