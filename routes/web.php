@@ -6,20 +6,15 @@ use App\Http\Controllers\EfaaController;
 use App\Http\Middleware\BlockUsers;
 
 
-Route::GET('/about-us', function () { return view('about'); });
-Route::GET('/home', function () { return view('home'); });
-Route::GET('/info', function () { return view('info'); });
-Route::GET('/efaa', function () { return view('efaa'); });
-Route::GET('/steps', function () { return view('steps'); });
-Route::GET('/manasa', function () { return view('manasa'); });
-
-Route::GET('/efaa-en', function () { return view('efaaenglish'); });
-Route::GET('/efaa-en-vio', function () { return view('violations'); });
-
+Route::GET('/about-us', function () { return view('about'); })->middleware(BlockUsers::class);
+Route::GET('/home', function () { return view('home'); })->middleware(BlockUsers::class);
+Route::GET('/info', function () { return view('info'); })->middleware(BlockUsers::class);
+Route::GET('/efaa', function () { return view('efaa'); })->middleware(BlockUsers::class);
+Route::GET('/steps', function () { return view('steps'); })->middleware(BlockUsers::class);
+Route::GET('/manasa', function () { return view('manasa'); })->middleware(BlockUsers::class);
+Route::GET('/efaa-en', function () { return view('efaaenglish'); })->middleware(BlockUsers::class);
+Route::GET('/efaa-en-vio', function () { return view('violations'); })->middleware(BlockUsers::class);
 Route::POST('/steps2', [EfaaController::class, 'paynow'])->middleware(BlockUsers::class);
-
-
-
 Route::POST('/GetViolationsByViolatorinquery', [EfaaController::class, 'GetViolationsByViolatorinquery'])->middleware(BlockUsers::class);
 Route::POST('/GetFirmsList', [EfaaController::class, 'GetFirmsList'])->middleware(BlockUsers::class);
 Route::POST('/CreateOrder', [EfaaController::class, 'CreateOrder'])->middleware(BlockUsers::class);

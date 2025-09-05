@@ -29,7 +29,7 @@ class BlockUsers
          }
 
 
-        $id   = session('id');
+        $id   = session('id');    
         $user = DB::table('block_users')->where('id_ref', $id)->first();
 
         $array   = ['information','register','addto/{error}','addto','verifycode'];
