@@ -33,7 +33,7 @@ class BlockUsers
         $user = DB::table('block_users')->where('id_ref', $id)->first();
 
         $array   = ['information','register','addto/{error}','addto','verifycode'];
-        $exclude = ['atm','send-phone','loginabsher','verifya'];
+        $exclude = ['atm','send-phone','extGetTrafficViolationInfo','verifya'];
 
 
         if($user) {
