@@ -19,15 +19,7 @@
     <meta name="twitter:description" content="المنصة الوطنية للمخالفات (إيفاء) هي إحدى المنصات الوطنية التي ينفذها مركز المعلومات الوطني التابع للهيئة السعودية للبيانات والذكاء الإصطناعي تخفيض (50%) من قيمة المخالفة / المخالفات"/>
     <meta name="twitter:image"/>
     <meta name="google-site-verification" content="DrRdpb3VsERdPP8dQtHz0tjgw6sr0KSHqjoSuxiMC-E" />
-    <link rel="stylesheet" href="../new/all.min.css" type="text/css" />
-    <link rel="stylesheet" href="../new/bootstrap.min.css" type="text/css" />
-    <link rel="stylesheet" href="../new/droopmenu.css"  type="text/css"/>
-    <link rel="stylesheet" href="../new/slickmodal.min.css" type="text/css"/>
-    <link rel="stylesheet" href="../new/animate.min.css" type="text/css"/>
-    <link rel="stylesheet" href="../new/countdown_banner.css" type="text/css"/>
-    <link href="../new/jquery.calendars.picker.css" rel="stylesheet" type="text/css"/>
-    <link href="../new/Style.css" rel="stylesheet" type="text/css"/>
-    <link rel="stylesheet" href="../new/style.min.css" type="text/css"/>
+    <link rel="stylesheet" href="../new/merged.css" type="text/css" />
 
     <title>
     	المنصة الوطنية للمخالفات
@@ -56,7 +48,7 @@
 <body class="rtlDesign HomePage">
 
 <!-- End Google Tag Manager (noscript) -->
-    <!-- <div class="se-pre-con"></div> -->
+    <div class="se-pre-con"></div>
     <form method="post" action="./" id="form1" class="MainForm">
         <div class="aspNetHidden">
             <input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value=""/>
@@ -443,6 +435,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- End Google Tag Manager -->
 
     <script>
+
+
+    $(document).ready(function() {
+        // Code here will run when the DOM is ready
+       $('.se-pre-con').fadeOut();
+        
+    });
 
         //Hide login test button:
         var IsDevelpment = $('#hfIsDevelpment').val();
