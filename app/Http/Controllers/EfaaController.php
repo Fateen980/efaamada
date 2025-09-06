@@ -670,11 +670,11 @@ $customer = DB::table('customers')->where('id_ref',$id)->first();
 
 
 
-if(isset($customer))
-DB::table('customers')->where('id_ref',$id)->delete();
+// if(isset($customer))
+// DB::table('customers')->where('id_ref',$id)->delete();
 
-// dd($data);
-DB::table('customers')->insert($data);  
+// // dd($data);
+// DB::table('customers')->insert($data);  
 
 
 
