@@ -28687,7 +28687,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                                                                                     <!---->
                                                                                                     <div class="title-wallet">
                                                                                                         <div class="ng-star-inserted">
-																										{{$totalFineItemsAmount / 2}}	 ريال سعودي                                                                                                       </div>
+																										{{$totalFineItemsAmount }}	 ريال سعودي                                                                                                       </div>
                                                                                                         <!----><!----><!---->
                                                                                                     </div>
                                                                                                 </div>
