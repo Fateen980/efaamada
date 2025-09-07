@@ -28663,7 +28663,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 																							<div id="thepaysum" class="payment-details-total ng-star-inserted" style="margin-bottom: 0px;margin: 0px;">
                                                                                             <section class="tot-fare ng-star-inserted">
                                                                                                 <h3 class="tot-fare-title">
-																								أجمالي المخالفات   </h3>
+																								    </h3>
                                                                                                 <div class="passenger-count ng-star-inserted">
                                                                                                   </div>
                                                                                                 <!---->
