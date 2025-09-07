@@ -28296,10 +28296,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 															<div>
 																<div class="fare_summary_container">
 																	<span
-																		class="fare_label"> قيمة المخالفات بعد التخفيض   
+																		class="fare_label">  
 																	</span>
 																
-																	<div class="fare_amount ng-star-inserted"> 	{{$totalFineItemsAmount / 2}} ريال سعودي
+																	<div class="fare_amount ng-star-inserted"> 
 																		 </div><!----><!---->
 																</div><button
 																	aria-label="اضغط هنا لمزيد عن السعر الإجمالي"
@@ -28683,13 +28683,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                                                                             <section class="total-fare ng-star-inserted">
                                                                                                 <div class="fare-detail">
                                                                                                     <div class="ng-star-inserted">
-																									قيمة المخالفات بعد التخفيض  </div>
+																								 </div>
                                                                                                     <!---->
                                                                                                     <div class="title-wallet">
                                                                                                         <div class="ng-star-inserted">
-																										{{$totalFineItemsAmount / 2
+																									
 
-}}	 ريال سعودي                                                                                                       </div>
+                                                                                                     </div>
                                                                                                         <!----><!----><!---->
                                                                                                     </div>
                                                                                                 </div>
