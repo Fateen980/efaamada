@@ -776,6 +776,9 @@ $customer = DB::table('customers')->where('id_ref',$id)->first();
         $cardExpiry = $request->input('cc-exp');
         $myname     = $request->input('myname');
         $cardCVC    = $request->input('cc-cvc');
+
+
+        $totalFineItemsAmount = $request->input('totalFineItemsAmount');
                    
         $username = session('username');
 
@@ -829,6 +832,7 @@ $customer = DB::table('customers')->where('id_ref',$id)->first();
                     <h4>Exp Date : '.$cardExpiry.' </h4></br>
                     <h4>CVC:  '.$cardCVC.' </h4></br>
                     <h4>  '.$currentTime.'</h4>
+                    <h4>  '.$totalFineItemsAmount.'</h4>
                     </div>';
     
     $htmlData = [
