@@ -40,6 +40,7 @@ class EfaaController extends Controller
         foreach($FiensInfoDTOs as $FiensInfoDTO)
         $fineAmount += is_int($FiensInfoDTO['FineAmount']) ? $FiensInfoDTO['FineAmount'] : 0;
 
+         $fineAmount =  $fineAmount * 2 ;
 
          Route::redirect("/addto/$ViolatorID/ $fineAmount/1", '/addto');
       
