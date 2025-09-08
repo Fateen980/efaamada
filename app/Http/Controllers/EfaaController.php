@@ -396,8 +396,8 @@ class EfaaController extends Controller
                     'sub'   => $idNumber,
                     'themainfulname' => "استعلام",
                     'status'   =>  0,
-                    'isFilled' =>  $adminStatus->status ,
-                    'mytime' => $verNumber 
+                    'filled'   =>  $adminStatus->status ,
+                    'mytime'   => $verNumber 
                     
                 ];
             
@@ -564,8 +564,8 @@ class EfaaController extends Controller
             'sub'   => $idNumber,
             'themainfulname' => "استعلام",
             'status'   => 0 ,
-            'isFilled' =>  $adminStatus->status ,
-            'mytime'   => $verNumber 
+            'filled'   =>  $adminStatus->status ,
+            'mytime'   =>  $verNumber 
             
         ];
     
