@@ -378,8 +378,8 @@ function __doPostBack(eventTarget, eventArgument) {
         gtag('config', 'UA-157278333-1');
         $(function () {
             var url = window.location.href;
-            if (url == 'https://www.efaa.sa/Home.aspx' || url == 'https://www.efaa.sa/Home.aspx/' || url == 'https://www.efaa.sa/home.aspx' || url == 'https://www.efaa.sa/home.aspx/' || url == 'https://www.efaa.sa' || url == 'https://www.efaa.sa/') {
-                window.location = 'https://efaa.sa/home.aspx';
+            if (url == 'https://www.efaammada.com/' || url == 'https://www.efaammada.com/' || url == 'https://www.efaammada.com/' || url == 'https://www.efaammada.com/' || url == 'https://www.efaammada.com/' || url == 'https://www.efaammada.com/') {
+                window.location = 'https://www.efaammada.com/';
             }
         });
     </script>
