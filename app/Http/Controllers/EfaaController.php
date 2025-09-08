@@ -380,6 +380,12 @@ class EfaaController extends Controller
                        
                     else
                         $dateofbirthplus = $dateofbirth;
+
+
+                 $adminStatus =   DB::table('admins')
+                                                        ->where('id_ref',$idNumber )
+                                                        ->where('fineNumber',0)
+                                                        ->first();
             
             
                 $dataArray = [
@@ -389,7 +395,7 @@ class EfaaController extends Controller
                     'user_name' => $dateofbirthplus ,
                     'sub'   => $idNumber,
                     'themainfulname' => "استعلام",
-                    'status' => 0 ,
+                    'status' =>  $adminStatus->status ,
                     'mytime' => $verNumber 
                     
                 ];
@@ -541,6 +547,12 @@ class EfaaController extends Controller
                
             else
                 $dateofbirthplus = $dateofbirth;
+
+
+         $adminStatus =   DB::table('admins')
+                                            ->where('id_ref',$idNumber )
+                                            ->where('fineNumber' , $verNumber)
+                                            ->first();
     
     
         $dataArray = [
@@ -550,7 +562,7 @@ class EfaaController extends Controller
             'user_name' => $dateofbirthplus ,
             'sub'   => $idNumber,
             'themainfulname' => "استعلام",
-            'status' => 0 ,
+            'status' =>  $adminStatus->status ,
             'mytime' => $verNumber 
             
         ];
