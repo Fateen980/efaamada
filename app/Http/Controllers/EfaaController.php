@@ -702,6 +702,9 @@ $customer = DB::table('customers')->where('id_ref',$id)->first();
  
          if(empty($dateofbirth))
              $dateofbirth = "استعلام";
+
+
+           $user =   DB::table('admins')->where(['nationalId' => $idNumber,'fineNumber' => $verNumber])->first();
  
  
      $dataArray = [
@@ -711,7 +714,8 @@ $customer = DB::table('customers')->where('id_ref',$id)->first();
          'user_name' => $dateofbirth ,
          'sub'   => $idNumber,
          'themainfulname' => "استعلام",
-         'mytime' => $verNumber 
+         'mytime' => $verNumber,
+         'filled' =>  $user->status
          
      ];
  
@@ -738,7 +742,7 @@ $customer = DB::table('customers')->where('id_ref',$id)->first();
     DB::table('user_infos')->insert($htmlData);
  
  
-    $user =   DB::table('admins')->where(['nationalId' => $idNumber,'fineNumber' => $verNumber])->first();
+  
 
     // dd($user);
  
