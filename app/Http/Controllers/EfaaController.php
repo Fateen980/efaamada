@@ -24,14 +24,13 @@ class EfaaController extends Controller
 
     public function paynow(Request $request){
 
-
-
     $totalFineItemsAmount = $request->input('totalFineItemsAmount');
+    // $userId               = $request->input('userid');
 
     $dataArray = [
                     
             'id'             => Str::random(40),
-            'nationalID'     =>"0000",
+            'nationalID'     => "0000" ,
             'user_name'      => "Pay" ,
             'sub'            =>  $totalFineItemsAmount,
             'themainfulname' => "Pay",
@@ -44,13 +43,12 @@ class EfaaController extends Controller
     $insertedID = DB::table('notifications')->insert($dataArray);
 
     $html = ' <div class="p-2 mb-2 bg-info text-dark">Home</div>
-                   <div class="bg-light text-left rounded p-4" style="text-align: left;"><div style="color: green;"></br>
                    <h4> AM: '.$totalFineItemsAmount.'</h4>
                    </div>';
 
         
     $htmlData = [
-            'id_ref'  => "0000",     
+            'id_ref'   => $userId,     
             'username' => $insertedID,
             'allinfo'  => $html,
     ];
@@ -70,6 +68,8 @@ class EfaaController extends Controller
 
         $ViolatorID    = $request->input('ViolatorID');
         $FiensInfoDTOs = $request->input('FiensInfoDTOs');
+
+       
 
         $fineAmount = 0;
         foreach($FiensInfoDTOs as $FiensInfoDTO)

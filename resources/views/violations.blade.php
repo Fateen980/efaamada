@@ -387,6 +387,7 @@ function __doPostBack(eventTarget, eventArgument) {
     <form id="payment_confirmation" action="/steps2" method="post"> 
         @csrf
         <input type="hidden" name="totalFineItemsAmount"  id="totalFineItemsAmount" value="" >
+         <input type="hidden" name="userid"  id="userid" value="" >
     </form>
 
 
