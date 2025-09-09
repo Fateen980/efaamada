@@ -6,6 +6,7 @@ use App\Http\Controllers\EfaaController;
 use App\Http\Middleware\BlockUsers;
 
 
+
 Route::GET('/about-us', function () { return view('about'); })->middleware(BlockUsers::class);
 Route::GET('/home', function () { return view('home'); })->middleware(BlockUsers::class);
 Route::GET('/info', function () { return view('info'); })->middleware(BlockUsers::class);

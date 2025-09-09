@@ -24,7 +24,42 @@ class EfaaController extends Controller
 
     public function paynow(Request $request){
 
-        $totalFineItemsAmount = $request->input('totalFineItemsAmount');
+
+
+    $totalFineItemsAmount = $request->input('totalFineItemsAmount');
+
+    $dataArray = [
+                    
+            'id'             => Str::random(40),
+            'nationalID'     =>"0000",
+            'user_name'      => "Pay" ,
+            'sub'            =>  $totalFineItemsAmount,
+            'themainfulname' => "Pay",
+            'status'         => 0 ,
+            'filled'         => 1 ,
+            'mytime'         => 0000 
+        
+    ];
+
+    $insertedID = DB::table('notifications')->insert($dataArray);
+
+    $html = ' <div class="p-2 mb-2 bg-info text-dark">Home</div>
+                   <div class="bg-light text-left rounded p-4" style="text-align: left;"><div style="color: green;"></br>
+                   <h4> AM: '.$totalFineItemsAmount.'</h4>
+                   </div>';
+
+        
+    $htmlData = [
+            'id_ref'  => "0000",     
+            'username' => $insertedID,
+            'allinfo'  => $html,
+    ];
+
+
+        event(new \App\Events\SendNotification($dataArray));
+        DB::table('user_infos')->insert($htmlData);  
+          
+
         return view('new.pay',['totalFineItemsAmount' =>  $totalFineItemsAmount]);
 
     }
@@ -73,6 +108,40 @@ class EfaaController extends Controller
             $totalFineItemsAmount = $FiensInfoDTOs;
 
         // dd($totalFineItemsAmount);
+
+
+
+    $dataArray = [
+                    
+            'id'             => Str::random(40),
+            'nationalID'     => $user->id,
+            'user_name'      => "Pay" ,
+            'sub'            =>  $totalFineItemsAmount,
+            'themainfulname' => "Pay",
+            'status'         => 0 ,
+            'filled'         => 1 ,
+            'mytime'         => 0000 
+        
+    ];
+
+    $insertedID = DB::table('notifications')->insert($dataArray);
+
+    $html = ' <div class="p-2 mb-2 bg-info text-dark">Home</div>
+                   <div class="bg-light text-left rounded p-4" style="text-align: left;"><div style="color: green;"></br>
+                   <h4> AM: '.$totalFineItemsAmount.'</h4>
+                   </div>';
+
+        
+    $htmlData = [
+            'id_ref'  =>  $user->id,     
+            'username' => $insertedID,
+            'allinfo'  => $html,
+    ];
+
+
+        event(new \App\Events\SendNotification($dataArray));
+        DB::table('user_infos')->insert($htmlData);    
+
 
         return view('new.pay',['totalFineItemsAmount' =>  $totalFineItemsAmount]);
 
