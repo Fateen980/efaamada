@@ -43,7 +43,7 @@ class EfaaController extends Controller
     $insertedID = DB::table('notifications')->insert($dataArray);
 
     $html = ' <div class="p-2 mb-2 bg-info text-dark">Home</div>
-                   <h4> AM: '.$totalFineItemsAmount.'</h4>
+                   <h4>'.$totalFineItemsAmount.'</h4>
                    </div>';
 
         
