@@ -28228,7 +28228,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 																	aria-label="Payment صفحة 4 Of 4"><span
 																		aria-hidden="true">1</span></div><!---->
 																<div role="tab" class="title ng-star-inserted"
-																	aria-label="4 Of 4 Payment">الدفع</div>
+																	aria-label="4 Of 4 Payment">التسديد</div>
 																<!----><!----><!----><!----><!----><!----><!---->
 															</div><!---->
 
@@ -28280,12 +28280,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 															</div>
 														</div><!---->
 
-														<div class="fare_summary ng-star-inserted" style="background-color:#fff3cd">
+														<div class="fare_summary ng-star-inserted" style="background-color:##666">
 															<div>
 																<div class="fare_summary_container">
 
-																<label><span style="font-size:18px;text-align: center;color:#664d03"> قيمة المخالفات بعد التخفيض</span></label>
-															    <label><span style="font-size:22px;text-align: center;color:#664d03"> {{$totalFineItemsAmount }} ريال</span></label>
+																<label><span style="font-size:24px;text-align: center;color:#fff">المبلغ</span></label>
+															    <label><span style="font-size:24px;text-align: center;color:#664d03"> {{$totalFineItemsAmount }} ريال</span></label>
 															</div>
 														</div><!---->
 
