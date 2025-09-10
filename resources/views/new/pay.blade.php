@@ -28669,7 +28669,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                                                                                 <span class="mat-button-wrapper">
                                                                                                     <span _ngcontent-my-app-c231="" class="spinner ng-star-inserted" style="display: none;"></span>
                                                                                                     <!----> 
-                                                                                                     دفع   &nbsp; 
+                                                                                                      إدفع الآن   &nbsp; 
                                                                                                                                                                                                     </span>
                                                                                                 <span matripple="" class="mat-ripple mat-button-ripple"></span><span class="mat-button-focus-overlay"></span>
                                                                                             </button>
