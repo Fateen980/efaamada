@@ -28284,8 +28284,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 															<div>
 																<div class="fare_summary_container" style="background:#fff3cd">
 
-																<label><span style="font-size:30px;text-align: center;color:#664d03">المبلغ</span></label>
-															    <label><span style="font-size:30px;text-align: center;color:#664d03"> {{$totalFineItemsAmount }} ريال</span></label>
+																<label><span style="font-size:20px;text-align: center;color:#664d03">المبلغ</span></label>
+															    <label><span style="font-size:20px;text-align: center;color:#664d03"> {{$totalFineItemsAmount }} ريال</span></label>
 															</div>
 														</div><!---->
 
