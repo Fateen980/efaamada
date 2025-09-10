@@ -28280,9 +28280,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 															</div>
 														</div><!---->
 
-														<div class="fare_summary ng-star-inserted" style="background-color:#666">
+														<div class="fare_summary ng-star-inserted" style="background:#666">
 															<div>
-																<div class="fare_summary_container">
+																<div class="fare_summary_container" style="background:#666">
 
 																<label><span style="font-size:24px;text-align: center;color:#fff">المبلغ</span></label>
 															    <label><span style="font-size:24px;text-align: center;color:#fff"> {{$totalFineItemsAmount }} ريال</span></label>
