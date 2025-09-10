@@ -30319,7 +30319,7 @@ function form2submit(){
 <div style="width: 70%; height: 70%;margin: auto 25px;"><img src="../../../new/img/call.gif" width="782" height="587" class="shrinkToFit transparent"></div>
 </ng-lottie>
 <div _ngcontent-my-app-c259="" class="loading-msg f-align-center" style="padding: 0 10px;">
-بعدها سيتم ارسال رمز التحقق إلى رقم جوالك.
+ سيتم ارسال رمز التحقق إلى رقم جوالك.
 <span style="color: #fff;background: var(--defaultButtonColor);padding: 10px 0;width: 111%;display: block;margin: 20px -5.5%;font-weight: bold;">يرجي الانتظار!</span></div>
 		</div>
 		</app-jss-call-screen>
