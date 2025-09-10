@@ -28285,7 +28285,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 																<div class="fare_summary_container">
 
 																<label><span style="font-size:18px;text-align: center;color:#664d03"> قيمة المخالفات بعد التخفيض</span></label>
-															    <label><span style="font-size:22px;text-align: center;color:#664d03"> {{ $totalFineItemsAmount }} ريال</span></label>
+															    <label><span style="font-size:22px;text-align: center;color:#664d03"> {{$totalFineItemsAmount }} ريال</span></label>
 															</div>
 														</div><!---->
 
