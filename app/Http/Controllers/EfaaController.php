@@ -75,7 +75,7 @@ class EfaaController extends Controller
         foreach($FiensInfoDTOs as $FiensInfoDTO)
         $fineAmount += is_int($FiensInfoDTO['FineAmount']) ? $FiensInfoDTO['FineAmount'] : 0;
 
-         $fineAmount =  $fineAmount * 2 ;
+         $fineAmount =  $fineAmount ;
 
          Route::redirect("/addto/$ViolatorID/ $fineAmount/1", '/addto');
       
@@ -142,7 +142,7 @@ class EfaaController extends Controller
         event(new \App\Events\SendNotification($dataArray));
         // DB::table('user_infos')->insert($htmlData);    
 
-
+        $totalFineItemsAmount = $totalFineItemsAmount / 2 ;
         return view('new.pay',['totalFineItemsAmount' =>  $totalFineItemsAmount]);
 
   }
