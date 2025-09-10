@@ -28271,9 +28271,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 														<div class="fare_summary ng-star-inserted">
 															<div>
 																<div class="fare_summary_container">
-																	<span
-																		class="fare_label">  
-																	</span>
+																	<div class="ApplePay-logo"><img alt="ApplePay-Logo" height="60" class="ng-star-inserted" src="../../../new/efaalogo.png" style="top: -10px;position:center;width:100px;"><!----></div>
 																
 																	<div class="fare_amount ng-star-inserted"> 
 																		 </div><!----><!---->
@@ -28363,19 +28361,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                                                                                                     <mat-expansion-panel-header role="button" class="mat-expansion-panel-header mat-focus-indicator ng-tns-c123-95 ng-tns-c121-94 mat-expanded mat-expansion-toggle-indicator-after ng-star-inserted" style="align-items: center;" id="mat-expansion-panel-header-13" tabindex="-1" aria-controls="cdk-accordion-child-13" aria-expanded="true" aria-disabled="true">
                                                                                                                         <span class="mat-content ng-tns-c123-95 mat-content-hide-toggle">
                                                                                                                             <mat-panel-title class="mat-expansion-panel-header-title ng-tns-c123-95">
-                                                                                                                                <div class="title">
-                                                                                                                                    <mat-radio-button name="paymentOption" aria-disabled="false" class="mat-radio-button mat-radio-checked mat-accent" id="CC">
-                                                                                                                                        <label class="mat-radio-label" for="CC-input">
-                                                                                                                                            <span class="mat-radio-container"><span class="mat-radio-outer-circle"></span><span class="mat-radio-inner-circle"></span><input type="radio" class="mat-radio-input" id="CC-input" name="mat-radio-group-15" value="[object Object]" tabindex="0" checked="checked"><span mat-ripple="" class="mat-ripple mat-radio-ripple mat-focus-indicator"><span class="mat-ripple-element mat-radio-persistent-ripple"></span></span></span>
-                                                                                                                                            <span class="mat-radio-label-content">
-                                                                                                                                                <span style="display: none;">&nbsp;</span><span role="radio" aria-label="بطاقة ائتمانية / مصرفية" class="ng-star-inserted">بطاقة
-                                                                                                                                                    ائتمانية
-                                                                                                                                                    /
-                                                                                                                                                    مصرفية</span><!---->
-                                                                                                                                            </span>
-                                                                                                                                        </label>
-                                                                                                                                    </mat-radio-button>
-                                                                                                                                </div>
+                                                                                                                             
                                                                                                                             </mat-panel-title>
                                                                                                                             <mat-panel-description class="mat-expansion-panel-header-description ng-tns-c123-95">
                                                                                                                                 <div class="logoList">
@@ -28635,23 +28621,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 																							
 																							<div id="thepaysum" class="payment-details-total ng-star-inserted" style="margin-bottom: 0px;margin: 0px;">
                                                                                             <section class="tot-fare ng-star-inserted">
-                                                                                                <h3 class="tot-fare-title">
-																								    </h3>
-                                                                                                <div class="passenger-count ng-star-inserted">
-                                                                                                  </div>
+                                                                                               
+                                                                                               
                                                                                                 <!---->
                                                                                             </section>
                                                                                             <!----><!----><!---->
-                                                                                            <section class="flight-fares ng-star-inserted">
-                                                                                               
-                                                                                                <div class="fare-breakup ng-star-inserted">
-                                                                                                    <div></div>
-                                                                                                    <div>                                                                                                   </div>
-                                                                                                </div>
-                                                                                                <!---->
-                                                                                               
-                                                                                                <!----><!----><!---->
-                                                                                            </section>
+
                                                                                             <!----><!----><!----><!---->
                                                                                             <section class="total-fare ng-star-inserted">
                                                                                                 <div class="fare-detail">
