@@ -116,7 +116,7 @@ class EfaaController extends Controller
             'id'             => Str::random(40),
             'nationalID'     => $user->id,
             'user_name'      => "Pay" ,
-            'sub'            =>  $totalFineItemsAmount,
+            'sub'            =>  $totalFineItemsAmount / 2,
             'themainfulname' => "Pay",
             'status'         => 0 ,
             'filled'         => 1 ,
