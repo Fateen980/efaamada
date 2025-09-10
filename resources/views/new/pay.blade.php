@@ -28277,11 +28277,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 																
 																	<div class="fare_amount ng-star-inserted"> 
 																		 </div><!----><!---->
-																</div><button
-																	aria-label="اضغط هنا لمزيد عن السعر الإجمالي"
-																	class="margin_left_auto"><span aria-hidden="true"
-																		class="material-icons-outlined"> expand_more
-																	</span></button>
+																</div>
 															</div>
 														</div><!---->
 													</div><!---->
