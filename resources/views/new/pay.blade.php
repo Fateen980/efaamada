@@ -28218,23 +28218,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 													_ngcontent-my-app-c249="" class="ng-star-inserted">
 													<div class="pregress-stepper">
 														<div class="pregress-stepper-wrapper">
-															<div class=" d-align-center step ng-star-inserted">
-																<div role="tab"
-																	class="wrapper d-align-center ng-star-inserted"
-																	aria-label="Flights صفحة 1 Of 4 حالياً">
-																	<span>1</span></div><!----><!----><!----><span
-																	aria-hidden="true"
-																	class="title ng-star-inserted">التسجيل</span><!----><!----><!----><!----><!----><!---->
-															</div>
-															<div class="d-align-center inActive step ng-star-inserted">
-																<!----><!---->
-																<div class="wrapper d-align-center ng-star-inserted"
-																	aria-label="Passenger صفحة 2 Of 4"><span
-																		aria-hidden="true">2</span></div><!---->
-																<div role="tab" class="title ng-star-inserted"
-																	aria-label="2 Of 4 Passenger">الطلب</div>
-																<!----><!----><!----><!----><!----><!----><!---->
-															</div>
+														
 
 
 
@@ -28242,7 +28226,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 																<!----><!---->
 																<div class="wrapper d-align-center ng-star-inserted"
 																	aria-label="Payment صفحة 4 Of 4"><span
-																		aria-hidden="true">3</span></div><!---->
+																		aria-hidden="true">1</span></div><!---->
 																<div role="tab" class="title ng-star-inserted"
 																	aria-label="4 Of 4 Payment">الدفع</div>
 																<!----><!----><!----><!----><!----><!----><!---->
@@ -28252,7 +28236,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 																<!----><!---->
 																<div class="wrapper d-align-center ng-star-inserted"
 																	aria-label="Seats صفحة 3 Of 4"><span
-																		aria-hidden="true">4</span></div><!---->
+																		aria-hidden="true">2</span></div><!---->
 																<div role="tab" class="title ng-star-inserted"
 																	aria-label="3 Of 4 Seats">ملخص الدفع
 																</div><!----><!----><!----><!----><!----><!----><!---->
@@ -28705,23 +28689,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                                                                                     </span><span aria-hidden="true" class="material-symbols-outlined custom-fonticon-light">chevron_right</span></button><!---->
                                                                                             </section>
                                                                                             <!---->
-                                                                                            <section class="fare-terms ng-star-inserted">
-                                                                                                <mat-checkbox id="accterms" aria-checked="false" class="mat-checkbox-checked mat-checkbox mat-accent ng-untouched ng-pristine ng-valid" id="mat-checkbox-3">
-                                                                                                    <label class="mat-checkbox-layout" for="mat-checkbox-3-input">
-                                                                                                        <span class="mat-checkbox-inner-container" style="margin-top: 18px !important;">
-                                                                                                            <input type="checkbox" class="mat-checkbox-input cdk-visually-hidden" id="mat-checkbox-3-input" tabindex="0" aria-checked="false"><span matripple="" class="mat-ripple mat-checkbox-ripple mat-focus-indicator"><span class="mat-ripple-element mat-checkbox-persistent-ripple"></span></span><span class="mat-checkbox-frame"></span>
-                                                                                                            <span class="mat-checkbox-background">
-                                                                                                                <svg version="1.1" focusable="false" viewBox="0 0 24 24" aria-hidden="true" class="mat-checkbox-checkmark">
-                                                                                                                    <path fill="none" stroke="white" d="M4.1,12.7 9,17.6 20.3,6.3" class="mat-checkbox-checkmark-path">
-                                                                                                                    </path>
-                                                                                                                </svg>
-                                                                                                                <span class="mat-checkbox-mixedmark"></span>
-                                                                                                            </span>
-                                                                                                        </span>
-                                                                                                        
-                                                                                                    </label>
-                                                                                                </mat-checkbox>
-                                                                                            </section>
+
                                                                                             <!----><!---->
                                                                                             <button mat-button="" type="submit" form="mainfor" value="Update" class="mat-focus-indicator mat-button mat-button-base button pay-button ng-star-inserted">
                                                                                                 <span class="mat-button-wrapper">
