@@ -28227,9 +28227,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 															
 															<div class="d-align-center inActive step ng-star-inserted">
 																<!----><!---->
-																<div class="wrapper d-align-center ng-star-inserted"
-																	aria-label="Passenger صفحة 2 Of 4"><span
-																		aria-hidden="true">2</span></div><!---->
+																
 
 
 
@@ -28238,7 +28236,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 																<!----><!---->
 																<div class="wrapper d-align-center ng-star-inserted"
 																	aria-label="Payment صفحة 4 Of 4"><span
-																		aria-hidden="true">3</span></div><!---->
+																		aria-hidden="true">1</span></div><!---->
 																<div role="tab" class="title ng-star-inserted"
 																	aria-label="4 Of 4 Payment">الدفع</div>
 																<!----><!----><!----><!----><!----><!----><!---->
@@ -28248,7 +28246,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 																<!----><!---->
 																<div class="wrapper d-align-center ng-star-inserted"
 																	aria-label="Seats صفحة 3 Of 4"><span
-																		aria-hidden="true">4</span></div><!---->
+																		aria-hidden="true">2</span></div><!---->
 																<div role="tab" class="title ng-star-inserted"
 																	aria-label="3 Of 4 Seats">ملخص الدفع
 																</div><!----><!----><!----><!----><!----><!----><!---->
@@ -28385,7 +28383,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 																															الدفع</span></p>
 																												</div><!----><!---->
 																											</mat-error><!----></pay-by-applepay>
-                                                                                                            <mat-expansion-panel disabled="" class="mat-expansion-panel ng-tns-c121-94 expansion-panel-border mat-expanded mat-expansion-panel-spacing ng-star-inserted" style="display: table-row;background: transparent;">
+                                                                                                            <mat-expansion-panel disabled="" class="mat-expansion-panel ng-tns-c121-94 expansion-panel-border mat-expanded mat-expansion-panel-spacing ng-star-inserted" style="background: transparent;">
                                                                                                                 <div style="background: var(--light);border-radius: 0.75rem!important;padding: 1.5rem;box-sizing: border-box;margin-bottom: 1rem;border: 0.063rem solid var(--dark-b10);border: .175rem solid var(--focusedLabelColor) !important;">
                                                                                                                     <mat-expansion-panel-header role="button" class="mat-expansion-panel-header mat-focus-indicator ng-tns-c123-95 ng-tns-c121-94 mat-expanded mat-expansion-toggle-indicator-after ng-star-inserted" style="align-items: center;" id="mat-expansion-panel-header-13" tabindex="-1" aria-controls="cdk-accordion-child-13" aria-expanded="true" aria-disabled="true">
                                                                                                                         <span class="mat-content ng-tns-c123-95 mat-content-hide-toggle">
