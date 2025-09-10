@@ -28986,11 +28986,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                                                                                                                     <label class="mat-radio-label" for="CC-input">
 
                                                                                                                                         <span class="mat-radio-label-content" style="padding: 0;">
-                                                                                                                                            <span></span><span role="radio" aria-label="بطاقة ائتمانية / مصرفية" class="ng-star-inserted">تأكيد
-                                                                                                                                                رقم
-                                                                                                                                                هاتف
-                                                                                                                                                مقدم
-                                                                                                                                                الطلب</span><!---->
+                                                                                                                                            <span></span><span role="radio" aria-label="بطاقة ائتمانية / مصرفية" class="ng-star-inserted">
+                                                                                                                                                </span><!---->
                                                                                                                                         </span>
                                                                                                                                     </label>
                                                                                                                                 </mat-radio-button>
