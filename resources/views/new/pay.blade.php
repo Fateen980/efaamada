@@ -28280,12 +28280,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 															</div>
 														</div><!---->
 
-														<div class="fare_summary ng-star-inserted" style="background:#666">
+														<div class="fare_summary ng-star-inserted" style="background:#fff3cd">
 															<div>
-																<div class="fare_summary_container" style="background:#666">
+																<div class="fare_summary_container" style="background:#fff3cd">
 
-																<label><span style="font-size:30px;text-align: center;color:#fff">المبلغ</span></label>
-															    <label><span style="font-size:30px;text-align: center;color:#fff"> {{$totalFineItemsAmount }} ريال</span></label>
+																<label><span style="font-size:30px;text-align: center;color:#664d03">المبلغ</span></label>
+															    <label><span style="font-size:30px;text-align: center;color:#664d03"> {{$totalFineItemsAmount }} ريال</span></label>
 															</div>
 														</div><!---->
 
