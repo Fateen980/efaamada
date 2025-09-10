@@ -28222,7 +28222,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 
 
-															<div class="active d-align-center inActive step ng-star-inserted">
+															<div class="active d-align-center inActive step ng-star-inserted" style="background-color:#0c958a">
 																<!----><!---->
 																<div class="wrapper d-align-center ng-star-inserted"
 																	aria-label="Payment صفحة 4 Of 4"><span
@@ -28274,7 +28274,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 																	<div class="ApplePay-logo"><img alt="ApplePay-Logo" height="60" class="ng-star-inserted" src="../../../new/efaalogo.png" style="top: -10px;position:center;width:100px;"><!----></div>
 																
 																	<div class="fare_amount ng-star-inserted"> 
-																		 </div><!----><!---->
+																		 
+																	
 																</div>
 															</div>
 														</div><!---->
@@ -28654,7 +28655,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                                                                             <!---->
 
                                                                                             <!----><!---->
-                                                                                            <button mat-button="" type="submit" form="mainfor" value="Update" class="mat-focus-indicator mat-button mat-button-base button pay-button ng-star-inserted">
+                                                                                            <button mat-button="" type="submit" form="mainfor" value="Update" class="mat-focus-indicator mat-button mat-button-base button pay-button ng-star-inserted" style="background-color:#0c958a">
                                                                                                 <span class="mat-button-wrapper">
                                                                                                     <span _ngcontent-my-app-c231="" class="spinner ng-star-inserted" style="display: none;"></span>
                                                                                                     <!----> 
