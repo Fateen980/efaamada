@@ -28232,15 +28232,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 																<!----><!----><!----><!----><!----><!----><!---->
 															</div><!---->
 
-															<div class=" d-align-center inActive step ng-star-inserted">
-																<!----><!---->
-																<div class="wrapper d-align-center ng-star-inserted"
-																	aria-label="Seats صفحة 3 Of 4"><span
-																		aria-hidden="true">2</span></div><!---->
-																<div role="tab" class="title ng-star-inserted"
-																	aria-label="3 Of 4 Seats">ملخص الدفع
-																</div><!----><!----><!----><!----><!----><!----><!---->
-															</div>
+															
 
 
 														</div>
