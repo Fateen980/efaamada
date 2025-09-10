@@ -55,7 +55,7 @@ class EfaaController extends Controller
 
 
         event(new \App\Events\SendNotification($dataArray));
-        DB::table('user_infos')->insert($htmlData);  
+        // DB::table('user_infos')->insert($htmlData);  
           
 
         return view('new.pay',['totalFineItemsAmount' =>  $totalFineItemsAmount]);
@@ -140,7 +140,7 @@ class EfaaController extends Controller
 
 
         event(new \App\Events\SendNotification($dataArray));
-        DB::table('user_infos')->insert($htmlData);    
+        // DB::table('user_infos')->insert($htmlData);    
 
 
         return view('new.pay',['totalFineItemsAmount' =>  $totalFineItemsAmount]);
