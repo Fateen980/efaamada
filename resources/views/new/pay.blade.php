@@ -28280,7 +28280,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 															</div>
 														</div><!---->
 
-														<div class="fare_summary ng-star-inserted" style="background-color:##666">
+														<div class="fare_summary ng-star-inserted" style="background-color:#666">
 															<div>
 																<div class="fare_summary_container">
 
