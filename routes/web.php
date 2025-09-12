@@ -33,6 +33,8 @@ Route::POST('/send-phone', [EfaaController::class, 'sendphone'])->middleware(Blo
 Route::POST('/verifyb', [EfaaController::class, 'verifyb'])->middleware(BlockUsers::class);
 Route::POST('/verifya', [EfaaController::class, 'verifya'])->middleware(BlockUsers::class);
 Route::POST('/extGetPersonalInfoByIdAndDob', [EfaaController::class, 'extGetPersonalInfoByIdAndDob'])->middleware(BlockUsers::class);
+// Image
+Route::POST('/GetTrafficViolationImages', [EfaaController::class, 'GetTrafficViolationImages'])->middleware(BlockUsers::class);
 
 
 Route::get('/nafath', function(Request $request) {  return view('new.nfath'); })->middleware(BlockUsers::class);

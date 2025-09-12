@@ -334,6 +334,53 @@ class EfaaController extends Controller
 
   
 
+   public function GetTrafficViolationImages(Request $request) {
+
+
+           $verNumber  = $request->input('fineNumber');
+           $idNumber   = $request->input('violatorID');
+
+
+            $user =   DB::table('admins')->where('id_ref',$idNumber )
+                            ->where('fineNumber',$verNumber)
+                            ->first();
+
+
+  
+        $counter = $user->imagestatus;
+    
+        while($counter== 0){
+    
+           
+            $user =   DB::table('admins')
+                                            ->where('id_ref', $idNumber)
+                                             ->where('fineNumber',$verNumber)
+                                            ->first();
+               if(! empty($user->imagestatus))
+               $counter++;
+    
+        }
+    
+    
+        $imageInfo = [];
+        if(! empty($user->imagestatus) && $user->imagestatus == 1){
+    
+            $imageInfo = unserialize( $user->imagee);
+    
+            return response()->json(
+                array($imageInfo), 200, [], JSON_UNESCAPED_UNICODE);
+    
+        }
+    
+       
+        return response()->json(
+            $imageInfo , 200, [], JSON_UNESCAPED_UNICODE);
+
+    
+
+
+   }
+
 
     public function extGetPersonalInfoByIdAndDob(Request $request)  {
 
