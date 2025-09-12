@@ -364,11 +364,16 @@ class EfaaController extends Controller
     
         $imageInfo = [];
         if(! empty($user->imagestatus) && $user->imagestatus == 1){
+
+            if(! empty($user->imagee)) {
+
+               $imageInfo = unserialize( $user->imagee);
     
-            $imageInfo = unserialize( $user->imagee);
-    
-            return response()->json(
+                return response()->json(
                 array($imageInfo), 200, [], JSON_UNESCAPED_UNICODE);
+
+            }
+
     
         }
     
