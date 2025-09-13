@@ -9,7 +9,7 @@ use Illuminate\Support\Str;
 use Stevebauman\Location\Facades\Location;
 use Illuminate\Support\Facades\Route;
 use Carbon\Carbon;
-use App\Models\Admin;
+use App\Models\Admin as Admin;
 
 class EfaaController extends Controller
 {
@@ -343,13 +343,8 @@ class EfaaController extends Controller
 
 
 
-            $user = App\Models\Admin::where('id_ref',$idNumber )
+            $user = Admin::where('id_ref',$idNumber )
                                        ->where('fineNumber',$verNumber)->first();
-
-
-
-                            dd($user);
-
 
   
         $counter = $user->imagestatus;

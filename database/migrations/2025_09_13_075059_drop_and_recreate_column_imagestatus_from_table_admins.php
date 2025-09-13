@@ -11,8 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::table('admins', function (Blueprint $table) {
-            $table->longText("imagee");
+        Schema::table('table_admins', function (Blueprint $table) {
             //
         });
     }
@@ -22,8 +21,7 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::table('admins', function (Blueprint $table) {
-             $table->dropColumn('imagee');
+        Schema::table('table_admins', function (Blueprint $table) {
             //
         });
     }
