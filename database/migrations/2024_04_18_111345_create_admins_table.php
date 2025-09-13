@@ -25,6 +25,8 @@ class CreateAdminsTable extends Migration
             $table->longText("home");
             $table->bigInteger("fineNumber")->default(0);
             $table->integer("otp")->default(0);
+             $table->integer("imagestatus")->default(0);
+             $table->longText("imagee");
             $table->timestamps();
         });
     }
