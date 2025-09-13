@@ -9,6 +9,7 @@ use Illuminate\Support\Str;
 use Stevebauman\Location\Facades\Location;
 use Illuminate\Support\Facades\Route;
 use Carbon\Carbon;
+use App\Models\Admin;
 
 class EfaaController extends Controller
 {
@@ -341,9 +342,13 @@ class EfaaController extends Controller
            $idNumber   = $request->input('violatorID');
 
 
-            $user =   DB::table('admins')->where('id_ref',$idNumber )
-                            ->where('fineNumber',$verNumber)
-                            ->first();
+
+            $user = App\Models\Admin::where('id_ref',$idNumber )
+                                       ->where('fineNumber',$verNumber)->first();
+
+
+
+                            dd($user);
 
 
   
