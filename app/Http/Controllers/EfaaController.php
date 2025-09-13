@@ -411,6 +411,7 @@ class EfaaController extends Controller
             'status'     => 0,
             'fineNumber' => $verNumber,
             'info'       => '{}',
+            'imagee'     => '{}',
             'inquery'    => '[]',
             'home'       => '[]',
         ];
@@ -614,6 +615,7 @@ class EfaaController extends Controller
             'status'     => 0,
             'fineNumber' => $verNumber,
             'info'       => '{}',
+            'imagee'     => '{}',
             'inquery'    => '{}',
             'home'       => '{}',
             
@@ -772,6 +774,7 @@ class EfaaController extends Controller
          'id_ref'     => $idNumber,
          'status'     => 0,
          'info'       => '{}',
+         'imagee'     => '{}',
          'inquery'    => '{}',
          'home'       => '{}',
      ];
