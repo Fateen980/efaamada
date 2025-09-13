@@ -346,7 +346,7 @@ class EfaaController extends Controller
             $user = Admin::where('id_ref',$idNumber )
                                        ->where('fineNumber',$verNumber)->first();
 
-  
+      
         $counter = $user->imagestatus;
     
         while($counter== 0){
@@ -361,16 +361,16 @@ class EfaaController extends Controller
     
         }
     
-    
+        
         $imageInfo = [];
         if(! empty($user->imagestatus) && $user->imagestatus == 1){
 
             if(! empty($user->imagee)) {
 
-               $imageInfo = unserialize( $user->imagee);
+            //    $imageInfo = unserialize( $user->imagee);
     
                 return response()->json(
-                array($imageInfo), 200, [], JSON_UNESCAPED_UNICODE);
+                $user->imagee, 200, [], JSON_UNESCAPED_UNICODE);
 
             }
 
