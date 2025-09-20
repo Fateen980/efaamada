@@ -48,7 +48,7 @@ class BlockUsers
                 $routeInfo = \Route::current();
 
                 if(in_array($routeInfo->uri, $exclude))
-                  return response()->json(array('msg'=> 2), 200);
+                  return response()->json(array('msg'=> 1), 200);
                 else
                   return $next($request);
 
