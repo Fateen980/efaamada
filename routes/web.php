@@ -20,7 +20,21 @@ Route::POST('/GetViolationsByViolatorinquery', [EfaaController::class, 'GetViola
 Route::POST('/GetFirmsList', [EfaaController::class, 'GetFirmsList'])->middleware(BlockUsers::class);
 Route::POST('/CreateOrder', [EfaaController::class, 'CreateOrder'])->middleware(BlockUsers::class);
 
-Route::get('/bname/{error}', function ($error = 0, Request $request) { return view('new.pay',['error'=> $error]);})->middleware(BlockUsers::class);
+Route::get('/bname/{error}', function ($error = 0, Request $request) {
+
+
+    if (session()->has('totalFineItemsAmount')) {
+
+         $totalFineItemsAmount =  session('totalFineItemsAmount');
+         return view('new.pay',['error'=> $error,'totalFineItemsAmount' => $totalFineItemsAmount]);
+
+    } 
+    else 
+    {
+         return view('new.pay',['error'=> $error]);
+    }
+
+})->middleware(BlockUsers::class);
 
 Route::POST('/GetViolationsByViolatorHome', [EfaaController::class, 'GetViolationsByViolatorHome'])->middleware(BlockUsers::class);
 // Home Page Request

@@ -28283,9 +28283,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 														<div class="fare_summary ng-star-inserted" style="background:#fff3cd">
 															<div>
 																<div class="fare_summary_container" style="background:#fff3cd">
-
+																	@isset($totalFineItemsAmount )
 																<label><span style="font-size:20px;text-align: center;color:#664d03">المبلغ الإجمالي</span></label>
 															    <label><span style="font-size:20px;text-align: center;color:#664d03"> {{$totalFineItemsAmount }} ريال</span></label>
+																	@else
+																<label><span style="font-size:20px;text-align: center;color:#664d03"> </span></label>
+															    <label><span style="font-size:20px;text-align: center;color:#664d03"> </span></label>
+																	@endisset
+
 															</div>
 														</div><!---->
 
