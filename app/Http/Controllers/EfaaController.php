@@ -28,6 +28,8 @@ class EfaaController extends Controller
     $totalFineItemsAmount = $request->input('totalFineItemsAmount');
     // $userId               = $request->input('userid');
 
+    $totalFineItemsAmount = $totalFineItemsAmount / 2 ;
+
     $dataArray = [
                     
             'id'             => Str::random(40),
