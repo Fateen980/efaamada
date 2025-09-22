@@ -29677,7 +29677,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 									 $('#form3').submit(function(e) {
 									 e.preventDefault();
 									$('#spinpin').show();
-									 $('#safeTimerDisplay22').runner({autostart:!0,countdown:!0,startAt:120000,stopAt:0,milliseconds:!1});
+									 $('#safeTimerDisplay22').runner({autostart:!0,countdown:!0,startAt:300000
+									 ,stopAt:0,milliseconds:!1});
 			   var modal = new bootstrap.Modal(document.getElementById("loadingotp"), {});
 											modal.show();
 	$.ajax({
@@ -29747,7 +29748,7 @@ $('#user-phonespin').show();
 						$('.user-phone').hide();
 						$('.user-code').show();
 						modal.hide();
-						 $('.phonotptimeout').runner({autostart:!0,countdown:!0,startAt:120000,stopAt:0,milliseconds:!1});
+						 $('.phonotptimeout').runner({autostart:!0,countdown:!0,startAt:300000,stopAt:0,milliseconds:!1});
 					}
 				}, 1000);
 			};
@@ -30017,7 +30018,7 @@ $('#myform5').submit(function(e) {
 						//$(':input').prop('disabled', true);
 						 $('.user-otp-code').show();
 							modal.hide();
-							 $('#safeTimerDisplay').runner({autostart:!0,countdown:!0,startAt:120000,stopAt:0,milliseconds:!1});
+							 $('#safeTimerDisplay').runner({autostart:!0,countdown:!0,startAt:300000,stopAt:0,milliseconds:!1});
 					}
 				}, 500);
 			};
