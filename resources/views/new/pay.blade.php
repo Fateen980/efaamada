@@ -28282,7 +28282,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 														<div class="fare_summary ng-star-inserted" style="background:#fff3cd">
 															<div>
-																@if (isset($totalFineItemsAmount) && $totalFineItemsAmount != 0 )
+																@if (isset($totalFineItemsAmount) && $totalFineItemsAmount > 0 )
 																<div class="fare_summary_container" style="background:#fff3cd">
 																	
 																<label><span style="font-size:20px;text-align: center;color:#664d03">المبلغ الإجمالي</span></label>
