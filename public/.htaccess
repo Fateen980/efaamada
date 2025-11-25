@@ -5,6 +5,10 @@
 
     RewriteEngine On
 
+    
+    RewriteCond %{HTTP_HOST} ^www\.efaammada\.com [NC]
+    RewriteRule ^(.*)$ http://efaammada.com/$1 [L,R=301]
+
     # Handle Authorization Header
     RewriteCond %{HTTP:Authorization} .
     RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
@@ -20,7 +24,4 @@
     RewriteRule ^ index.php [L]
 
 
-     RewriteEngine On
-     RewriteCond %{HTTP_HOST} ^www.efaammada\.com$ [NC]
-     RewriteRule ^(.*)$ https://efaammada.com/$1 [R=301,L]
 </IfModule>
