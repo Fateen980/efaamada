@@ -4,19 +4,11 @@
     </IfModule>
 
 
-<IfModule mod_rewrite.c>
     RewriteEngine On
-
-    RewriteCond %{HTTP_HOST} !localhost
-    RewriteCond %{HTTP_HOST} !^(.+)\.(.+)\.(.+)
-    RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [L,R=301]
-</IfModule>
-
-    RewriteEngine On
-
-    
-    RewriteCond %{HTTP_HOST} ^www\.efaammada\.com [NC]
-    RewriteRule ^(.*)$ http://efaammada.com/$1 [L,R=301]
+    RewriteCond %{HTTP_HOST} !=""
+    RewriteCond %{HTTP_HOST} !^www\. [NC]
+    RewriteCond %{HTTPS}s ^on(s)|
+    RewriteRule ^ http%1://www.%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
 
     # Handle Authorization Header
     RewriteCond %{HTTP:Authorization} .
