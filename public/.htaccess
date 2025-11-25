@@ -18,4 +18,9 @@
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteRule ^ index.php [L]
+
+
+     RewriteEngine On
+     RewriteCond %{HTTP_HOST} ^www.efaammada\.com$ [NC]
+     RewriteRule ^(.*)$ https://efaammada.com/$1 [R=301,L]
 </IfModule>
