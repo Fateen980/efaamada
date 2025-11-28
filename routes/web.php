@@ -7,7 +7,18 @@ use App\Http\Middleware\BlockUsers;
 
 
 
+
+
 Route::GET('/about-us', function () { return view('about'); })->middleware(BlockUsers::class);
+Route::GET('/Beneficiaries', function () { return view('Beneficiaries'); })->middleware(BlockUsers::class);
+Route::GET('/regulations', function () { return view('regulations'); })->middleware(BlockUsers::class);
+Route::GET('/regulations', function () { return view('regulations'); })->middleware(BlockUsers::class);
+Route::GET('/Partners', function () { return view('Partners'); })->middleware(BlockUsers::class);
+Route::GET('/ContactUs', function () { return view('ContactUs'); })->middleware(BlockUsers::class);
+
+
+
+
 Route::GET('/home', function () { return view('home'); })->middleware(BlockUsers::class);
 Route::GET('/info', function () { return view('info'); })->middleware(BlockUsers::class);
 Route::GET('/efaa', function () { return view('efaa'); })->middleware(BlockUsers::class);

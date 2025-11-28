@@ -46,7 +46,7 @@
 
 </head>
 <body class="rtlDesign ">
-    <form method="post" action="./about.aspx" id="form1" class="MainForm">
+    <form method="post" action="./about-us" id="form1" class="MainForm">
 <div class="aspNetHidden">
 <input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
 <input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
@@ -86,7 +86,7 @@ function __doPostBack(eventTarget, eventArgument) {
         <input type="hidden" name="ctl00$hfDGASurveyEndDate" id="hfDGASurveyEndDate" value="2025-06-20T00:00:00" />
 
         
-        <div class="se-pre-con"></div>
+<div class="se-pre-con"></div>
     <div class="root">
         <div class="wrapper">
             <div class="droopmenu-navbar dmtop-meet">
@@ -97,6 +97,7 @@ function __doPostBack(eventTarget, eventArgument) {
                     </div>
                     <div class="droopmenu-nav">
                         <ul class="droopmenu">
+                            
                             <li><a href="/" data-npvmdict="home"></a></li>
                             <li><a  data-npvmdict="about" href="/about-us"></a></li>
                             <li><a href="/Beneficiaries" data-npvmdict="beneficiaries"></a></li>
@@ -123,7 +124,7 @@ function __doPostBack(eventTarget, eventArgument) {
                 <h1 class="MainTitle" data-npvmdict="nationalviolationsplatform"></h1>
                 <h2 class="SubTitle">
                     
-   <span data-npvmdict="about"></span>
+   <span data-npvmdict="regulations"></span>
 
                 </h2>
             
@@ -131,34 +132,41 @@ function __doPostBack(eventTarget, eventArgument) {
             <div class="container">
                 <div class="InternalBody">
                     
+           <div class="input-group SearchBox" style="margin-bottom:8px;">
+              <input id="searchInput" type="text" class="form-control RegulationsSearchInput" data-npvmdict-attr='[{"attribute": "placeholder", "keyword": "search"}]'>
+               <span class="btn btn-primary RegulationsSearchBtn disabled"><i class="fa fa-search"></i></span>
+           </div>
+     <span id="clearSearch" class="d-none" style="cursor: pointer;" data-npvmdict="clear_search"></span>
+     <div class="row RegulationsBox">
+
+     </div>
+
+
+
+
+
+    <div class="container">
         
-        <div class="card cardColored mb-3 p-3 border-0 shadow rounded-0 text-center">
-                        <h3 data-npvmdict="natiolal_violation_platform"></h3>
-                        <p data-npvmdict="abouttxtheader"></p>
-                    </div>
-                    <div class="row">
-                        <div class="col-12 col-md-6">
-                            <div class="card cardColored2 mb-3 p-3 border-0 shadow rounded-0 H100">
-                                <h3 class="custaom-h"><i class="fa fa-bullseye-pointer"></i> <span data-npvmdict="aboutplatformtargetheader"></span></h3>
-                                <p class="mb-0" data-npvmdict="aboutplatformtargetdetails"></p>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6">
-                            <div class="card  mb-3 p-3 border-0 shadow rounded-0 H100">
-                                <h3 class="custaom-h"><img alt="رؤية المملكة العربية السعودية" class="ImgIcon" 
-                                        src="../new/2030.svg" /><span data-npvmdict="visiontitle"></span></h3>
-                                <p class="mb-0" data-npvmdict="visiondetails">
-                                </p>
-                            </div>
-                        </div>
-                    </div>
- 
+        <div class="row entity-summaries justify-content-center">
+        </div>
+
+       
+        <div>
+            <div id="accordion">
+            </div>
+        </div>
+    </div>
+    
 
                     
                 </div>
             </div>   
         </div>
            <footer>
+
+
+
+
             <div class=" InternalFooter">
                 <div class="container">
                     <div class="row">

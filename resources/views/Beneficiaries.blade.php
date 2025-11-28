@@ -46,7 +46,7 @@
 
 </head>
 <body class="rtlDesign ">
-    <form method="post" action="./about.aspx" id="form1" class="MainForm">
+    <form method="post" action="./about-us" id="form1" class="MainForm">
 <div class="aspNetHidden">
 <input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
 <input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
@@ -86,7 +86,7 @@ function __doPostBack(eventTarget, eventArgument) {
         <input type="hidden" name="ctl00$hfDGASurveyEndDate" id="hfDGASurveyEndDate" value="2025-06-20T00:00:00" />
 
         
-        <div class="se-pre-con"></div>
+               <div class="se-pre-con"></div>
     <div class="root">
         <div class="wrapper">
             <div class="droopmenu-navbar dmtop-meet">
@@ -123,7 +123,7 @@ function __doPostBack(eventTarget, eventArgument) {
                 <h1 class="MainTitle" data-npvmdict="nationalviolationsplatform"></h1>
                 <h2 class="SubTitle">
                     
-   <span data-npvmdict="about"></span>
+   <span data-npvmdict="beneficiaries"></span>
 
                 </h2>
             
@@ -131,28 +131,37 @@ function __doPostBack(eventTarget, eventArgument) {
             <div class="container">
                 <div class="InternalBody">
                     
-        
-        <div class="card cardColored mb-3 p-3 border-0 shadow rounded-0 text-center">
-                        <h3 data-npvmdict="natiolal_violation_platform"></h3>
-                        <p data-npvmdict="abouttxtheader"></p>
-                    </div>
-                    <div class="row">
-                        <div class="col-12 col-md-6">
-                            <div class="card cardColored2 mb-3 p-3 border-0 shadow rounded-0 H100">
-                                <h3 class="custaom-h"><i class="fa fa-bullseye-pointer"></i> <span data-npvmdict="aboutplatformtargetheader"></span></h3>
-                                <p class="mb-0" data-npvmdict="aboutplatformtargetdetails"></p>
+
+<p class="text-center" data-npvmdict="beneficiariestxt">
+                    </p>
+                    <div class="row text-center BeneficiariesBox">
+                        <div class="col-12 col-md-6 col-lg-4 mt-3">
+                            <div class="card cardColored H100">
+                                <i class="fa fa-building"></i>
+                                <h4 class="mt-3" data-npvmdict="facilities"></h4>
+                                <p data-npvmdict="facilitiestxt"></p>
+                               
                             </div>
                         </div>
-                        <div class="col-12 col-md-6">
-                            <div class="card  mb-3 p-3 border-0 shadow rounded-0 H100">
-                                <h3 class="custaom-h"><img alt="رؤية المملكة العربية السعودية" class="ImgIcon" 
-                                        src="../new/2030.svg" /><span data-npvmdict="visiontitle"></span></h3>
-                                <p class="mb-0" data-npvmdict="visiondetails">
-                                </p>
+                        <div class="col-12 col-md-6 col-lg-4 mt-3">
+                            <div class="card cardColored2 H100">
+                                <i class="fa fa-handshake"></i>
+                                <h4 class="mt-3" data-npvmdict="partners"></h4>
+                                <p data-npvmdict="partnerstxt"></p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4 mt-3">
+                            <div class="card  H100">
+                                <i class="fa fa-users-class"></i>
+                                <h4 class="mt-3" data-npvmdict="individuals"></h4>
+                                <p data-npvmdict="individualstxt"></p>
                             </div>
                         </div>
                     </div>
- 
+
+
+
+		
 
                     
                 </div>

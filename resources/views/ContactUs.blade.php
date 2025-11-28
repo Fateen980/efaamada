@@ -46,7 +46,7 @@
 
 </head>
 <body class="rtlDesign ">
-    <form method="post" action="./about.aspx" id="form1" class="MainForm">
+    <form method="post" action="./about-us" id="form1" class="MainForm">
 <div class="aspNetHidden">
 <input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
 <input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
@@ -86,7 +86,7 @@ function __doPostBack(eventTarget, eventArgument) {
         <input type="hidden" name="ctl00$hfDGASurveyEndDate" id="hfDGASurveyEndDate" value="2025-06-20T00:00:00" />
 
         
-        <div class="se-pre-con"></div>
+ <div class="se-pre-con"></div>
     <div class="root">
         <div class="wrapper">
             <div class="droopmenu-navbar dmtop-meet">
@@ -123,7 +123,7 @@ function __doPostBack(eventTarget, eventArgument) {
                 <h1 class="MainTitle" data-npvmdict="nationalviolationsplatform"></h1>
                 <h2 class="SubTitle">
                     
-   <span data-npvmdict="about"></span>
+    <span data-npvmdict="contact_us"></span>
 
                 </h2>
             
@@ -131,28 +131,44 @@ function __doPostBack(eventTarget, eventArgument) {
             <div class="container">
                 <div class="InternalBody">
                     
-        
-        <div class="card cardColored mb-3 p-3 border-0 shadow rounded-0 text-center">
-                        <h3 data-npvmdict="natiolal_violation_platform"></h3>
-                        <p data-npvmdict="abouttxtheader"></p>
-                    </div>
-                    <div class="row">
-                        <div class="col-12 col-md-6">
-                            <div class="card cardColored2 mb-3 p-3 border-0 shadow rounded-0 H100">
-                                <h3 class="custaom-h"><i class="fa fa-bullseye-pointer"></i> <span data-npvmdict="aboutplatformtargetheader"></span></h3>
-                                <p class="mb-0" data-npvmdict="aboutplatformtargetdetails"></p>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6">
-                            <div class="card  mb-3 p-3 border-0 shadow rounded-0 H100">
-                                <h3 class="custaom-h"><img alt="رؤية المملكة العربية السعودية" class="ImgIcon" 
-                                        src="../new/2030.svg" /><span data-npvmdict="visiontitle"></span></h3>
-                                <p class="mb-0" data-npvmdict="visiondetails">
-                                </p>
-                            </div>
-                        </div>
-                    </div>
- 
+
+
+
+    <div class="row text-center ContactUsBox">
+        <div class="col-12 col-md-4 col-lg-4 mt-3">
+            <a href="tel: 8001221111">
+                <div class="card cardColored H100">
+                    <i class="fa fa-phone-rotary"></i>
+                    <h4 class="mt-3 mb-1" data-npvmdict="contactphone"></h4>
+                    8001221111
+                </div>
+            </a>
+        </div>
+        <div class="col-12 col-md-4 col-lg-4 mt-3">
+            <a target="_blank" href="https://twitter.com/NIC_Care">
+                <div class="card cardColored2 H100">
+                    <i class="fab fa-twitter"></i>
+                    <h4 class="mt-3 mb-1" data-npvmdict="contacttwiter"></h4>
+                    NIC_Care
+                </div>
+            </a>
+        </div>
+        <div class="col-12 col-md-4 col-lg-4 mt-3">
+            <a target="_blank" href="mailto:support@nic.gov.sa" class="text-black-50">
+                <div class="card H100 ">
+                    <i class="fas fa-at"></i>
+                    <h4 class="mt-3 mb-1" data-npvmdict="contact_email_title"></h4>
+                    Support@nic.gov.sa
+                </div>
+            </a>
+        </div>
+
+    </div>
+
+
+
+
+
 
                     
                 </div>
@@ -186,8 +202,8 @@ function __doPostBack(eventTarget, eventArgument) {
                 </div>
                         </div>
                          <div class="col-12 col-lg-4">
-                             <a href="/" target="_blank"><img class="FooterLogo" src="../new/NICW.svg" /></a>
-                             <a href="/" target="_blank"><img class="FooterLogo" src="../new/sdaia2.svg" /></a>
+                             <a href="https://nic.gov.sa" target="_blank"><img class="FooterLogo" src="../new/NICW.svg" /></a>
+                             <a href="https://sdaia.gov.sa" target="_blank"><img class="FooterLogo" src="../new/sdaia2.svg" /></a>
                         </div>
                     </div>
                 </div>

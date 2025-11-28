@@ -46,7 +46,7 @@
 
 </head>
 <body class="rtlDesign ">
-    <form method="post" action="./about.aspx" id="form1" class="MainForm">
+    <form method="post" action="./about-us" id="form1" class="MainForm">
 <div class="aspNetHidden">
 <input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
 <input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
@@ -86,7 +86,7 @@ function __doPostBack(eventTarget, eventArgument) {
         <input type="hidden" name="ctl00$hfDGASurveyEndDate" id="hfDGASurveyEndDate" value="2025-06-20T00:00:00" />
 
         
-        <div class="se-pre-con"></div>
+ <div class="se-pre-con"></div>
     <div class="root">
         <div class="wrapper">
             <div class="droopmenu-navbar dmtop-meet">
@@ -123,7 +123,7 @@ function __doPostBack(eventTarget, eventArgument) {
                 <h1 class="MainTitle" data-npvmdict="nationalviolationsplatform"></h1>
                 <h2 class="SubTitle">
                     
-   <span data-npvmdict="about"></span>
+   <span data-npvmdict="ourpartners"></span>
 
                 </h2>
             
@@ -131,34 +131,54 @@ function __doPostBack(eventTarget, eventArgument) {
             <div class="container">
                 <div class="InternalBody">
                     
-        
-        <div class="card cardColored mb-3 p-3 border-0 shadow rounded-0 text-center">
-                        <h3 data-npvmdict="natiolal_violation_platform"></h3>
-                        <p data-npvmdict="abouttxtheader"></p>
+    <div class="row text-center PartnersBox">
+                        
                     </div>
-                    <div class="row">
-                        <div class="col-12 col-md-6">
-                            <div class="card cardColored2 mb-3 p-3 border-0 shadow rounded-0 H100">
-                                <h3 class="custaom-h"><i class="fa fa-bullseye-pointer"></i> <span data-npvmdict="aboutplatformtargetheader"></span></h3>
-                                <p class="mb-0" data-npvmdict="aboutplatformtargetdetails"></p>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6">
-                            <div class="card  mb-3 p-3 border-0 shadow rounded-0 H100">
-                                <h3 class="custaom-h"><img alt="رؤية المملكة العربية السعودية" class="ImgIcon" 
-                                        src="../new/2030.svg" /><span data-npvmdict="visiontitle"></span></h3>
-                                <p class="mb-0" data-npvmdict="visiondetails">
-                                </p>
-                            </div>
-                        </div>
-                    </div>
- 
+    
 
                     
                 </div>
             </div>   
         </div>
            <footer>
+            <div class=" InternalFooter">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-lg-4 FooterEfaaLogo">
+                            <img class="FooterLogo" src="../new/EFAAW.svg" />
+                            <a class="DGA-logo" href="http://raqmi.dga.gov.sa/platforms/DigitalStamp/ShowCertificate/5486">
+                                <img class="FooterLogo" src="http://raqmi.dga.gov.sa/platforms/DigitalStamp/GetStampWFile/3322" style="height: 65px;">
+                            </a>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <div class="HomeMainBoxSearchBoxContainer FooterMed">
+                    <span data-npvmdict="nationalviolationsplatform"></span>
+                    <ul class="FooterNav">
+                        <li><a href="PrivacyPolicy.aspx" data-npvmdict="privacy_policy"></a></li>
+                        <li><a href="SLA.aspx" data-npvmdict="service_level_agreement"></a></li>
+                        <li><a  href="TermsOfUse.aspx" data-npvmdict="term_of_use"></a></li>
+                        <li><a href="FAQ.aspx" data-npvmdict="faq"></a></li>
+                    </ul>
+                    <ul class="PPaymentLogos">
+                        <li><img alt="Mada" src="../new/Mada.svg" /></li>
+                        <li><img alt="Sdad" src="../new/Sdad.svg" /></li>
+                        <li><img alt="Visa" src="../new/Visa.svg" /></li>
+                        <li><img alt="Mastercard" src="../new/MasterCard.svg" /></li>
+                    </ul>
+                </div>
+                        </div>
+                         <div class="col-12 col-lg-4">
+                             <a href="/" ><img class="FooterLogo" src="../new/NICW.svg" /></a>
+                             <a href="/" ><img class="FooterLogo" src="../new/sdaia2.svg" /></a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </footer>
+
+
+
             <div class=" InternalFooter">
                 <div class="container">
                     <div class="row">

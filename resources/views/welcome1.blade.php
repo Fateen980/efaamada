@@ -102,19 +102,19 @@ function __doPostBack(eventTarget, eventArgument) {
                                     <a href="/" data-npvmdict="home"></a>
                                 </li>
                                 <li>
-                                    <a data-npvmdict="about" href="/"></a>
+                                    <a data-npvmdict="about" href="/about-us"></a>
                                 </li>
                                 <li>
-                                    <a href="/" data-npvmdict="beneficiaries"></a>
+                                    <a href="/Beneficiaries" data-npvmdict="beneficiaries"></a>
                                 </li>
                                 <li>
-                                    <a href="/" data-npvmdict="regulations"></a>
+                                    <a href="/regulations" data-npvmdict="regulations"></a>
                                 </li>
                                 <li>
-                                    <a href="/" data-npvmdict="ourpartners"></a>
+                                    <a href="/Partners"  data-npvmdict="ourpartners"></a>
                                 </li>
                                 <li>
-                                    <a href="/" data-npvmdict="contact_us"></a>
+                                    <a href="/ContactUs" data-npvmdict="contact_us"></a>
                                 </li>
                                 <li id="dashboardProgramLink" style="display:none">
                                     <a href="#">
