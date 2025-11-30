@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="../new/merged.css" type="text/css" />
 
     <title>
-    	المنصة الوطنية للمخالفات |منصة ايفاء|اتصل بنا
+        المنصة الوطنية للمخالفات (منصةإيفاء) | اتصل بنا
     </title>
     
 
