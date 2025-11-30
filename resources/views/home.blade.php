@@ -30,7 +30,7 @@
     <link rel="stylesheet" href="../new/style.min.css" type="text/css"/>
 
     <title>
-    	منصة إيفاء
+    	المنصة الوطنية للمخالفات | منصة ايفاء 
     </title>
     
 
