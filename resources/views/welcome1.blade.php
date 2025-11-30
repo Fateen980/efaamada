@@ -94,7 +94,11 @@ function __doPostBack(eventTarget, eventArgument) {
                             <a href="#" class="droopmenu-brand">
                                 <img alt="إيفاء" src="../new/EFAAW.svg">
                             </a>
-                            <!-- <a href="#" class="droopmenu-toggle">/a> -->
+                          <a href="#" class="droopmenu-toggle">
+                           <i class="dm-burg"></i>
+                           <i class="dm-burg"></i>
+                           <i class="dm-burg"></i>
+                          </a>
                         </div>
                         <div class="droopmenu-nav">
                             <ul class="droopmenu">
