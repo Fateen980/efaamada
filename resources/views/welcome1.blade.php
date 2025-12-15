@@ -84,8 +84,9 @@ function __doPostBack(eventTarget, eventArgument) {
         <input type="hidden" name="ctl00$hfMotivProgAdvEndDate" id="hfMotivProgAdvEndDate" value="2024-10-18"/>
         <input type="hidden" name="ctl00$hfIsDevelpment" id="hfIsDevelpment" value="0"/>
         <input type="hidden" name="ctl00$hfDisablePayment" id="hfDisablePayment"/>
-
         <input class="CalenderBoxInput" type="text" style="display: none;">
+
+
         <div class="root">
             <div class="wrapper">
                 <div class="droopmenu-navbar dmtop-meet dmfixed droopmenu-horizontal dmpos-top dmfade">
@@ -101,6 +102,8 @@ function __doPostBack(eventTarget, eventArgument) {
                           </a>
                         </div>
                         <div class="droopmenu-nav">
+                            <div class="droopmenu-nav-wrap">
+                                 <div class="droopmenu-navi">
                             <ul class="droopmenu">
                                 <li>
                                     <a href="/" data-npvmdict="home"></a>
@@ -155,7 +158,12 @@ function __doPostBack(eventTarget, eventArgument) {
                             </ul>
                         </div>
                     </div>
+                  </div>
+                 </div>
                 </div>
+
+
+                
                 <div class="HomeMainBox">
                     <div class="HomeMainBoxSearchBoxContainer">
                         <div class="container">
@@ -165,9 +173,9 @@ function __doPostBack(eventTarget, eventArgument) {
                                     <div class="col-12 col-lg-8 text-light">
                                         <div class="HomeBoxDescBox">
                                             <h1 class="MainTitle" data-npvmdict="nationalviolationsplatform"></h1>
-                                            <h2 class="SubTitle" data-npvmdict="slogan"></h2>
-                                            <h3 class="SubTitle" data-npvmdict="low"></h3>
-                                            <p class="text-justify d-none d-sm-block" data-npvmdict="abouttxtshort"></p>
+                                     
+                                            <h1 class="SubTitle" data-npvmdict="low"></h1>
+                                         
 
                                             <div class="BtnToolbar">
                                                 <a href="/" id="ContentPlaceHolder1_linkIndividualsLogin" class="LoginBtn LoginBtnStyleB" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$linkIndividualsLogin&#39;,&#39;&#39;)">
