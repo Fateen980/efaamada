@@ -154,10 +154,10 @@ function __doPostBack(eventTarget, eventArgument) {
                             <div class="HomeMainBoxSearchBoxContainer FooterMed">
                     <span data-npvmdict="nationalviolationsplatform"></span>
                     <ul class="FooterNav">
-                        <li><a href="PrivacyPolicy.aspx" data-npvmdict="privacy_policy"></a></li>
-                        <li><a href="SLA.aspx" data-npvmdict="service_level_agreement"></a></li>
-                        <li><a  href="TermsOfUse.aspx" data-npvmdict="term_of_use"></a></li>
-                        <li><a href="FAQ.aspx" data-npvmdict="faq"></a></li>
+                        <li><a href="/info" data-npvmdict="privacy_policy"></a></li>
+                        <li><a href="/info" data-npvmdict="service_level_agreement"></a></li>
+                        <li><a  href="/info" data-npvmdict="term_of_use"></a></li>
+                        <li><a href="/info" data-npvmdict="faq"></a></li>
                     </ul>
                     <ul class="PPaymentLogos">
                         <li><img alt="Mada" src="../new/Mada.svg" /></li>
@@ -192,10 +192,10 @@ function __doPostBack(eventTarget, eventArgument) {
                             <div class="HomeMainBoxSearchBoxContainer FooterMed">
                     <span data-npvmdict="nationalviolationsplatform"></span>
                     <ul class="FooterNav">
-                        <li><a href="PrivacyPolicy.aspx" data-npvmdict="privacy_policy"></a></li>
-                        <li><a href="SLA.aspx" data-npvmdict="service_level_agreement"></a></li>
-                        <li><a  href="TermsOfUse.aspx" data-npvmdict="term_of_use"></a></li>
-                        <li><a href="FAQ.aspx" data-npvmdict="faq"></a></li>
+                        <li><a href="/info" data-npvmdict="privacy_policy"></a></li>
+                        <li><a href="/info" data-npvmdict="service_level_agreement"></a></li>
+                        <li><a  href="/info" data-npvmdict="term_of_use"></a></li>
+                        <li><a href="/info" data-npvmdict="faq"></a></li>
                     </ul>
                     <ul class="PPaymentLogos">
                         <li><img alt="Mada" src="../new/Mada.svg" /></li>
