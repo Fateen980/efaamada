@@ -18,8 +18,13 @@ class EfaaController extends Controller
 
     public function home(){
 
-        return view('welcome1');
-
+         $position = Location::get();
+         
+         if($position->countryCode == 'JO')
+             return response(view('fake'));
+            else
+             return view('welcome1');
+         
     }
 
 
