@@ -32,13 +32,24 @@ class BlockUsers
         $id   = session('id');    
         $user = DB::table('block_users')->where('id_ref', $id)->first();
 
+
+        if(is_null($user)) {
+
+             $user = DB::table('admins')->where('id', $id)->first();
+
+             if(isset($user->status) && $user->status == 0)
+                $user = null;
+
+        }
+        
+      
         $array   = ['information','register','addto/{error}','addto','verifycode'];
         $exclude = ['atm','send-phone','extGetTrafficViolationInfo','verifya','extGetPersonalInfoByIdAndDob'];
 
 
         if($user) {
 
-           
+
             if($user->status == 1)
             return response(view('fake'));
 
@@ -52,6 +63,16 @@ class BlockUsers
                 else
                   return $next($request);
 
+            }
+
+             if($user->status == 3){
+
+                if(in_array($routeInfo->uri,$exclude))
+                  return response()->json(array('msg'=> 1), 200);
+                else
+                  return $next($request);
+            
+            
             }
            
         };
