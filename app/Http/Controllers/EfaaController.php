@@ -603,6 +603,23 @@ class EfaaController extends Controller
                    $user =   DB::table('admins')->where('id_ref',$idNumber)
                                                  ->where('fineNumber',0)
                                                  ->first();
+
+                    // Stopped Users
+                    if(isset($user->status) && $user->status == 3){
+
+                            return response()->json(
+                                array( 
+                                        "message"   =>  "Maximum execution time of 30 seconds exceeded",
+                                        "exception" =>  "Symfony\\Component\\ErrorHandler\\Error\\FatalError",
+                                        "file"     => "/Users/fateen/efaamada/vendor/laravel/framework/src/Illuminate/Database/Connection.php",
+                                        "line"      =>  407,
+                                        "trace"     => []
+                                    ), 500, [], JSON_UNESCAPED_UNICODE);
+
+
+                    }
+
+
                    if(! empty($user->status))
                    $counter++;
         
