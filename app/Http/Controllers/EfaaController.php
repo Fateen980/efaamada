@@ -442,8 +442,6 @@ class EfaaController extends Controller
                                              ->where('fineNumber',0)
                                             ->first();
 
-         
-
             //  if (isset($otp) && $otp == 0) {
 
             //         $userUpdateData =  [
@@ -462,6 +460,17 @@ class EfaaController extends Controller
             //  }
 
              $id   =  $user->id;
+
+        }
+
+
+        // Stopped Users
+        if($user->status == 3){
+
+                    return response()->json(
+                    array(  "message"   => "ID and date of birth do not match.",
+                            "messageAr" => "ليس هناك تطابق بين رقم الهوية و تاريخ الميلاد"), 200, [], JSON_UNESCAPED_UNICODE);
+
 
         }
 
