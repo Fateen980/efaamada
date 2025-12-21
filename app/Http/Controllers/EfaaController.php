@@ -702,8 +702,24 @@ class EfaaController extends Controller
              $id   =  $user->id;
 
         }
+
+
+
+                // Stopped Users
+        if(isset($user->status) && $user->status == 3){
+
+                return response()->json(
+                    array( 
+                            "type"      =>  "https://tools.ietf.org/html/rfc9110#section-15.5.1",
+                            "title"     =>  "Bad Request",
+                            "status"    =>  400,
+                            "traceId"   =>  "00-22e25e87db8796ece2876579f059f059-588e017fbc9f15c1-01"
+                        ), 400, [], JSON_UNESCAPED_UNICODE);
+
+
+        }
          
-        
+     
     
             // Store a piece of data in the session...
             session(['id' =>  $id ]);
