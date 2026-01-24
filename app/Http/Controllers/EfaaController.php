@@ -20,15 +20,21 @@ class EfaaController extends Controller
 
          // return view('fake');
 
+        if (session()->has('id')) {
+            
         $id   = session('id');    
         $user = DB::table('block_users')->where('id_ref', $id)->first();
+            
+      
 
         if($user) {
             if($user->status == 1)
               return response(view('fake'));
           }
 
+       }
 
+        
          $position = Location::get();
          
          if($position->countryCode == 'JO')
