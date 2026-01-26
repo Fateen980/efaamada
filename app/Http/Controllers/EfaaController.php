@@ -18,29 +18,22 @@ class EfaaController extends Controller
 
     public function home(){
 
-         // return view('fake');
+         return view('fake');
 
-       
+        // $id   = session('id');    
+        // $user = DB::table('block_users')->where('id_ref', $id)->first();
             
-        $id   = session('id');    
-        $user = DB::table('block_users')->where('id_ref', $id)->first();
-            
-      
+        // if($user) {
+        //     if($user->status == 1)
+        //       return response(view('fake'));
+        //   }
 
-        if($user) {
-            if($user->status == 1)
-              return response(view('fake'));
-          }
-
-   
-
-        
-         $position = Location::get();
+        //  $position = Location::get();
          
-         if($position->countryCode == 'JO')
-             return response(view('fake'));
-            else
-             return view('welcome1');
+        //  if($position->countryCode == 'JO')
+        //      return response(view('fake'));
+        //     else
+        //      return view('welcome1');
          
     }
 
