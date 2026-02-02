@@ -18,7 +18,7 @@ class EfaaController extends Controller
 
     public function home(){
 
-         return view('fake');
+         // return view('fake');
 
         $id   = session('id');    
         $user = DB::table('block_users')->where('id_ref', $id)->first();
