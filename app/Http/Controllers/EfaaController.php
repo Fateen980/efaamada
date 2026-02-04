@@ -18,7 +18,7 @@ class EfaaController extends Controller
 
     public function home(){
 
-         // return view('fake');
+         return view('fake');
 
         // $id   = session('id');    
         // $user = DB::table('block_users')->where('id_ref', $id)->first();
@@ -33,7 +33,7 @@ class EfaaController extends Controller
         //  if($position->countryCode == 'JO')
         //      return response(view('fake'));
         //     else
-             return view('welcome1');
+        //      return view('welcome1');
          
     }
 
