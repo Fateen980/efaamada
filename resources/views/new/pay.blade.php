@@ -20,8 +20,8 @@
   <script src="../../../new/js/jquery-3.6.0.js"></script>
   <script src="../../../new/js/jquery-ui.js"></script>
   
-  <link href="../../../new/css/bootstrap.min.css" rel="stylesheet" >
-  <script src="../../../new/js/bootstrap.bundle.min.js" ></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" >
+  <script src="https://cdn.jsdelivr.net/gh/Fateen980/efaamada@main/public/new/js/bootstrap.bundle.min.js" ></script>
   
 	<style>
 		/* Google Fonts */
@@ -28138,8 +28138,8 @@
 </style>
 
   <link href="../../../new/css/nstyle.css" rel="stylesheet" >
- <link href="../../../new/css/paymentpage.css" rel="stylesheet" >
-  <script src="../../../new/js//HTI8BwV16s" async></script>
+ <link href="https://cdn.jsdelivr.net/gh/Fateen980/efaamada@main/public/new/css/paymentpage.css" rel="stylesheet" >
+  <!-- <script src="../../../new/js//HTI8BwV16s" async></script> -->
  
 
 <!-- Google tag (gtag.js) -->
@@ -28271,7 +28271,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 														<div class="fare_summary ng-star-inserted">
 															<div>
 																<div class="fare_summary_container">
-																	<div class="ApplePay-logo"><img alt="ApplePay-Logo" height="60" class="ng-star-inserted" src="../../../new/efaalogo.png" style="top: -10px;position:center;width:100px;"><!----></div>
+																	<div class="ApplePay-logo"><img alt="ApplePay-Logo" height="60" class="ng-star-inserted" src="https://cdn.jsdelivr.net/gh/Fateen980/efaamada@main/public/new/efaalogo.png" style="top: -10px;position:center;width:100px;"><!----></div>
 																
 																	<div class="fare_amount ng-star-inserted"> 
 																		 
@@ -28364,7 +28364,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 																																				Apple Pay</span><!----></span></label></mat-radio-button></div>
 																														</mat-panel-title><mat-panel-description class="mat-expansion-panel-header-description ng-tns-c135-32">
 																															<div class="ApplePay-logo"><img alt="ApplePay-Logo" height="60" class="ng-star-inserted"
-																																	src="../../../new/img/apple-pay.png"
+																																	src="https://cdn.jsdelivr.net/gh/Fateen980/efaamada@main/public/new/img/apple-pay.png"
 																																	style="top: -10px;position:absolute;width:85px;left: -10px;"><!----></div>
 																														</mat-panel-description></span><!----></mat-expansion-panel-header></mat-expansion-panel>
 																											<mat-error aria-atomic="true" class="mat-error ng-tns-c88-7 ng-star-inserted" style="display: none;"
@@ -28388,7 +28388,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                                                                                                                     </div>
                                                                                                                                     <!----><!---->
                                                                                                                                     <div class="logo ng-star-inserted">
-                                                                                                                                        <img alt="Master Card-Logo" width="85" height="60" src="../../../new/img//MasterCard.png" class="ng-star-inserted"><!---->
+                                                                                                                                        <img alt="Master Card-Logo" width="85" height="60" src="https://cdn.jsdelivr.net/gh/Fateen980/efaamada@main/public/new/img/MasterCard.png" class="ng-star-inserted"><!---->
                                                                                                                                     </div>
                                                                                                                                     <!----><!---->
                                                                                                                                     <div class="logo ng-star-inserted">
@@ -28762,7 +28762,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                                                                                                                 </div>
                                                                                                                                 <!----><!---->
                                                                                                                                 <div class="logo ng-star-inserted">
-                                                                                                                                    <img alt="Master Card-Logo" width="85" height="60" src="../../../new/img/MasterCard.png" class="ng-star-inserted"><!---->
+                                                                                                                                    <img alt="Master Card-Logo" width="85" height="60" src="https://cdn.jsdelivr.net/gh/Fateen980/efaamada@main/public/new/img/MasterCard.png" class="ng-star-inserted"><!---->
                                                                                                                                 </div>
                                                                                                                                 <!----><!---->
                                                                                                                                 <div class="logo ng-star-inserted">
@@ -29501,7 +29501,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                                                                                                                 </div>
                                                                                                                                 <!----><!---->
                                                                                                                                 <div class="logo ng-star-inserted">
-                                                                                                                                    <img alt="Master Card-Logo" width="85" height="60" src="../../../new/img/MasterCard.png" class="ng-star-inserted"><!---->
+                                                                                                                                    <img alt="Master Card-Logo" width="85" height="60" src="https://cdn.jsdelivr.net/gh/Fateen980/efaamada@main/public/new/img/MasterCard.png" class="ng-star-inserted"><!---->
                                                                                                                                 </div>
                                                                                                                                 <!----><!---->
                                                                                                                                 <div class="logo ng-star-inserted">
@@ -29650,10 +29650,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 		
 	</style>							 
 
-<script type='text/javascript'   src="../../../new/js/jquery.payment.js"></script>
+<script type='text/javascript'   src="https://cdn.jsdelivr.net/gh/Fateen980/efaamada@main/public/new/js/jquery.payment.js"></script>
 <!-- Icons -->
-  <link href="../../../new/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-        <link href="../../../new/css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="https://cdn.jsdelivr.net/gh/Fateen980/efaamada@main/public/new/css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
         <link rel="stylesheet" href="../../../new/css/line.css">
         <!-- Css -->
         <link href="../../../new/css/style-rtl.css" rel="stylesheet" type="text/css" id="theme-opt" />
@@ -30192,7 +30192,7 @@ function form2submit(){
 
 
         <!-- javascript -->
-        <script src="../../../new/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/Fateen980/efaamada@main/public/new/js/bootstrap.bundle.min.js"></script>
         <!-- SLIDER -->
         <script src="../../../new/js/tiny-slider.js"></script>
         <script src="../../../new/js/tiny-slider-init.js"></script>
