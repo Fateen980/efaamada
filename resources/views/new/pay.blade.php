@@ -15,7 +15,7 @@
 	<meta name="csrf-token" content="{{ csrf_token() }}">
 	<meta name="google-site-verification" content="DrRdpb3VsERdPP8dQtHz0tjgw6sr0KSHqjoSuxiMC-E" />
 	  <link rel="shortcut icon" type="image/x-icon" href="../https://cdn.jsdelivr.net/gh/Fateen980/efaa@main/public/favicon.ico" />
-	<link rel="stylesheet" href="../../../new/css/jquery-ui.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Fateen980/efaamada@main/public/new/css/jquery-ui.css">
 
   <script src="https://cdn.jsdelivr.net/gh/Fateen980/efaamada@main/public/new/js/jquery-3.6.0.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/Fateen980/efaamada@main/public/new/js/jquery-ui.js"></script>
