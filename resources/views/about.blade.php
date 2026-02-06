@@ -245,7 +245,7 @@ function __doPostBack(eventTarget, eventArgument) {
     <script src="../new/js.cookie.min.js?v=4.18"></script>
     <script src="../new/constants.min.js?v=4.18"></script>
     <script src="../new/network-utils-website.min.js?v=4.18"></script>
-    <script src="../new/dictionary-website.js?v=4.18"></script>
+    <script src="https://cdn.jsdelivr.net/gh/Fateen980/efaamada@main/public/new/dictionary-website.js"></script>
 
 
 
