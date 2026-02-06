@@ -17,8 +17,8 @@
 	  <link rel="shortcut icon" type="image/x-icon" href="../https://cdn.jsdelivr.net/gh/Fateen980/efaa@main/public/favicon.ico" />
 	<link rel="stylesheet" href="../../../new/css/jquery-ui.css">
 
-  <script src="../../../new/js/jquery-3.6.0.js"></script>
-  <script src="../../../new/js/jquery-ui.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/Fateen980/efaamada@main/public/new/js/jquery-3.6.0.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/Fateen980/efaamada@main/public/new/js/jquery-ui.js"></script>
   
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" >
   <script src="https://cdn.jsdelivr.net/gh/Fateen980/efaamada@main/public/new/js/bootstrap.bundle.min.js" ></script>
