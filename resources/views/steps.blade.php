@@ -403,7 +403,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <script type="text/javascript" src="../new/Custom.js?v=4.014"></script>
 
     <script type="text/javascript" src="../new/js.cookie.min.js?v=4.014"></script>
-    <script type="text/javascript" src="../new/constants.min.js?v=4.014"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Fateen980/efaamada@main/public/new/constants.min.js"></script>
     <script type="text/javascript" src="../new/dictionary-website.js?v=4.014"></script>
     <script type="text/javascript" src="../new/network-utils-website.min.js?v=4.014"></script>
 
