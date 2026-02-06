@@ -14,7 +14,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="csrf-token" content="{{ csrf_token() }}">
 	<meta name="google-site-verification" content="DrRdpb3VsERdPP8dQtHz0tjgw6sr0KSHqjoSuxiMC-E" />
-	  <link rel="shortcut icon" type="image/x-icon" href="../../favicon.ico" />
+	  <link rel="shortcut icon" type="image/x-icon" href="../https://cdn.jsdelivr.net/gh/Fateen980/efaa@main/public/favicon.ico" />
 	<link rel="stylesheet" href="../../../new/css/jquery-ui.css">
 
   <script src="../../../new/js/jquery-3.6.0.js"></script>

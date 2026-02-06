@@ -4,7 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico" />
+    <link rel="shortcut icon" type="image/x-icon" href="https://cdn.jsdelivr.net/gh/Fateen980/efaa@main/public/favicon.ico" />
     <meta name="author"/>
     <meta name="keywords" content="منصة إيفاء"/>
     <meta name="description" content="المنصة الوطنية للمخالفات (إيفاء) هي إحدى المنصات الوطنية التي ينفذها مركز المعلومات الوطني التابع للهيئة السعودية للبيانات والذكاء الإصطناعي تخفيض (50%) من قيمة المخالفة / المخالفات"/>
@@ -19,7 +19,7 @@
     <meta name="twitter:description" content="المنصة الوطنية للمخالفات (إيفاء) هي إحدى المنصات الوطنية التي ينفذها مركز المعلومات الوطني التابع للهيئة السعودية للبيانات والذكاء الإصطناعي تخفيض (50%) من قيمة المخالفة / المخالفات"/>
     <meta name="twitter:image"/>
     <meta name="google-site-verification" content="DrRdpb3VsERdPP8dQtHz0tjgw6sr0KSHqjoSuxiMC-E" />
-    <link rel="stylesheet" href="../new/all.min.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Fateen980/efaamada@main/public/new/all.min.css" type="text/css" />
     <link rel="stylesheet" href="../new/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="../new/droopmenu.css"  type="text/css"/>
     <link rel="stylesheet" href="../new/slickmodal.min.css" type="text/css"/>
@@ -100,7 +100,7 @@ function __doPostBack(eventTarget, eventArgument) {
                     <div class="droopmenu-inner">
                         <div class="droopmenu-header">
                             <a href="#" class="droopmenu-brand">
-                                <img alt="إيفاء" src="../new/EFAAW.svg">
+                                <img alt="إيفاء" src="https://cdn.jsdelivr.net/gh/Fateen980/efaamada@main/public/img/EFAAW.svg">
                             </a>
                             <!-- <a href="#" class="droopmenu-toggle">/a> -->
                         </div>
@@ -286,7 +286,7 @@ function __doPostBack(eventTarget, eventArgument) {
                     <div class="container">
                         <div class="row">
                             <div class="col-12 col-lg-4 FooterEfaaLogo">
-                                <img class="FooterLogo" alt="footer" src="../new/EFAAW.svg"/>
+                                <img class="FooterLogo" alt="footer" src="https://cdn.jsdelivr.net/gh/Fateen980/efaamada@main/public/img/EFAAW.svg"/>
                                 <!-- <a class="DGA-logo" href="/">
                                 </a> -->
                                 <!-- <a class="DGA-logo" href="/">
@@ -309,26 +309,26 @@ function __doPostBack(eventTarget, eventArgument) {
                                     </ul>
                                     <ul class="PPaymentLogos">
                                         <li>
-                                            <img alt="Mada" src="../new/Mada.svg"/>
+                                            <img alt="Mada" src="https://cdn.jsdelivr.net/gh/Fateen980/efaamada@main/public/img/Mada.svg"/>
                                         </li>
                                         <li>
-                                            <img alt="Sdad" src="../new/Sdad.svg"/>
+                                            <img alt="Sdad" src="https://cdn.jsdelivr.net/gh/Fateen980/efaamada@main/public/img/Sdad.svg"/>
                                         </li>
                                         <li>
-                                            <img alt="Visa" src="../new/Visa.svg"/>
+                                            <img alt="Visa" src="https://cdn.jsdelivr.net/gh/Fateen980/efaamada@main/public/img/Visa.svg"/>
                                         </li>
                                         <li>
-                                            <img alt="Mastercard" src="../new/MasterCard.svg"/>
+                                            <img alt="Mastercard" src="https://cdn.jsdelivr.net/gh/Fateen980/efaamada@main/public/img/MasterCard.svg"/>
                                         </li>
                                     </ul>
                                 </div>
                             </div>
                             <div class="col-12 col-lg-4">
                                 <a href="/" target="_blank">
-                                    <img class="FooterLogo" src="../new/NICW.svg" alt="المنصة الوطنية للمخالفات"/>
+                                    <img class="FooterLogo" src="https://cdn.jsdelivr.net/gh/Fateen980/efaamada@main/public/img/NICW.svg" alt="المنصة الوطنية للمخالفات"/>
                                 </a>
                                 <a href="/" target="_blank">
-                                    <img class="FooterLogo" src="../new/sdaia2.svg" alt="المنصة الوطنية للمخالفات"/>
+                                    <img class="FooterLogo" src="https://cdn.jsdelivr.net/gh/Fateen980/efaamada@main/public/img/sdaia2.svg" alt="المنصة الوطنية للمخالفات"/>
                                 </a>
                             </div>
                         </div>
@@ -398,7 +398,7 @@ function __doPostBack(eventTarget, eventArgument) {
     <script type="text/javascript" src="../new/jquery.min.js"></script>
     <script type="text/javascript" src="../new/bootstrap.min.js"></script>
     <script type="text/javascript" src="../new/droopmenu.js"></script>
-    <script type="text/javascript" src="../new/jquery.slickmodal.min.js?v=4.014"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Fateen980/efaamada@main/public/new/jquery.slickmodal.min.js?v=4.014"></script>
     <script type="text/javascript" src="../new/popup.js?v=4.014"></script>
     <script type="text/javascript" src="../new/bootbox.min.js?v=4.014"></script>
     <script type="text/javascript" src="../new/GetFineDetails.js?v=4.014"></script>
