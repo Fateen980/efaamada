@@ -230,7 +230,7 @@ function __doPostBack(eventTarget, eventArgument) {
 
     <a href="#" ID="backToTop"><i class="fa fa-arrow-up"></i></a>
     <script type="text/javascript" src="../new/about/jquery.js"></script>
-    <script type="text/javascript" src="../new/bootstrap.min.js" ></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Fateen980/efaamada@main/public/new/bootstrap.min.js" ></script>
     <script type="text/javascript" src="../new/droopmenu.js?v=4.18"></script>
     
     

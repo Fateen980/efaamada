@@ -393,8 +393,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <a href="#" ID="backToTop">
         <i class="fa fa-arrow-up"></i>
     </a>
-    <script type="text/javascript" src="../new/jquery.min.js"></script>
-    <script type="text/javascript" src="../new/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Fateen980/efaamada@main/public/new/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Fateen980/efaamada@main/public/new/bootstrap.min.js"></script>
     <script type="text/javascript" src="../new/droopmenu.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Fateen980/efaamada@main/public/new/jquery.slickmodal.min.js?v=4.014"></script>
     <script type="text/javascript" src="../new/popup.js?v=4.014"></script>
@@ -407,12 +407,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <script type="text/javascript" src="../new/dictionary-website.js?v=4.014"></script>
     <script type="text/javascript" src="../new/network-utils-website.min.js?v=4.014"></script>
 
-    <script type="text/javascript" src="../new/Calender_Hijri.js"></script>
-    <script type="text/javascript" src="../new/jquery.calendars.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Fateen980/efaamada@main/public/new/Calender_Hijri.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Fateen980/efaamada@main/public/new/jquery.calendars.js"></script>
     <script type="text/javascript" src="../new/jquery.calendars.ummalqura.js"></script>
-    <script type="text/javascript" src="../new/jquery.calendars.picker.js"></script>
-    <script type="text/javascript" src="../new/jquery.calendars.plus.js"></script>
-    <script type="text/javascript" src="../new/jquery.hijri.date.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Fateen980/efaamada@main/public/new/jquery.calendars.picker.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Fateen980/efaamada@main/public/new/jquery.calendars.plus.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Fateen980/efaamada@main/public/new/jquery.hijri.date.js"></script>
     <!-- <script type="text/javascript" src="../new/Custom.js"></script> -->
 
     <script>
