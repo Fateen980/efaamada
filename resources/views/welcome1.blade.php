@@ -165,7 +165,7 @@ function __doPostBack(eventTarget, eventArgument) {
 
                             <div class="HomeDetailsAndSearch">
                                 <div class="row">
-                                    <div class="col-12 col-lg-8 text-light">
+                                   <div class="col-12 col-lg-6 text-center">
                                         <div class="HomeBoxDescBox">
                                             <h1 class="MainTitle" data-npvmdict="nationalviolationsplatform"></h1>
                                      
@@ -186,7 +186,7 @@ function __doPostBack(eventTarget, eventArgument) {
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-12 col-lg-4 text-center">
+                                    <div class="col-12 col-lg-6 text-center">
                                         <div class="HomeMainBoxSearchBoxAndBtns">
 
                                             <div class="HomeMainBoxSearchBox">
