@@ -131,13 +131,6 @@ function __doPostBack(eventTarget, eventArgument) {
                                     </a>
                                 </li>
 
-
-                                <li>
-                                    <a href="#" onclick="DictionaryUtils.toggleLang()">
-                                        <i class="fas fa-globe"></i>
-                                        <span data-npvmdict="lang"></span>
-                                    </a>
-                                </li>
                             </ul>
                         </div>
                     </div>
@@ -156,10 +149,7 @@ function __doPostBack(eventTarget, eventArgument) {
                                     <div class="col-12 col-lg-8 text-light">
                                         <div class="HomeBoxDescBox">
                                             <h1 class="MainTitle" data-npvmdict="nationalviolationsplatform"></h1>
-                                     
                                             <h3 class="SubTitle" data-npvmdict="low"></h3>
-                                         
-
                                             <div class="BtnToolbar">
                                                 <a href="/" id="ContentPlaceHolder1_linkIndividualsLogin" class="LoginBtn LoginBtnStyleB" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$linkIndividualsLogin&#39;,&#39;&#39;)">
                                                     <i class="fa fa-user"></i>
@@ -265,17 +255,14 @@ function __doPostBack(eventTarget, eventArgument) {
                     </div>
                 </div>
             </div>
+
+
             <footer>
                 <div class=" InternalFooter">
                     <div class="container">
                         <div class="row">
                             <div class="col-12 col-lg-4 FooterEfaaLogo">
                                 <img class="FooterLogo" alt="footer" src="https://cdn.jsdelivr.net/gh/Fateen980/efaamada@main/public/img/EFAAW.svg"/>
-                                <!-- <a class="DGA-logo" href="/">
-                                </a> -->
-                                <!-- <a class="DGA-logo" href="/">
-                                <img class="FooterLogo" alt="FooterLogo" src="../img/stamp-certificatew-old.png" style="height: 65px;">
-                            </a> -->
                             </div>
                             <div class="col-12 col-lg-4">
                                 <div class="HomeMainBoxSearchBoxContainer FooterMed">
