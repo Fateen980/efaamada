@@ -130,19 +130,7 @@ function __doPostBack(eventTarget, eventArgument) {
                                         <span class="badge bg-danger px-1" data-npvmdict="new"></span>
                                     </a>
                                 </li>
-                                <li id="drpLogin">
-                                    <a data-npvmdict="login" href="#"></a>
-                                    <ul>
-                                        <li>
-                                            <a id="linkIndividualsLogin" href="javascript:__doPostBack(&#39;ctl00$linkIndividualsLogin&#39;,&#39;&#39;)">
-                                                <i class="fa fa-user"></i>
-                                                <span data-npvmdict="individualbusiness"></span>
-                                            </a>
-                                        </li>
-                                      
 
-                                    </ul>
-                                </li>
 
                                 <li>
                                     <a href="#" onclick="DictionaryUtils.toggleLang()">
@@ -169,7 +157,7 @@ function __doPostBack(eventTarget, eventArgument) {
                                         <div class="HomeBoxDescBox">
                                             <h1 class="MainTitle" data-npvmdict="nationalviolationsplatform"></h1>
                                      
-                                            <h1 class="SubTitle" data-npvmdict="low"></h1>
+                                            <h3 class="SubTitle" data-npvmdict="low"></h3>
                                          
 
                                             <div class="BtnToolbar">
