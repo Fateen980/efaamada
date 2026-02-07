@@ -139,13 +139,8 @@ function __doPostBack(eventTarget, eventArgument) {
                                                 <span data-npvmdict="individualbusiness"></span>
                                             </a>
                                         </li>
-                                        <li></li>
-                                        <li>
-                                            <a id="linkPartnersLogin" href="javascript:__doPostBack(&#39;ctl00$linkPartnersLogin&#39;,&#39;&#39;)">
-                                                <i class="fa fa-building"></i>
-                                                <span data-npvmdict="partners"></span>
-                                            </a>
-                                        </li>
+                                      
+
                                     </ul>
                                 </li>
 
@@ -182,11 +177,7 @@ function __doPostBack(eventTarget, eventArgument) {
                                                     <i class="fa fa-user"></i>
                                                     <span data-npvmdict="individualbusiness"></span>
                                                 </a>
-                                                <a href="/" id="ContentPlaceHolder1_linkPartnersLogin2" class="LoginBtn LoginBtnStyleB" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$linkPartnersLogin2&#39;,&#39;&#39;)">
-                                                    <i class="fa fa-building"></i>
-                                                    <span data-npvmdict="partners"></span>
-                                                </a>
-
+  
                                                      <a href="#" id="ContentPlaceHolder1_linkPartnersLogin2" class="LoginBtn LoginBtnStyleB" onclick="DictionaryUtils.toggleLang()">
                                                     <i class="fas fa-globe"></i>
                                                     <span data-npvmdict="lang"></span>
