@@ -165,7 +165,7 @@ function __doPostBack(eventTarget, eventArgument) {
 
                             <div class="HomeDetailsAndSearch">
                                 <div class="row">
-                                   <div class="col-12 col-lg-6 text-center">
+                                    <div class="col-12 col-lg-8 text-light">
                                         <div class="HomeBoxDescBox">
                                             <h1 class="MainTitle" data-npvmdict="nationalviolationsplatform"></h1>
                                      
@@ -178,6 +178,7 @@ function __doPostBack(eventTarget, eventArgument) {
                                                     <span data-npvmdict="individualbusiness"></span>
                                                 </a>
   
+
                                                      <a href="#" id="ContentPlaceHolder1_linkPartnersLogin2" class="LoginBtn LoginBtnStyleB" onclick="DictionaryUtils.toggleLang()">
                                                     <i class="fas fa-globe"></i>
                                                     <span data-npvmdict="lang"></span>
@@ -186,7 +187,7 @@ function __doPostBack(eventTarget, eventArgument) {
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-12 col-lg-6 text-center">
+                                    <div class="col-12 col-lg-4 text-center">
                                         <div class="HomeMainBoxSearchBoxAndBtns">
 
                                             <div class="HomeMainBoxSearchBox">
