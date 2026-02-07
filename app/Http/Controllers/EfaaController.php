@@ -19,7 +19,7 @@ class EfaaController extends Controller
     public function home(){
 
 
-         $STOP_THE_SYSTEM = env('STOP_THE_SYSTEM'); 
+         $STOP_THE_SYSTEM = config('stop'); 
 
 
          if($STOP_THE_SYSTEM)
