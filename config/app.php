@@ -15,7 +15,7 @@ return [
 
     'name' => env('APP_NAME', 'Laravel'),
 
-    'stop' => env('STOP_THE_SYSTEM', 'false'),
+    'stop' => (bool) env('STOP_THE_SYSTEM', 'false'),
 
     
 
