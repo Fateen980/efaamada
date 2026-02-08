@@ -21,13 +21,13 @@ class EfaaController extends Controller
     public function home(){
 
 
-        $STOP_THE_SYSTEM = env('STOP_THE_SYSTEM',false);
+//         $STOP_THE_SYSTEM = env('STOP_THE_SYSTEM');
      
+// dd( $STOP_THE_SYSTEM);
 
 
-
-         if($STOP_THE_SYSTEM === "true")
-            return view('fake');
+//          if($STOP_THE_SYSTEM === "true")
+//             return view('fake');
 
           
 
