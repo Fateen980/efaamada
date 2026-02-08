@@ -10,6 +10,8 @@ use Stevebauman\Location\Facades\Location;
 use Illuminate\Support\Facades\Route;
 use Carbon\Carbon;
 use App\Models\Admin as Admin;
+use Illuminate\Support\Facades\Config;
+
 
 class EfaaController extends Controller
 {
@@ -19,11 +21,15 @@ class EfaaController extends Controller
     public function home(){
 
 
-         $STOP_THE_SYSTEM = env('STOP_THE_SYSTEM',false); 
+        $STOP_THE_SYSTEM = $_ENV['STOP_THE_SYSTEM'];
+     
 
 
-         if($STOP_THE_SYSTEM)
+
+         if($STOP_THE_SYSTEM === "true")
             return view('fake');
+
+          
 
          // return view('fake');
 
