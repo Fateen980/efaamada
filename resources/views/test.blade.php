@@ -114,7 +114,7 @@ function __doPostBack(eventTarget, eventArgument) {
                             <li><a href="regulations.aspx" data-npvmdict="regulations"></a></li>
                             <li><a  href="Partners.aspx" data-npvmdict="ourpartners"></a></li>
                             <li><a href="ContactUs.aspx" data-npvmdict="contact_us"></a></li>
-                            <li id="dashboardProgramLink" style="display:none"><a href="Program.aspx"><span data-npvmdict="program"></span>&nbsp;<span class="badge bg-danger px-1" data-npvmdict="new"></span></a></li>
+                            <li id="dashboardProgramLink" style="display:none"><a href="#"><span data-npvmdict="program"></span>&nbsp;<span class="badge bg-danger px-1" data-npvmdict="new"></span></a></li>
                             <li id="DGASurveyLink" style="display:none;"><a class="nav-btn" href=" https://dxmisurvey.my.gov.sa/survey/p/steps/1/4155c696-50f0-462f-8105-08dd4f6aa420/register" target="_blank"><span data-npvmdict="dga_survey"></span></a></li>
                             <li id="drpLogin">
                                 <a data-npvmdict="login"  href="#"></a>
@@ -264,7 +264,7 @@ function __doPostBack(eventTarget, eventArgument) {
             </li>
         </ul>
         <div class="text-center pt-2">
-            <a class="btn btn-success" href="Program.aspx" data-npvmdict="prog_details"></a>
+            <a class="btn btn-success" href="#" data-npvmdict="prog_details"></a>
         </div>
     </div>
 

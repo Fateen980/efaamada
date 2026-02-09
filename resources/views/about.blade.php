@@ -103,13 +103,13 @@ function __doPostBack(eventTarget, eventArgument) {
                             <li><a href="/regulations" data-npvmdict="regulations"></a></li>
                             <li><a  href="/Partners" data-npvmdict="ourpartners"></a></li>
                             <li><a href="/ContactUs" data-npvmdict="contact_us"></a></li>
-                            <li id="dashboardProgramLink" style="display:none"><a href="Program.aspx"><span data-npvmdict="program"></span>&nbsp;<span class="badge bg-danger px-1" data-npvmdict="new"></span></a></li>
+                            <li id="dashboardProgramLink" style="display:none"><a href="#"><span data-npvmdict="program"></span>&nbsp;<span class="badge bg-danger px-1" data-npvmdict="new"></span></a></li>
                             <li id="DGASurveyLink" style="display:none"><a class="nav-btn" href=" https://dxmisurvey.my.gov.sa/survey/p/steps/1/4155c696-50f0-462f-8105-08dd4f6aa420/register" target="_blank"><span data-npvmdict="dga_survey"></span></a></li>
                             <li id="drpLogin">
                                 <a data-npvmdict="login"  href="#"></a>
                                 <ul>
                                     <li></li>
-                                    <li><a href="/callback.aspx?mode=1&UserType=1" id="linkIndividualsLogin"><i class="fa fa-user"   ></i> <span data-npvmdict="individualbusiness"></span></a></li>
+                                    <li><a href="/" id="linkIndividualsLogin"><i class="fa fa-user"   ></i> <span data-npvmdict="individualbusiness"></span></a></li>
                                     <li><a id="linkPartnersLogin" href="javascript:__doPostBack(&#39;ctl00$linkPartnersLogin&#39;,&#39;&#39;)"><i class="fa fa-building" ></i> <span data-npvmdict="partners"></span></a></li>
                                 </ul>
                             </li>
