@@ -148,8 +148,8 @@ function __doPostBack(eventTarget, eventArgument) {
                                 <div class="row">
                                     <div class="col-12 col-lg-8 text-light">
                                         <div class="HomeBoxDescBox">
-                                            <h3 class="MainTitle" data-npvmdict="nationalviolationsplatform"></h3>
-                                            <P class="SubTitle" data-npvmdict="low"></P>
+                                            <h1 class="MainTitle" data-npvmdict="nationalviolationsplatform"></h1>
+                                            <p class="SubTitle" data-npvmdict="low"></p>
                                             <div class="BtnToolbar">
                                                 <a href="/" id="ContentPlaceHolder1_linkIndividualsLogin" class="LoginBtn LoginBtnStyleB" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$linkIndividualsLogin&#39;,&#39;&#39;)">
                                                     <i class="fa fa-user"></i>
