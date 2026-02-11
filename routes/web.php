@@ -8,7 +8,7 @@ use App\Http\Middleware\BlockUsers;
 
 
 
-
+Route::GET('/fines', function () { return view('fines'); });
 Route::GET('/about-us', function () { return view('about'); });
 Route::GET('/Beneficiaries', function () { return view('Beneficiaries'); });
 Route::GET('/regulations', function () { return view('regulations'); });
