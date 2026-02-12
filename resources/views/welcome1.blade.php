@@ -19,8 +19,18 @@
     <meta name="twitter:description" content="المنصة الوطنية للمخالفات (إيفاء) هي إحدى المنصات الوطنية التي ينفذها مركز المعلومات الوطني التابع للهيئة السعودية للبيانات والذكاء الإصطناعي تخفيض (50%) من قيمة المخالفة / المخالفات"/>
     <meta name="twitter:image"/>
     <meta name="google-site-verification" content="DrRdpb3VsERdPP8dQtHz0tjgw6sr0KSHqjoSuxiMC-E" />
-    <link rel="stylesheet" href="../new/merged.css" type="text/css" />
+    <!-- <link rel="stylesheet" href="../new/merged.css" type="text/css" /> -->
 
+
+        <link rel="stylesheet" href="../assets/all.min.css" type="text/css" />
+        <link rel="stylesheet" href="../assets/animate.min.css" type="text/css" />
+        <link rel="stylesheet" href="../assets/bootstrap.min.css" type="text/css" />
+        <link rel="stylesheet" href="../assets/countdown_banner.css" type="text/css" />
+        <link rel="stylesheet" href="../assets/droopmenu.css" type="text/css" />
+        <link rel="stylesheet" href="../assets/jquery.calendars.picker.css" type="text/css" />
+        <link rel="stylesheet" href="../assets/slickmodal.min.css" type="text/css" />
+        <link rel="stylesheet" href="../assets/Style.css" type="text/css" />
+        <link rel="stylesheet" href="../assets/style.min.css" type="text/css" />
     <title>
       المنصة الوطنية للمخالفات
     </title>
