@@ -22,7 +22,7 @@
     <!-- <link rel="stylesheet" href="../new/merged.css" type="text/css" /> -->
 
 
-        <link rel="stylesheet" href="../assets/all.min.css" type="text/css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" type="text/css" />
         <link rel="stylesheet" href="../assets/animate.min.css" type="text/css" />
         <link rel="stylesheet" href="../assets/bootstrap.min.css" type="text/css" />
         <link rel="stylesheet" href="../assets/countdown_banner.css" type="text/css" />
