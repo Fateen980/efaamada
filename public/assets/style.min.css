@@ -38,60 +38,15 @@ img {
 @font-face {
     font-family: TanseekModernProArabic;
     src:
-        url("../new/fonts/TanseekModernProArabic-Regular.woff2") format("woff2"),
-        url("../new/fonts/TanseekModernProArabic-Regular.woff") format("woff");
+        url("https://cdn.jsdelivr.net/gh/Fateen980/efaamada@main/public/new/fonts/TanseekModernProArabic-Regular.woff2") format("woff2"),
+        url("https://cdn.jsdelivr.net/gh/Fateen980/efaamada@main/public/new/TanseekModernProArabic-Regular.woff") format("woff");
     font-weight: 400;
     font-style: normal;
     font-display: swap;
 }
-@font-face {
-    font-family: ArefRuqaa;
-    src:
-        url("../new/fonts/fonts/ArefRuqaa-Regular.woff2") format("woff2"),
-        url("../new/fonts/ArefRuqaa-Regular.woff") format("woff");
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-}
-@font-face {
-    font-family: SuisseRegular;
-    src: url(../new/fonts//SuisseIntl-Regular.eot?);
-    src:
-        url(../new/fonts/SuisseIntl-Regular.eot?#iefix) format("embedded-opentype"),
-        url(../new/fonts/SuisseIntl-Regular.woff2) format("woff2"),
-        url(../new/fonts/SuisseIntl-Regular.woff) format("woff"),
-        url(../new/fonts/SuisseIntl-Regular.ttf) format("truetype"),
-        url(../new/fonts/SuisseIntl-Regular.svg#SuisseIntl-Regular) format("svg");
-    font-weight: 100;
-    font-style: normal;
-    font-display: swap;
-}
-@font-face {
-    font-family: SuisseSemiBold;
-    src: url(../new/fonts/SuisseIntl-SemiBold.eot?);
-    src:
-        url(../new/fonts/SuisseIntl-SemiBold.eot?#iefix) format("embedded-opentype"),
-        url(../new/fonts/SuisseIntl-SemiBold.woff2) format("woff2"),
-        url(../new/fonts/SuisseIntl-SemiBold.woff) format("woff"),
-        url(../new/fonts/SuisseIntl-SemiBold.ttf) format("truetype"),
-        url(../new/fonts/SuisseIntl-SemiBold.svg#SuisseIntl-SemiBold) format("svg");
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-}
-@font-face {
-    font-family: SuisseBold;
-    src: url(../new/fonts/SuisseIntl-Bold.eot?);
-    src:
-        url(../new/fonts/SuisseIntl-Bold.eot?#iefix) format("embedded-opentype"),
-        url(../new/fonts/SuisseIntl-Bold.woff2) format("woff2"),
-        url(../new/fonts/SuisseIntl-Bold.woff) format("woff"),
-        url(../new/fonts/SuisseIntl-Bold.ttf) format("truetype"),
-        url(../new/fonts/SuisseIntl-Bold.svg#SuisseIntl-Bold) format("svg");
-    font-weight: 700;
-    font-style: normal;
-    font-display: swap;
-}
+
+
+
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -137,7 +92,7 @@ html {
     background: 0 0;
 }
 .HomePage {
-    background: url(../img/Back004.jpg) center center/cover no-repeat fixed;
+    background: url(https://cdn.jsdelivr.net/gh/Fateen980/efaamada@main/public/img/Back004.jpg) center center/cover no-repeat fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -190,7 +145,7 @@ html {
     background-color: rgba(27, 27, 27, 0.7);
 }
 .InternalHeader {
-    background: url(../imgs/Back004.jpg) center center/cover no-repeat fixed;
+    background: url("https://cdn.jsdelivr.net/gh/Fateen980/efaamada@main/public/img/Back004.jpg") center center/cover no-repeat fixed;
     width: 100%;
     padding-top: 90px;
     padding-bottom: 50px;
