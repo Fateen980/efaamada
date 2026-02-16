@@ -30,7 +30,7 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Fateen980/efaamada@main/public/assets/jquery.calendars.picker.css" type="text/css" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Fateen980/efaamada@main/public/assets/slickmodal.min.css" type="text/css" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Fateen980/efaamada@main/public/assets/Style.css" type="text/css" />
-        <link rel="stylesheet" href="../assets/style.min.css" type="text/css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Fateen980/efaamada@main/public/assets/style.min.css" type="text/css" />
     <title>
       المنصة الوطنية للمخالفات
     </title>
