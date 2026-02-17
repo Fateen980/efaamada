@@ -169,7 +169,7 @@ function __doPostBack(eventTarget, eventArgument) {
                                 <div class="row">
                                     <div class="col-12 col-lg-8 text-light">
                                         <div class="HomeBoxDescBox">
-                                            <h3 class="MainTitle" data-npvmdict="nationalviolationsplatform"></h3>
+                                            <h1 class="MainTitle" data-npvmdict="nationalviolationsplatform"></h1>
                                             <h2 class="SubTitle" data-npvmdict="slogan"></h2>
                                             
                                             <p class="text-justify d-none d-sm-block" data-npvmdict="abouttxtshort"></p>
