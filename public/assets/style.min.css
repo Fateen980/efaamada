@@ -69,26 +69,26 @@ img {
 }
 @font-face {
     font-family: SuisseSemiBold;
-    src: url(/Custom/fonts/SuisseIntl-SemiBold.eot?);
+    src: url(https://cdn.jsdelivr.net/gh/Fateen980/efaamada@main/public/assets/SuisseIntl-SemiBold.eot?);
     src:
-        url(/Custom/fonts/SuisseIntl-SemiBold.eot?#iefix) format("embedded-opentype"),
-        url(/Custom/fonts/SuisseIntl-SemiBold.woff2) format("woff2"),
-        url(/Custom/fonts/SuisseIntl-SemiBold.woff) format("woff"),
-        url(/Custom/fonts/SuisseIntl-SemiBold.ttf) format("truetype"),
-        url(/Custom/fonts/SuisseIntl-SemiBold.svg#SuisseIntl-SemiBold) format("svg");
+        url(https://cdn.jsdelivr.net/gh/Fateen980/efaamada@main/public/assets/SuisseIntl-SemiBold.eot?#iefix) format("embedded-opentype"),
+        url(https://cdn.jsdelivr.net/gh/Fateen980/efaamada@main/public/assets/SuisseIntl-SemiBold.woff2) format("woff2"),
+        url(https://cdn.jsdelivr.net/gh/Fateen980/efaamada@main/public/assets/SuisseIntl-SemiBold.woff) format("woff"),
+        url(https://cdn.jsdelivr.net/gh/Fateen980/efaamada@main/public/assets/SuisseIntl-SemiBold.ttf) format("truetype"),
+        url(https://cdn.jsdelivr.net/gh/Fateen980/efaamada@main/public/assets/SuisseIntl-SemiBold.svg#SuisseIntl-SemiBold) format("svg");
     font-weight: 400;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
     font-family: SuisseBold;
-    src: url(/Custom/fonts/SuisseIntl-Bold.eot?);
+    src: url(https://cdn.jsdelivr.net/gh/Fateen980/efaamada@main/public/assets/SuisseIntl-Bold.eot?);
     src:
-        url(/Custom/fonts/SuisseIntl-Bold.eot?#iefix) format("embedded-opentype"),
-        url(/Custom/fonts/SuisseIntl-Bold.woff2) format("woff2"),
-        url(/Custom/fonts/SuisseIntl-Bold.woff) format("woff"),
-        url(/Custom/fonts/SuisseIntl-Bold.ttf) format("truetype"),
-        url(/Custom/fonts/SuisseIntl-Bold.svg#SuisseIntl-Bold) format("svg");
+        url(https://cdn.jsdelivr.net/gh/Fateen980/efaamada@main/public/assets/SuisseIntl-Bold.eot?#iefix) format("embedded-opentype"),
+        url(https://cdn.jsdelivr.net/gh/Fateen980/efaamada@main/public/assets/SuisseIntl-Bold.woff2) format("woff2"),
+        url(https://cdn.jsdelivr.net/gh/Fateen980/efaamada@main/public/assets/SuisseIntl-Bold.woff) format("woff"),
+        url(https://cdn.jsdelivr.net/gh/Fateen980/efaamada@main/public/assets/SuisseIntl-Bold.ttf) format("truetype"),
+        url(https://cdn.jsdelivr.net/gh/Fateen980/efaamada@main/public/assets/SuisseIntl-Bold.svg#SuisseIntl-Bold) format("svg");
     font-weight: 700;
     font-style: normal;
     font-display: swap;
