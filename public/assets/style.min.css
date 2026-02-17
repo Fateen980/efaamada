@@ -62,7 +62,7 @@ img {
         url(https://cdn.jsdelivr.net/gh/Fateen980/efaamada@main/public/assets/SuisseIntl-Regular.woff2) format("woff2"),
         url(https://cdn.jsdelivr.net/gh/Fateen980/efaamada@main/public/assets/SuisseIntl-Regular.woff) format("woff"),
         url(https://cdn.jsdelivr.net/gh/Fateen980/efaamada@main/public/assets/SuisseIntl-Regular.ttf) format("truetype"),
-        url(/Custom/fonts/SuisseIntl-Regular.svg#SuisseIntl-Regular) format("svg");
+        url(https://cdn.jsdelivr.net/gh/Fateen980/efaamada@main/public/assets/SuisseIntl-Regular.svg#SuisseIntl-Regular) format("svg");
     font-weight: 100;
     font-style: normal;
     font-display: swap;
