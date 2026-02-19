@@ -19,11 +19,22 @@
     <meta name="twitter:description" content="المنصة الوطنية للمخالفات (إيفاء) هي إحدى المنصات الوطنية التي ينفذها مركز المعلومات الوطني التابع للهيئة السعودية للبيانات والذكاء الإصطناعي تخفيض (50%) من قيمة المخالفة / المخالفات"/>
     <meta name="twitter:image"/>
     <meta name="google-site-verification" content="DrRdpb3VsERdPP8dQtHz0tjgw6sr0KSHqjoSuxiMC-E" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Fateen980/efaamada@main/public/new/merged.css" type="text/css" />
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/css/bootstrap.min.css" type="text/css" />
+    <!-- <link rel="stylesheet" href="../assets/countdown_banner.css" type="text/css" /> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Fateen980/efaamada@main/public/assets/droopmenu.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Fateen980/efaamada@main/public/assets/jquery.calendars.picker.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Fateen980/efaamada@main/public/assets/slickmodal.min.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Fateen980/efaamada@main/public/assets/Style.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Fateen980/efaamada@main/public/assets/style.min.css" type="text/css" />
 
     <title>
         المنصة الوطنية للمخالفات | من نحن
     </title>
+
+
     
 
     <link rel="apple-touch-icon" sizes="57x57" href="../new/apple-icon-57x57.png"/>

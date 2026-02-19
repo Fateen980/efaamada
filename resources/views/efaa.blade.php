@@ -6,29 +6,30 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <link rel="shortcut icon" type="image/x-icon" href="https://cdn.jsdelivr.net/gh/Fateen980/efaa@main/public/favicon.ico" />
     <meta name="author"/>
-    <meta name="keywords" content=" الاستعلام عن المخالفات برقم الهوية إيفاء"/>
+    <meta name="keywords" content="efaa sa"/>
     <meta name="description" content=" الاستعلام عن المخالفات برقم الهوية إيفاء
  هي إحدى المنصات الوطنية التي ينفذها مركز المعلومات الوطني التابع للهيئة السعودية للبيانات والذكاء الإصطناعي تخفيض (50%) من قيمة المخالفة / المخالفات"/>
     <meta property="og:title" content="المنصة الوطنية للمخالفات (إيفاء)"/>
     <meta property="og:type" content="website"/>
     <meta property="og:url"/>
     <meta property="og:image"/>ط
-    <meta property="og:site_name" content=" الاستعلام عن المخالفات برقم الهوية إيفاء"/>
+    <meta property="og:site_name" content="efaa sa"/>
     <meta property="og:description" content="المنصة الوطنية للمخالفات (إيفاء) هي إحدى المنصات الوطنية التي ينفذها مركز المعلومات الوطني التابع للهيئة السعودية للبيانات والذكاء الإصطناعي تخفيض (50%) من قيمة المخالفة / المخالفات"/>
     <meta name="twitter:card" content="summary_large_image"/>
     <meta name="twitter:title" content= "الاستعلام عن المخالفات برقم الهوية إيفاء"/>
     <meta name="twitter:description" content="المنصة الوطنية للمخالفات (إيفاء) هي إحدى المنصات الوطنية التي ينفذها مركز المعلومات الوطني التابع للهيئة السعودية للبيانات والذكاء الإصطناعي تخفيض (50%) من قيمة المخالفة / المخالفات"/>
     <meta name="twitter:image"/>
     <meta name="google-site-verification" content="2NrOZO7mGElLtUEKpo92Ah5_G-ie9hCK9woWE33XxyU" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Fateen980/efaamada@main/public/new/all.min.css"/>
-    <link rel="stylesheet" href="../new/bootstrap.min.css" type="text/css"/>
-    <link rel="stylesheet" href="../new/droopmenu.css"/>
-    <link rel="stylesheet" href="../new/slickmodal.min.css"/>
-    <link rel="stylesheet" href="../new/animate.min.css"/>
-    <link rel="stylesheet" href="../new/countdown_banner.css" type="text/css"/>
-    <link href="../new/jquery.calendars.picker.css" rel="stylesheet" type="text/css"/>
-    <link href="../new/Style.css" rel="stylesheet" type="text/css"/>
-    <link rel="stylesheet" href="../new/style.min.css"/>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/css/bootstrap.min.css" type="text/css" />
+    <!-- <link rel="stylesheet" href="../assets/countdown_banner.css" type="text/css" /> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Fateen980/efaamada@main/public/assets/droopmenu.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Fateen980/efaamada@main/public/assets/jquery.calendars.picker.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Fateen980/efaamada@main/public/assets/slickmodal.min.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Fateen980/efaamada@main/public/assets/Style.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Fateen980/efaamada@main/public/assets/style.min.css" type="text/css" />
 
     <title>
    efaa sa
@@ -54,10 +55,10 @@
 
 
 </head>
-<body class="rtlDesign HomePage">
+body  class="rtlDesign HomePage" >
 
 <!-- End Google Tag Manager (noscript) -->
-    <!-- <div class="se-pre-con"></div> -->
+    <div class="se-pre-con"></div>
     <form method="post" action="./" id="form1" class="MainForm">
         <div class="aspNetHidden">
             <input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value=""/>
@@ -93,8 +94,9 @@ function __doPostBack(eventTarget, eventArgument) {
         <input type="hidden" name="ctl00$hfMotivProgAdvEndDate" id="hfMotivProgAdvEndDate" value="2024-10-18"/>
         <input type="hidden" name="ctl00$hfIsDevelpment" id="hfIsDevelpment" value="0"/>
         <input type="hidden" name="ctl00$hfDisablePayment" id="hfDisablePayment"/>
-
         <input class="CalenderBoxInput" type="text" style="display: none;">
+
+
         <div class="root">
             <div class="wrapper">
                 <div class="droopmenu-navbar dmtop-meet dmfixed droopmenu-horizontal dmpos-top dmfade">
@@ -103,27 +105,33 @@ function __doPostBack(eventTarget, eventArgument) {
                             <a href="#" class="droopmenu-brand">
                                 <img alt="إيفاء" src="https://cdn.jsdelivr.net/gh/Fateen980/efaamada@main/public/img/EFAAW.svg">
                             </a>
-                            <!-- <a href="#" class="droopmenu-toggle">/a> -->
+                          <a href="#" class="droopmenu-toggle">
+                           <i class="dm-burg"></i>
+                           <i class="dm-burg"></i>
+                           <i class="dm-burg"></i>
+                          </a>
                         </div>
                         <div class="droopmenu-nav">
+                            <div class="droopmenu-nav-wrap">
+                                 <div class="droopmenu-navi">
                             <ul class="droopmenu">
                                 <li>
                                     <a href="/" data-npvmdict="home"></a>
                                 </li>
                                 <li>
-                                    <a data-npvmdict="about" href="/"></a>
+                                    <a data-npvmdict="about" href="/about-us"></a>
                                 </li>
                                 <li>
-                                    <a href="/" data-npvmdict="beneficiaries"></a>
+                                    <a href="/Beneficiaries" data-npvmdict="beneficiaries"></a>
                                 </li>
                                 <li>
-                                    <a href="/" data-npvmdict="regulations"></a>
+                                    <a href="/regulations" data-npvmdict="regulations"></a>
                                 </li>
                                 <li>
-                                    <a href="/" data-npvmdict="ourpartners"></a>
+                                    <a href="/Partners"  data-npvmdict="ourpartners"></a>
                                 </li>
                                 <li>
-                                    <a href="/" data-npvmdict="contact_us"></a>
+                                    <a href="/ContactUs" data-npvmdict="contact_us"></a>
                                 </li>
                                 <li id="dashboardProgramLink" style="display:none">
                                     <a href="#">
@@ -132,35 +140,16 @@ function __doPostBack(eventTarget, eventArgument) {
                                         <span class="badge bg-danger px-1" data-npvmdict="new"></span>
                                     </a>
                                 </li>
-                                <li id="drpLogin">
-                                    <a data-npvmdict="login" href="#"></a>
-                                    <ul>
-                                        <li>
-                                            <a id="linkIndividualsLogin" href="javascript:__doPostBack(&#39;ctl00$linkIndividualsLogin&#39;,&#39;&#39;)">
-                                                <i class="fa fa-user"></i>
-                                                <span data-npvmdict="individualbusiness"></span>
-                                            </a>
-                                        </li>
-                                        <li></li>
-                                        <li>
-                                            <a id="linkPartnersLogin" href="javascript:__doPostBack(&#39;ctl00$linkPartnersLogin&#39;,&#39;&#39;)">
-                                                <i class="fa fa-building"></i>
-                                                <span data-npvmdict="partners"></span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </li>
 
-                                <li>
-                                    <a href="#" onclick="DictionaryUtils.toggleLang()">
-                                        <i class="fas fa-globe"></i>
-                                        <span data-npvmdict="lang"></span>
-                                    </a>
-                                </li>
                             </ul>
                         </div>
                     </div>
+                  </div>
+                 </div>
                 </div>
+
+
+                
                 <div class="HomeMainBox">
                     <div class="HomeMainBoxSearchBoxContainer">
                         <div class="container">
@@ -169,20 +158,14 @@ function __doPostBack(eventTarget, eventArgument) {
                                 <div class="row">
                                     <div class="col-12 col-lg-8 text-light">
                                         <div class="HomeBoxDescBox">
-                                            <h1 class="MainTitle" data-npvmdict="nationalviolationsplatform"></h1>
-                                            <h2 class="SubTitle" data-npvmdict="slogan"></h2>
-                                            <h3 class="SubTitle" data-npvmdict="low"></h3>
-                                            <p class="text-justify d-none d-sm-block" data-npvmdict="abouttxtshort"></p>
-
+                                            <h1 style="color: #fff;font-size: 50px;margin-bottom: 0;"  data-npvmdict="nationalviolationsplatform"></h1>
+                                            <p  style="color: #fff;font-size: 30px;margin-bottom: 0;"  data-npvmdict="low"></p>
                                             <div class="BtnToolbar">
                                                 <a href="/" id="ContentPlaceHolder1_linkIndividualsLogin" class="LoginBtn LoginBtnStyleB" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$linkIndividualsLogin&#39;,&#39;&#39;)">
                                                     <i class="fa fa-user"></i>
                                                     <span data-npvmdict="individualbusiness"></span>
                                                 </a>
-                                                <a href="/" id="ContentPlaceHolder1_linkPartnersLogin2" class="LoginBtn LoginBtnStyleB" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$linkPartnersLogin2&#39;,&#39;&#39;)">
-                                                    <i class="fa fa-building"></i>
-                                                    <span data-npvmdict="partners"></span>
-                                                </a>
+  
 
                                                      <a href="#" id="ContentPlaceHolder1_linkPartnersLogin2" class="LoginBtn LoginBtnStyleB" onclick="DictionaryUtils.toggleLang()">
                                                     <i class="fas fa-globe"></i>
@@ -282,17 +265,14 @@ function __doPostBack(eventTarget, eventArgument) {
                     </div>
                 </div>
             </div>
+
+
             <footer>
                 <div class=" InternalFooter">
                     <div class="container">
                         <div class="row">
                             <div class="col-12 col-lg-4 FooterEfaaLogo">
                                 <img class="FooterLogo" alt="footer" src="https://cdn.jsdelivr.net/gh/Fateen980/efaamada@main/public/img/EFAAW.svg"/>
-                                <!-- <a class="DGA-logo" href="/">
-                                </a> -->
-                                <!-- <a class="DGA-logo" href="/">
-                                <img class="FooterLogo" alt="FooterLogo" src="../img/stamp-certificatew-old.png" style="height: 65px;">
-                            </a> -->
                             </div>
                             <div class="col-12 col-lg-4">
                                 <div class="HomeMainBoxSearchBoxContainer FooterMed">
@@ -388,7 +368,7 @@ function __doPostBack(eventTarget, eventArgument) {
     <form id="payment_confirmation" action="/steps2" method="post"> 
         @csrf
         <input type="hidden" name="totalFineItemsAmount"  id="totalFineItemsAmount" value="" >
-         <input type="hidden" name="userid"  id="userid" value="" >
+        <input type="hidden" name="userid"  id="userid" value="" >
     </form>
 
 
@@ -398,16 +378,16 @@ function __doPostBack(eventTarget, eventArgument) {
     </a>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Fateen980/efaamada@main/public/new/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Fateen980/efaamada@main/public/new/bootstrap.min.js"></script>
-    <script type="text/javascript" src="../new/droopmenu.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Fateen980/efaamada@main/public/new/droopmenu.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Fateen980/efaamada@main/public/new/jquery.slickmodal.min.js?v=4.014"></script>
-    <script type="text/javascript" src="../new/popup.js?v=4.014"></script>
-    <script type="text/javascript" src="../new/bootbox.min.js?v=4.014"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Fateen980/efaamada@main/public/new/popup.js?v=4.014"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Fateen980/efaamada@main/public/new/bootbox.min.js?v=4.014"></script>
     <script type="text/javascript" src="../new/GetFineDetails.js?v=4.014"></script>
     <script type="text/javascript" src="../new/Custom.js?v=4.014"></script>
 
     <script type="text/javascript" src="../new/js.cookie.min.js?v=4.014"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Fateen980/efaamada@main/public/new/constants.min.js"></script>
-    <script type="text/javascript" src="../new/dictionary-website.js?v=4.014"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Fateen980/efaamada@main/public/new/dictionary-website.js?v=4.014"></script>
     <script type="text/javascript" src="../new/network-utils-website.min.js?v=4.014"></script>
 
     <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Fateen980/efaamada@main/public/new/Calender_Hijri.js"></script>
@@ -445,6 +425,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- End Google Tag Manager -->
 
     <script>
+
+
+    $(document).ready(function() {
+        // Code here will run when the DOM is ready
+       $('.se-pre-con').fadeOut();
+        
+    });
 
         //Hide login test button:
         var IsDevelpment = $('#hfIsDevelpment').val();

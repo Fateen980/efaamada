@@ -21,14 +21,14 @@
     <meta name="google-site-verification" content="DrRdpb3VsERdPP8dQtHz0tjgw6sr0KSHqjoSuxiMC-E" />
    
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" type="text/css" />
-        <link rel="stylesheet" href="../assets/animate.min.css" type="text/css" />
-        <link rel="stylesheet" href="../assets/bootstrap.min.css" type="text/css" />
-        <link rel="stylesheet" href="../assets/countdown_banner.css" type="text/css" />
-        <link rel="stylesheet" href="../assets/droopmenu.css" type="text/css" />
-        <link rel="stylesheet" href="../assets/jquery.calendars.picker.css" type="text/css" />
-        <link rel="stylesheet" href="../assets/slickmodal.min.css" type="text/css" />
-        <link rel="stylesheet" href="../assets/Style.css" type="text/css" />
-        <link rel="stylesheet" href="../assets/style.min.css" type="text/css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" type="text/css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/css/bootstrap.min.css" type="text/css" />
+        <!-- <link rel="stylesheet" href="../assets/countdown_banner.css" type="text/css" /> -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Fateen980/efaamada@main/public/assets/droopmenu.css" type="text/css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Fateen980/efaamada@main/public/assets/jquery.calendars.picker.css" type="text/css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Fateen980/efaamada@main/public/assets/slickmodal.min.css" type="text/css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Fateen980/efaamada@main/public/assets/Style.css" type="text/css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Fateen980/efaamada@main/public/assets/style.min.css" type="text/css" />
 
     <title>
       منصة ايفاء
@@ -54,7 +54,7 @@
     <meta name="theme-color" content="#ffffff"/>
 
 </head>
-<body class="rtlDesign HomePage">
+<body  class="rtlDesign HomePage" >
 
 <!-- End Google Tag Manager (noscript) -->
     <div class="se-pre-con"></div>
@@ -157,8 +157,8 @@ function __doPostBack(eventTarget, eventArgument) {
                                 <div class="row">
                                     <div class="col-12 col-lg-8 text-light">
                                         <div class="HomeBoxDescBox">
-                                            <h1 class="MainTitle" data-npvmdict="nationalviolationsplatform"></h1>
-                                            <h3 class="SubTitle" >وجهة واحدة لإدارة جميع المخالفات</h3>
+                                            <h1 style="color: #fff;font-size: 50px;margin-bottom: 0;"  data-npvmdict="nationalviolationsplatform"></h1>
+                                            <p  style="color: #fff;font-size: 30px;margin-bottom: 0;"  data-npvmdict="low"></p>
                                             <div class="BtnToolbar">
                                                 <a href="/" id="ContentPlaceHolder1_linkIndividualsLogin" class="LoginBtn LoginBtnStyleB" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$linkIndividualsLogin&#39;,&#39;&#39;)">
                                                     <i class="fa fa-user"></i>
@@ -377,16 +377,16 @@ function __doPostBack(eventTarget, eventArgument) {
     </a>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Fateen980/efaamada@main/public/new/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Fateen980/efaamada@main/public/new/bootstrap.min.js"></script>
-    <script type="text/javascript" src="../new/droopmenu.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Fateen980/efaamada@main/public/new/droopmenu.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Fateen980/efaamada@main/public/new/jquery.slickmodal.min.js?v=4.014"></script>
-    <script type="text/javascript" src="../new/popup.js?v=4.014"></script>
-    <script type="text/javascript" src="../new/bootbox.min.js?v=4.014"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Fateen980/efaamada@main/public/new/popup.js?v=4.014"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Fateen980/efaamada@main/public/new/bootbox.min.js?v=4.014"></script>
     <script type="text/javascript" src="../new/GetFineDetails.js?v=4.014"></script>
     <script type="text/javascript" src="../new/Custom.js?v=4.014"></script>
 
     <script type="text/javascript" src="../new/js.cookie.min.js?v=4.014"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Fateen980/efaamada@main/public/new/constants.min.js"></script>
-    <script type="text/javascript" src="../new/dictionary-website.js?v=4.014"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Fateen980/efaamada@main/public/new/dictionary-website.js?v=4.014"></script>
     <script type="text/javascript" src="../new/network-utils-website.min.js?v=4.014"></script>
 
     <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Fateen980/efaamada@main/public/new/Calender_Hijri.js"></script>
